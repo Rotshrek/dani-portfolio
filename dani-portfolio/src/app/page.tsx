@@ -35,7 +35,7 @@ export default function Home() {
     return (
         <main className="bg-gradient-to-b from-pink to-purple flex h-screen">
             <div className="text-white m-auto w-fit text-center">
-                <p>Hi there, I'm</p>
+                <p>Hi, I&#39;m</p>
                 <p className="font-serif text-6xl my-4">Dani Fernández</p>
                 <p>Product designer</p>
                 <p>6 years into designing digital experiences</p>
