@@ -1,15 +1,17 @@
+"use client"
+
 import Image from "next/image"
 
 const starsAmount = 12,
-  baseSize = 120,
-  colors = ["white", "pink", "cyan"]
+    baseSize = 120,
+    colors = ["white", "pink", "cyan"]
 
 const generateStarts = () => {
-  const stars = []
+    const stars = []
 
     for (let i = 0; i < starsAmount; i++) {
-      const starSize = baseSize + Math.random() * baseSize,
-        starColor = colors[Math.floor(Math.random() * colors.length)]
+        const starSize = baseSize + Math.random() * baseSize,
+            starColor = colors[Math.floor(Math.random() * colors.length)]
 
         stars.push(
             <div
@@ -21,7 +23,7 @@ const generateStarts = () => {
                     animationDuration: `${2 + Math.random() * 2}s`,
                 }}
             >
-              <Image src={`/${starColor}-star.svg`} alt="star" width={starSize} height={starSize} />
+                <Image src={`/${starColor}-star.svg`} alt="star" width={starSize} height={starSize} />
             </div>
         )
     }
@@ -30,8 +32,6 @@ const generateStarts = () => {
 }
 
 export default function Home() {
-    
-
     return (
         <main className="bg-gradient-to-b from-pink to-purple flex h-screen">
             <div className="text-white m-auto w-fit text-center">
