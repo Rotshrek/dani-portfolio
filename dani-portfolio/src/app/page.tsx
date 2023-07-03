@@ -14,11 +14,11 @@ const generateStarts = () => {
         stars.push(
             <div
                 key={i}
-                className="absolute opacity-40 animate-spin"
+                className="absolute opacity-40 animate-pulse"
                 style={{
                     top: `${Math.random() * 100}%`,
                     left: `${Math.random() * 100}%`,
-                    animationDuration: `${Math.random() * 20}s`,
+                    animationDuration: `${2 + Math.random() * 2}s`,
                 }}
             >
               <Image src={`/${starColor}-star.svg`} alt="star" width={starSize} height={starSize} />
