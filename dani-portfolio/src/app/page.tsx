@@ -1,38 +1,39 @@
 "use client"
 
 import Image from "next/image"
-import { useCallback } from "react"
+import { useEffect } from "react"
 
-const starsAmount = 12,
-    baseSize = 120,
+const baseSize = 120,
     colors = ["white", "pink", "cyan"]
 
+const generateStars = (starsAmount) => {
+    const stars = []
+
+    for (let i = 0; i < starsAmount; i++) {
+        const starSize = baseSize + Math.random() * baseSize,
+            starColor = colors[Math.floor(Math.random() * colors.length)]
+
+        stars.push(
+            <div
+                key={i}
+                className="absolute opacity-40 animate-pulse"
+                style={{
+                    top: `${Math.random() * 100}%`,
+                    left: `${Math.random() * 100}%`,
+                    animationDuration: `${2 + Math.random() * 2}s`,
+                }}
+            >
+                <Image src={`/${starColor}-star.svg`} alt="star" width={starSize} height={starSize} />
+            </div>
+        )
+    }
+
+    return stars
+}
+
 export default function Home() {
-    const generateStarts = useCallback(() => {
-        const stars = []
-
-        for (let i = 0; i < starsAmount; i++) {
-            const starSize = baseSize + Math.random() * baseSize,
-                starColor = colors[Math.floor(Math.random() * colors.length)]
-
-            stars.push(
-                <div
-                    key={i}
-                    className="absolute opacity-40 animate-pulse"
-                    style={{
-                        top: `${Math.random() * 100}%`,
-                        left: `${Math.random() * 100}%`,
-                        animationDuration: `${2 + Math.random() * 2}s`,
-                    }}
-                >
-                    <Image src={`/${starColor}-star.svg`} alt="star" width={starSize} height={starSize} />
-                </div>
-            )
-        }
-
-        return stars
-    }, [])
-
+    const starsAmount = 12
+    
     return (
         <main className="bg-gradient-to-b from-pink to-purple flex h-screen">
             <div className="text-white m-auto w-fit text-center">
@@ -41,7 +42,9 @@ export default function Home() {
                 <p>Product designer</p>
                 <p>6 years into designing digital experiences</p>
             </div>
-            <div className="absolute h-screen w-screen overflow-hidden">{generateStarts()}</div>
+            <div className="absolute h-screen w-screen overflow-hidden">{
+                generateStars(starsAmount)
+            }</div>
         </main>
     )
 }
