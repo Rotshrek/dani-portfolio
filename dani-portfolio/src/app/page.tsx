@@ -8,7 +8,7 @@ const baseSize = 120,
     colors = ["white", "pink", "cyan"]
 
 export default function Home() {
-    const [stars, setStars] = useState([])
+    const [stars, setStars] = useState<Element[]>([])
 
     const generateStars = useCallback((starsAmount: number) => {
         const newStars = []
