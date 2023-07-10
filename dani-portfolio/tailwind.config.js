@@ -15,6 +15,16 @@ module.exports = {
             sans: ["'Open Sans'", "sans-serif"],
             serif: ["'Scope One'", "serif"],
         },
-        plugins: [],
+        extend: {
+            animation: {
+                "show-up": "show-up 1s ease-in-out",
+            },
+            keyframes: {
+                "show-up": {
+                    "0%": { transform: "translate(var(--fromX), var(--fromY))" },
+                    "100%": { transform: "translate(0, 0)" },
+                },
+            },
+        },
     },
 }
