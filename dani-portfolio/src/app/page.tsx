@@ -1,14 +1,14 @@
 "use client"
 
 import Image from "next/image"
-import { useCallback, useEffect, useState } from "react"
+import { ReactElement, useCallback, useEffect, useState } from "react"
 
 const baseSize = 120,
     starsAmount = 12,
     colors = ["white", "pink", "cyan"]
 
 export default function Home() {
-    const [stars, setStars] = useState<Element[]>([])
+    const [stars, setStars] = useState<ReactElement[]>([])
 
     const generateStars = useCallback((starsAmount: number) => {
         const newStars = []
