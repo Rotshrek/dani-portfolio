@@ -6,7 +6,7 @@ import { useEffect } from "react"
 const baseSize = 120,
     colors = ["white", "pink", "cyan"]
 
-const generateStars = (starsAmount) => {
+const generateStars = (starsAmount: number) => {
     const stars = []
 
     for (let i = 0; i < starsAmount; i++) {
