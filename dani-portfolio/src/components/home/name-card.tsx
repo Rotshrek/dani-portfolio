@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { CSSProperties } from "react"
 import { frontStars } from "./front-stars"
 
 const stars = frontStars.map((star, i) => {
