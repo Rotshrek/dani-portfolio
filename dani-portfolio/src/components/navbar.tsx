@@ -3,7 +3,7 @@ export default function Navbar() {
         dividerClasses = "text-white py-2"
 
     return (
-        <div className="flex justify-between pt-8 px-8 absolute w-full">
+        <div className="flex justify-between pt-8 px-8 absolute w-full z-50">
             <div className="flex">
                 <a href="/" className={urlClasses + " font-serif text-xl"}>
                     Dani Fernández

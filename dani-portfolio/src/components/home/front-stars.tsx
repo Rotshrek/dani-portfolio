@@ -1,4 +1,9 @@
-export const frontStars = [
+"use client"
+
+import Image from "next/image"
+import { CSSProperties } from "react"
+
+const frontStars = [
     {
         color: "pink",
         yDirection: "top",
@@ -72,3 +77,42 @@ export const frontStars = [
         size: 40,
     },
 ]
+
+const stars = frontStars.map((star, i) => {
+    let fromX = -30,
+        fromY = 30
+
+    if (star.xDirection === "right") fromX = 30
+    if (star.yDirection === "top") fromY = -30
+
+    return (
+        <div
+            key={i}
+            className="absolute animate-show-up"
+            style={
+                {
+                    "--fromX": fromX + "vw",
+                    "--fromY": fromY + "vh",
+                    [star.yDirection]: star[star.yDirection as "top" | "bottom"],
+                    [star.xDirection]: star[star.xDirection as "left" | "right"],
+                    animation: `show-up 2.5s`,
+                } as CSSProperties
+            }
+        >
+            <Image
+                className="animate-spin animate-pulse "
+                src={`/${star.color}-star.svg`}
+                alt="star"
+                width={star.size}
+                height={star.size}
+                style={{
+                    animation: `pulse 3s infinite, spin 7s linear infinite`,
+                }}
+            />
+        </div>
+    )
+})
+
+export default function FrontStars() {
+    return <div>{stars}</div>
+}
