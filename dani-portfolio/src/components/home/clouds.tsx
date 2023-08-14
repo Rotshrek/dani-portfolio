@@ -64,5 +64,5 @@ const clouds = cloudsProps.map((cloud, i) => {
 })
 
 export default function Clouds() {
-    return <div>{clouds}</div>
+    return <div className="h-screen w-screen overflow-hidden absolute">{clouds}</div>
 }
