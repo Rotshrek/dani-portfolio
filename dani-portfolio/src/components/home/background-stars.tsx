@@ -9,7 +9,7 @@ export default function BackgroundStars() {
     const [stars, setStars] = useState<ReactElement[]>([])
 
     const smallDevice = typeof window !== "undefined" && window?.innerWidth < 640,
-        yConstant = smallDevice ? 20 : 27,
+        yConstant = smallDevice ? 32 : 27,
         xConstant = smallDevice ? 20 : 27,
         baseSize = smallDevice ? 60 : 100,
         starsAmount = smallDevice ? 12 : 15
