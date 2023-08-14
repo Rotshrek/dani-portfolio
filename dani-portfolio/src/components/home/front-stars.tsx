@@ -96,8 +96,8 @@ const stars = frontStars.map((star, i) => {
                 {
                     "--fromX": fromX + "vw",
                     "--fromY": fromY + "vh",
-                    [star.yDirection]: star[star.yDirection as "top" | "bottom"] * yResponsive + "%",
-                    [star.xDirection]: star[star.xDirection as "left" | "right"] * xResponsive + "%",
+                    [star.yDirection]: (star[star.yDirection as "top" | "bottom"] || 0) * yResponsive + "%",
+                    [star.xDirection]: (star[star.xDirection as "left" | "right"] || 0) * xResponsive + "%",
                     animation: `show-up 2.5s`,
                 } as CSSProperties
             }
