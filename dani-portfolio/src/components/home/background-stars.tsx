@@ -3,12 +3,16 @@
 import Image from "next/image"
 import { CSSProperties, ReactElement, useCallback, useEffect, useState } from "react"
 
-const baseSize = 100,
-    starsAmount = 15,
-    colors = ["white", "pink", "cyan"]
+const colors = ["white", "pink", "cyan"]
 
 export default function BackgroundStars() {
     const [stars, setStars] = useState<ReactElement[]>([])
+
+    const smallDevice = typeof window !== "undefined" && window?.innerWidth < 640,
+        yConstant = smallDevice ? 20 : 27,
+        xConstant = smallDevice ? 20 : 27,
+        baseSize = smallDevice ? 60 : 100,
+        starsAmount = smallDevice ? 12 : 15
 
     const generateBackgroundStars = useCallback((starsAmount: number) => {
         const newStars = []
@@ -46,8 +50,8 @@ export default function BackgroundStars() {
                         {
                             "--fromX": fromX + Math.random() * fromX + "vw",
                             "--fromY": fromY + Math.random() * fromY + "vh",
-                            [yDirection]: `${Math.random() * 27}%`,
-                            [xDirection]: `${Math.random() * 27}%`,
+                            [yDirection]: `${Math.random() * yConstant}%`,
+                            [xDirection]: `${Math.random() * xConstant}%`,
                             animation: `show-up 2.5s, show-up 180s 2.5s reverse forwards, show-up 2.5s 182.5s forwards`,
                         } as CSSProperties
                     }

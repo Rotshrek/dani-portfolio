@@ -79,8 +79,9 @@ const frontStars = [
 ]
 
 const stars = frontStars.map((star, i) => {
-    const yResponsive = typeof window !== "undefined" && window?.innerWidth < 640 ? 0.85 : 1,
-        xResponsive = typeof window !== "undefined" && window?.innerWidth < 640 ? 0.5 : 1
+    const smallDevice = typeof window !== "undefined" && window?.innerWidth < 640,
+        yResponsive = smallDevice ? 0.8 : 1,
+        xResponsive = smallDevice ? 0.4 : 1
 
     let fromX = -30,
         fromY = 30
