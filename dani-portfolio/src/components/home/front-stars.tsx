@@ -79,8 +79,8 @@ const frontStars = [
 ]
 
 const stars = frontStars.map((star, i) => {
-    const yResponsive = window?.innerWidth < 640 ? 0.85 : 1,
-        xResponsive = window?.innerWidth < 640 ? 0.5 : 1
+    const yResponsive = typeof window !== "undefined" && window?.innerWidth < 640 ? 0.85 : 1,
+        xResponsive = typeof window !== "undefined" && window?.innerWidth < 640 ? 0.5 : 1
 
     let fromX = -30,
         fromY = 30
@@ -97,7 +97,7 @@ const stars = frontStars.map((star, i) => {
                     "--fromX": fromX + "vw",
                     "--fromY": fromY + "vh",
                     [star.yDirection]: (star[star.yDirection as "top" | "bottom"] || 0) * yResponsive + "%",
-                    [star.xDirection]: (star[star.xDirection as "left" | "right"] || 0) * xResponsive + "%",
+                    [star.xDirection]: (star[star.xDirection as "left" | "right"] || 0) * xResponsive + "%",
                     animation: `show-up 2.5s`,
                 } as CSSProperties
             }
