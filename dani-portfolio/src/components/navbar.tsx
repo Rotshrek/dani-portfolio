@@ -6,7 +6,7 @@ export default function Navbar() {
     const [openMenu, setOpenMenu] = useState(false)
 
     const urlClasses = "text-white hover:text-purple px-4 py-2 relative duration-1000 text-right",
-        drawerClasses = openMenu ? " right-0" : " right-[-200px]"
+        drawerClasses = openMenu ? " right-0" : " right-[-200px] md:right-0"
 
     const handleDrawer = () => setOpenMenu(!openMenu)
 
@@ -18,7 +18,7 @@ export default function Navbar() {
                 </a>
             </div>
             <div className="flex flex-col md:flex-row min-w-[170px] overflow-hidden">
-                <a className="text-white text-right font-bold text-xl md:hidden" onClick={handleDrawer}>
+                <a className="text-white text-right font-bold text-xl md:hidden mb-4" onClick={handleDrawer}>
                     {openMenu ? ">" : "<"}
                 </a>
                 <a href="/work" className={urlClasses + drawerClasses}>
