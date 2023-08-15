@@ -7,14 +7,17 @@ module.exports = {
     ],
     theme: {
         colors: {
-            lightPink: "#951A7A",
-            pink: "#801060",
+            lightPink: "#E993B7",
+            pink: "#951A7A",
+            darkPink: "#801060",
             purple: "#030620",
             white: "#ffffff",
+            lightPurple: "#7D8FFF",
         },
         fontFamily: {
-            sans: ["'Open Sans'", "sans-serif"],
-            serif: ["'Scope One'", "serif"],
+            sans: ["var(--font-open_sans)"],
+            serif: ["var(--font-scope_one)"],
+            display: ["var(--font-bevan)"],
         },
         extend: {
             animation: {

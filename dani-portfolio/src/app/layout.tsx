@@ -1,8 +1,10 @@
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Open_Sans, Scope_One, Bevan } from "next/font/google"
 import Navbar from "@/components/navbar"
 
-const inter = Inter({ subsets: ["latin"] })
+const open_sans = Open_Sans({ subsets: ["latin"], variable: "--font-open_sans" })
+const scope_one = Scope_One({ subsets: ["latin"], variable: "--font-scope_one", weight: "400" })
+const bevan = Bevan({ subsets: ["latin"], variable: "--font-bevan", weight: "400" })
 
 export const metadata = {
     title: "Daniela Fernández",
@@ -12,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={inter.className + " bg-purple"}>
+            <body className={`${open_sans.variable} ${scope_one.variable} ${bevan.variable} bg-purple font-sans`}>
                 <Navbar />
                 {children}
             </body>
