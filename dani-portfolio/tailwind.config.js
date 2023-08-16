@@ -10,9 +10,12 @@ module.exports = {
             lightPink: "#E993B7",
             pink: "#951A7A",
             darkPink: "#801060",
-            purple: "#030620",
+            darkPurple: "#030620",
+            purple: "#21082F",
+            darkBlue: "#0F0726",
             white: "#ffffff",
             lightPurple: "#7D8FFF",
+            lighterPurple: "#c4d0ff",
         },
         fontFamily: {
             sans: ["var(--font-open_sans)"],

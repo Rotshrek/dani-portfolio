@@ -5,7 +5,7 @@ import { useState } from "react"
 export default function Navbar() {
     const [openMenu, setOpenMenu] = useState(false)
 
-    const urlClasses = "text-white hover:text-purple px-4 py-2 relative duration-1000 text-right",
+    const urlClasses = "text-white hover:text-darkPurple px-4 py-2 relative duration-1000 text-right",
         drawerClasses = openMenu ? " right-0" : " right-[-200px] md:right-0"
 
     const handleDrawer = () => setOpenMenu(!openMenu)

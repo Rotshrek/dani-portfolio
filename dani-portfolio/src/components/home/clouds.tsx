@@ -33,7 +33,7 @@ const clouds = cloudsProps.map((cloud, i) => {
     let fromX = -100,
         fromY = 80,
         xDirection = "right",
-        gradient = "bg-gradient-to-b from-pink to-purple"
+        gradient = "bg-gradient-to-b from-pink to-darkPurple"
 
     if (cloud.side === "top") {
         fromX = 100

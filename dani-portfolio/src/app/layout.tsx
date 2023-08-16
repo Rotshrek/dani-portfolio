@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={`${open_sans.variable} ${scope_one.variable} ${bevan.variable} bg-purple font-sans`}>
+            <body className={`${open_sans.variable} ${scope_one.variable} ${bevan.variable} bg-darkPurple font-sans`}>
                 <Navbar />
                 {children}
             </body>
