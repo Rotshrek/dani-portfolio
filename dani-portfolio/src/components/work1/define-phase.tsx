@@ -72,7 +72,7 @@ export default function DefinePhase() {
 
                         <div>
                             <div className="w-[200px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
-                                <p>“I wouldn't feel safe giving my RUT if I'm just quoting.”</p>
+                                <p>I wouldn&#39;t feel safe giving my RUT if I&#39;m just quoting.</p>
 
                                 <div className="absolute left-0 top-1/2 transform -translate-x-1/2 rotate-45 w-4 h-4 bg-lighterPurple"></div>
                             </div>
@@ -91,8 +91,8 @@ export default function DefinePhase() {
                         <div>
                             <div className="w-[400px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                 <p>
-                                    “The car’s license plate is linked to the vehicle that I want to quote, and it is
-                                    more related to the main action that I want to perform”
+                                    The car’s license plate is linked to the vehicle that I want to quote, and it is
+                                    more related to the main action that I want to perform.
                                 </p>
 
                                 <div className="absolute left-0 top-1/2 transform -translate-x-1/2 rotate-45 w-4 h-4 bg-lighterPurple"></div>

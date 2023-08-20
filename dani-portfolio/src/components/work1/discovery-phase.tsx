@@ -109,7 +109,7 @@ export default function DiscoveryPhase() {
                         Our form has more questions than our competitors.
                     </p>
                     <p className="md:col-span-4 text-lg text-white">
-                        Unlike our competitors we have the insured's data distributed in different places.
+                        Unlike our competitors we have the insured&#39;s data distributed in different places.
                     </p>
                 </div>
             </div>
