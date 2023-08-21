@@ -10,8 +10,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     <p className="font-display text-lightPink text-2xl mb-6">New user flow</p>
                     <p className="text-lg">
                         Given all the previous research this was the design of final flow. We start by asking for the
-                        license plate to auto-complete the car&#39;s data and finally ask for the data of the car&#39;s owner.
-                        We eliminated questions that were not necessary to quote and grouped them by topic.
+                        license plate to auto-complete the car&#39;s data and finally ask for the data of the car&#39;s
+                        owner. We eliminated questions that were not necessary to quote and grouped them by topic.
                     </p>
                 </div>
                 <div className="relative md:col-span-12 h-[456px]">
@@ -52,7 +52,23 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     </p>
                 </div>
                 <div className="md:col-span-12 min-h-screen">
-                    <Image src="/handoff.png" height={1119} width={879} alt="Handoff to development" />
+                    <Image
+                        className="m-auto"
+                        src="/handoff.png"
+                        height={1119}
+                        width={879}
+                        alt="Handoff to development"
+                    />
+                </div>
+                <div className="md:col-span-12 text-right">
+                    <a
+                        href="https://www.figma.com/file/1Boh16TmDAvE6tTnP2Ki5Y/Cotizacio%CC%81n-CICL?type=design&node-id=2102%3A49992&mode=design&t=RUDtx62WYegODiLO-1"
+                        target="_blank"
+                        className="inline-block border rounded-full px-4 py-1 font-bold"
+                    >
+                        Open File in browser
+                        <span className="ml-3">{">"}</span>
+                    </a>
                 </div>
             </div>
         </div>
