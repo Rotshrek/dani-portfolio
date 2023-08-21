@@ -10,7 +10,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     <p className="font-display text-lightPink text-2xl mb-6">New user flow</p>
                     <p className="text-lg">
                         Given all the previous research this was the design of final flow. We start by asking for the
-                        license plate to auto-complete the car's data and finally ask for the data of the car's owner.
+                        license plate to auto-complete the car&#39;s data and finally ask for the data of the car&#39;s owner.
                         We eliminated questions that were not necessary to quote and grouped them by topic.
                     </p>
                 </div>
