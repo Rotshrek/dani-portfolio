@@ -1,9 +1,8 @@
 "use client"
 
-import { gridClasses } from "@/app/work1/page"
 import Image from "next/image"
 
-export default function DefinePhase() {
+export default function DefinePhase({ gridClasses }) {
     return (
         <div className="w-screen bg-white min-h-screen">
             <div className={gridClasses + " gap-y-4"}>
@@ -29,9 +28,7 @@ export default function DefinePhase() {
                         <Image src="/compara-flow.png" fill alt="national identity form flow" />
                     </div>
                 </div>
-            </div>
-            <div className={gridClasses + " gap-y-4"}>
-                <div className="md:col-span-12">
+                <div className="md:col-span-12 mt-8">
                     <p className="font-display text-lightPink text-2xl">Survey</p>
                 </div>
                 <div className="md:col-span-6">

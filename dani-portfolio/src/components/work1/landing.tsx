@@ -1,9 +1,8 @@
 "use client"
 
-import { gridClasses } from "@/app/work1/page"
 import Image from "next/image"
 
-export default function Work1Landing() {
+export default function Work1Landing({ gridClasses }) {
     return (
         <div className="w-screen bg-darkPurple h-screen">
             <div className={gridClasses + " pt-36 gap-12"}>

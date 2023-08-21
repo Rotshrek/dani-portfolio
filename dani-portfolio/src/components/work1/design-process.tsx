@@ -1,9 +1,8 @@
 "use client"
 
-import { gridClasses } from "@/app/work1/page"
 import Image from "next/image"
 
-export default function DesignProcess() {
+export default function DesignProcess({ gridClasses }) {
     return (
         <div className="w-screen bg-white h-screen">
             <div className={gridClasses}>

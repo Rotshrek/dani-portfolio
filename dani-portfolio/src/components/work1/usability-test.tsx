@@ -1,9 +1,8 @@
 "use client"
 
-import { gridClasses } from "@/app/work1/page"
 import Image from "next/image"
 
-export default function UsabilityTest() {
+export default function UsabilityTest({ gridClasses }) {
     return (
         <div>
             <div className="w-screen bg-darkPurple">

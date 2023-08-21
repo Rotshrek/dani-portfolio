@@ -1,9 +1,8 @@
 "use client"
 
-import { gridClasses } from "@/app/work1/page"
 import Image from "next/image"
 
-export default function DiscoveryPhase() {
+export default function DiscoveryPhase({ gridClasses }) {
     return (
         <div>
             <div className="w-screen bg-darkPurple h-[75vh]">
