@@ -11,6 +11,7 @@ import NewSurvey from "@/components/work1/new-survey"
 import SomethingUnexpected from "@/components/work1/something-unexpected"
 import TakeAway from "@/components/work1/take-away"
 import UsabilityTest from "@/components/work1/usability-test"
+import BottomNav from "@/components/bottom-nav"
 
 const gridClasses = "grid md:grid-cols-12 gap-8 max-w-[968px] h-full m-auto py-20"
 
@@ -28,6 +29,7 @@ export default function Work1() {
             <NewSurvey gridClasses={gridClasses} />
             <NewUserFlow gridClasses={gridClasses} />
             <TakeAway gridClasses={gridClasses} />
+            <BottomNav />
         </main>
     )
 }

@@ -41,7 +41,7 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                                 We added tooltips for those questions that are more complex and the user may need help
                                 with.
                             </li>
-                            <li>We improved the form’s context by including breadcrumbs.</li>
+                            <li>We improved the form&#39;s context by including breadcrumbs.</li>
                             <li>We informed better where the user is by including a stepper with clear labels.</li>
                             <li>
                                 We unified the voice and tone of the UX writing to through the form, from titles to
