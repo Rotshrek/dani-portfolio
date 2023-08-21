@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-export default function DiscoveryPhase({ gridClasses }) {
+export default function DiscoveryPhase({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
             <div className="w-screen bg-darkPurple h-[75vh]">

@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-export default function DefinePhase({ gridClasses }) {
+export default function DefinePhase({ gridClasses }: { gridClasses: string }) {
     return (
         <div className="w-screen bg-white min-h-screen">
             <div className={gridClasses + " gap-y-4"}>
@@ -68,7 +68,7 @@ export default function DefinePhase({ gridClasses }) {
                         </div>
 
                         <div>
-                            <div className="w-[200px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
+                            <div className="w-[200px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
                                 <p>I wouldn&#39;t feel safe giving my RUT if I&#39;m just quoting.</p>
 
                                 <div className="absolute left-0 top-1/2 transform -translate-x-1/2 rotate-45 w-4 h-4 bg-lighterPurple"></div>
@@ -86,9 +86,9 @@ export default function DefinePhase({ gridClasses }) {
                         </div>
 
                         <div>
-                            <div className="w-[400px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
+                            <div className="w-[400px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
                                 <p>
-                                    The car’s license plate is linked to the vehicle that I want to quote, and it is
+                                    The car&#39;s license plate is linked to the vehicle that I want to quote, and it is
                                     more related to the main action that I want to perform.
                                 </p>
 

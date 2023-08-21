@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-export default function Work1Landing({ gridClasses }) {
+export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
     return (
         <div className="w-screen bg-darkPurple h-screen">
             <div className={gridClasses + " pt-36 gap-12"}>

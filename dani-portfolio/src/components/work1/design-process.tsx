@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-export default function DesignProcess({ gridClasses }) {
+export default function DesignProcess({ gridClasses }: { gridClasses: string }) {
     return (
         <div className="w-screen bg-white h-screen">
             <div className={gridClasses}>
