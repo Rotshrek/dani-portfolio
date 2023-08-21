@@ -1,7 +1,7 @@
 "use client"
 
 import DefinePhase from "@/components/work1/define-phase"
-import NewUserFlow from "@/components/work1/define-phase copy"
+import NewUserFlow from "@/components/work1/new-user-flow"
 import DesignProcess from "@/components/work1/design-process"
 import DesignRecommendation from "@/components/work1/design-recommendations"
 import DesignRecommendation2 from "@/components/work1/design-recommendations-2"
