@@ -16,8 +16,8 @@ export default function About() {
                     <Image
                         className="md:hidden mt-6 m-auto"
                         src="/about-dani.png"
-                        width={260}
-                        height={346}
+                        width={196}
+                        height={261}
                         alt="Dani holding pastries"
                     />
                     <p className="font-serif text-white text-xl mt-8 max-w-[1048px]">
@@ -30,8 +30,8 @@ export default function About() {
                     <Image
                         className="md:hidden mt-6 m-auto"
                         src="/about-colors.png"
-                        width={254}
-                        height={338}
+                        width={192}
+                        height={255}
                         alt="Dani looking at an Art exhibition in the Moco Museum, Amsterdam"
                     />
                     <p className="font-serif text-white text-xl mt-8 max-w-[1048px]">
@@ -48,31 +48,31 @@ export default function About() {
                     <Image
                         className="md:hidden mt-6 m-auto"
                         src="/about-fish.png"
-                        width={289}
-                        height={217}
+                        width={218}
+                        height={164}
                         alt="Pesquecito Antonio, the fish"
                     />
                 </div>
-                <div className="md:inline-block w-1/3 relative hidden">
+                <div className="md:inline-block w-1/3 relative hidden align-top pt-32">
                     <Image
                         className="relative mb-[-60px] translate-x-1/2 z-10"
                         src="/about-dani.png"
-                        width={260}
-                        height={346}
+                        width={196}
+                        height={261}
                         alt="Dani holding pastries"
                     />
                     <Image
                         className="relative mb-[-60px] z-20"
                         src="/about-colors.png"
-                        width={254}
-                        height={338}
+                        width={192}
+                        height={255}
                         alt="Dani looking at an Art exhibition in the Moco Museum, Amsterdam"
                     />
                     <Image
                         className="relative mb-[-60px] translate-x-1/2 z-30"
                         src="/about-fish.png"
-                        width={289}
-                        height={217}
+                        width={218}
+                        height={164}
                         alt="Pesquecito Antonio, the fish"
                     />
                 </div>
