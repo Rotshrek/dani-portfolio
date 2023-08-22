@@ -21,7 +21,7 @@ export default function Navbar() {
                 <a className="text-white text-right font-bold text-xl md:hidden mb-4" onClick={handleDrawer}>
                     {openMenu ? ">" : "<"}
                 </a>
-                <a href="/work" className={urlClasses + drawerClasses}>
+                <a href="/work1" className={urlClasses + drawerClasses}>
                     Work
                 </a>
                 <a href="/about" className={urlClasses + drawerClasses}>
@@ -33,8 +33,8 @@ export default function Navbar() {
                 <a href="/projects" className={urlClasses + drawerClasses}>
                     Contact
                 </a>
-                <span className="text-white py-2 hidden md:block">|</span>
-                <a className={urlClasses + drawerClasses}>Norsk</a>
+                {/* <span className="text-white py-2 hidden md:block">|</span>
+                <a className={urlClasses + drawerClasses}>Norsk</a> */}
             </div>
         </div>
     )
