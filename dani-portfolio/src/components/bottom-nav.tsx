@@ -32,7 +32,7 @@ export default function BottomNav() {
                     </a>
                 </div>
                 <div>
-                    <p className="text-lightPink text-xl py-2 font-bold">Thanks for reading!</p>
+                    <p className="text-lightPink text-xl py-2 font-bold text-center">Thanks for reading!</p>
                 </div>
             </div>
         </div>
