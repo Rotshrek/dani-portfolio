@@ -5,8 +5,8 @@ import Image from "next/image"
 export default function Work3() {
     return (
         <div>
-            <div className="w-screen bg-purple h-[75vh]">
-                <div className="grid md:grid-cols-12 gap-8 max-w-[1024px] h-full m-auto py-20">
+            <div className="w-screen bg-purple md:h-[75vh]">
+                <div className="grid md:grid-cols-12 gap-8 max-w-[1024px] h-full m-auto p-8 md:p-0 py-20">
                     <div className="md:col-span-7 m-auto">
                         <Image src={`/work3.png`} alt="cloud outline" width={551} height={312} />
                     </div>

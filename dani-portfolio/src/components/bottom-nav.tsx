@@ -4,8 +4,8 @@ export default function BottomNav() {
     const urlClasses = "block text-white hover:text-lightPink px-4 py-2 relative duration-1000"
 
     return (
-        <div className="min-w-[170px] max-w-[968px] m-auto">
-            <div className="flex flex-col justify-between md:flex-row py-12 border-t-2 border-white">
+        <div className="min-w-[170px] max-w-[968px] m-auto px-8 md:px-0">
+            <div className="flex flex-col justify-between md:flex-row py-12 border-t-2 border-lightBlue">
                 <div>
                     <p className={urlClasses}>
                         <strong>Work</strong>

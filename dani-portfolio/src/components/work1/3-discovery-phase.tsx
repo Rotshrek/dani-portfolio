@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function DiscoveryPhase({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-darkPurple h-[75vh]">
+            <div className="w-screen bg-darkPurple md:h-[75vh]">
                 <div className={gridClasses}>
                     <div className="md:col-span-12">
                         <p className="font-display text-white text-6xl mb-8 text-center">Discovery Phase</p>
@@ -26,7 +26,7 @@ export default function DiscoveryPhase({ gridClasses }: { gridClasses: string })
                     </div>
                     <div className="md:col-span-6">
                         <Image
-                            className="mt-20"
+                            className="mt-8 md:mt-20"
                             src="/compara-screen.png"
                             width={500}
                             height={300}
@@ -35,18 +35,19 @@ export default function DiscoveryPhase({ gridClasses }: { gridClasses: string })
                     </div>
                 </div>
             </div>
-            <div className="w-screen bg-darkBlue h-[75vh]">
+            <div className="w-screen bg-darkBlue md:h-[75vh]">
                 <div className={gridClasses}>
                     <div className="md:col-span-8">
-                        <p className="font-display text-lightPink text-2xl mb-6">Interviews: Call center</p>
+                        <p className="font-display text-lightPink text-2xl md:mb-6">Interviews: Call center</p>
                         <p className="text-lg text-white">
                             I moderated one-on-one interviews with 10 executives to discover possible user pain points.
                             These were the main findings:
                         </p>
                     </div>
                     <div className="md:col-span-4"></div>
-                    <div className="md:col-span-4 mt-8">
+                    <div className="md:col-span-4 md:mt-8">
                         <Image
+                            className="m-auto"
                             src="/unclear-information.svg"
                             width={276}
                             height={200}
@@ -59,6 +60,7 @@ export default function DiscoveryPhase({ gridClasses }: { gridClasses: string })
                     </div>
                     <div className="md:col-span-4">
                         <Image
+                            className="m-auto"
                             src="/data-entry-issues.svg"
                             width={276}
                             height={200}
@@ -69,8 +71,9 @@ export default function DiscoveryPhase({ gridClasses }: { gridClasses: string })
                             <strong>incorrect information in the “model” and ”year”</strong> inputs.
                         </p>
                     </div>
-                    <div className="md:col-span-4 mt-8">
+                    <div className="md:col-span-4 md:mt-8">
                         <Image
+                            className="m-auto"
                             src="/insurance-selection.svg"
                             width={276}
                             height={200}
@@ -83,31 +86,31 @@ export default function DiscoveryPhase({ gridClasses }: { gridClasses: string })
                     </div>
                 </div>
             </div>
-            <div className="w-screen bg-purple h-[75vh]">
-                <div className={gridClasses + " gap-y-6"}>
+            <div className="w-screen bg-purple md:h-[75vh]">
+                <div className={gridClasses + " md:gap-y-6"}>
                     <div className="md:col-span-12">
-                        <p className="font-display text-lightPink text-2xl mb-6">Benchmark</p>
+                        <p className="font-display text-lightPink text-2xl md:mb-6">Benchmark</p>
                     </div>
-                    <p className="md:col-span-6 text-lg text-white mb-4">
+                    <p className="pr-12 md:pr-0 md:col-span-6 text-lg text-white md:mb-4">
                         We made an <strong>information architecture benchmark</strong> with 6 direct competitors. The
                         objetive was to find patterns to meet user expectations in quoting car insurances online.
                     </p>
-                    <p className="md:col-span-6 text-lg text-white mb-4">
+                    <p className="pr-12 md:pr-0 md:col-span-6 text-lg text-white md:mb-4">
                         In the table below, the rows are the competitors and the colums are the questions of the
                         competitors forms (inputs).
                     </p>
-                    <div className="relative md:col-span-12 h-[170px]">
-                        <div className="absolute w-[1280px] h-[170px] left-1/2 translate-x-[-50%]">
+                    <div className="relative md:col-span-12 h-[170px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                        <div className="absolute w-[1280px] h-[170px] md:left-1/2 md:translate-x-[-50%]">
                             <Image src="/benchmark.png" fill alt="Benchmarking timeline" />
                         </div>
                     </div>
-                    <p className="md:col-span-4 text-lg text-white">
+                    <p className="pr-12 md:pr-0 md:col-span-4 text-lg text-white">
                         Form tend to ask for the vehicle details first and then for the owner personal data.
                     </p>
-                    <p className="md:col-span-4 text-lg text-white">
+                    <p className="pr-12 md:pr-0 md:col-span-4 text-lg text-white">
                         Our form has more questions than our competitors.
                     </p>
-                    <p className="md:col-span-4 text-lg text-white">
+                    <p className="pr-12 md:pr-0 md:col-span-4 text-lg text-white">
                         Unlike our competitors we have the insured&#39;s data distributed in different places.
                     </p>
                 </div>

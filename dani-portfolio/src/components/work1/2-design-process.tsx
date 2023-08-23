@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export default function DesignProcess({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-white h-screen">
+        <div className="w-screen bg-white md:h-screen">
             <div className={gridClasses}>
                 <div className="md:col-span-12">
-                    <p className="font-display text-6xl mb-8 text-center">Design Process</p>
+                    <p className="font-display text-4xl md:text-6xl mb-8 text-center">Design Process</p>
                     <Image
                         className="m-auto"
                         src="/design-process.svg"

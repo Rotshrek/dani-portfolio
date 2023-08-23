@@ -8,8 +8,8 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
             <div className="w-screen bg-darkPurple min-h-screen">
                 <div className={gridClasses}>
                     <div className="md:col-span-12 text-center">
-                        <p className="font-display text-lightPurple text-6xl mb-8">Take Away!</p>
-                        <p className="font-display text-white text-xl mb-8">What did we improve?</p>
+                        <p className="font-display text-lightPurple text-5xl md:text-6xl mb-8">Take Away!</p>
+                        <p className="font-display text-white text-xl md:mb-8">What did we improve?</p>
                     </div>
                     <div className="md:col-span-6">
                         <ol className="text-lg text-white list-disc pl-6">

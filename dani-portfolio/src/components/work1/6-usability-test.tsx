@@ -114,7 +114,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             </div>
 
                             <div>
-                                <div className="w-[400px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[260px] md:w-[400px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
                                     <p>
                                         <strong>I would prefer to complete the email myself</strong> even if I have to
                                         type
@@ -137,7 +137,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             The test results were great. Which left us very happy and confident.
                         </p>
                     </div>
-                    <div className="md:col-span-5 mt-12">
+                    <div className="md:col-span-5 md:mt-12">
                         <table className="table-auto text-white w-full">
                             <thead>
                                 <tr>

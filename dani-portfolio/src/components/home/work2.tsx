@@ -5,8 +5,11 @@ import Image from "next/image"
 export default function Work2() {
     return (
         <div>
-            <div className="w-screen bg-darkBlue h-[75vh]">
-                <div className="grid md:grid-cols-12 gap-8 max-w-[1024px] h-full m-auto py-20">
+            <div className="w-screen bg-darkBlue md:h-[75vh]">
+                <div className="grid md:grid-cols-12 gap-8 max-w-[1024px] h-full m-auto p-8 md:p-0 py-20">
+                    <div className="m-auto md:hidden">
+                        <Image src={`/work2.png`} alt="cloud outline" width={208} height={417} />
+                    </div>
                     <div className="md:col-span-5 text-white m-auto">
                         <p className="font-display text-4xl mb-4">
                             Improving data visualization in the salmon industry
@@ -25,7 +28,7 @@ export default function Work2() {
                             <span className="ml-3">{">"}</span>
                         </a> */}
                     </div>
-                    <div className="md:col-span-7 m-auto">
+                    <div className="md:col-span-7 m-auto hidden md:block">
                         <Image src={`/work2.png`} alt="cloud outline" width={208} height={417} />
                     </div>
                 </div>
