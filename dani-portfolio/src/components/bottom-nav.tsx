@@ -24,12 +24,12 @@ export default function BottomNav() {
                     <a href="/about" className={urlClasses}>
                         <strong>About me</strong>
                     </a>
-                    <a href="/projects" className={urlClasses}>
+                    {/* <a href="/qa" className={urlClasses}>
                         <strong>QA for recruiters</strong>
                     </a>
-                    <a href="/projects" className={urlClasses}>
+                    <a href="/about" className={urlClasses}>
                         <strong>Contact</strong>
-                    </a>
+                    </a> */}
                 </div>
                 <div>
                     <p className="text-lightPink text-xl py-2 font-bold text-center">Thanks for reading!</p>

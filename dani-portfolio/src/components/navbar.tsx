@@ -27,12 +27,12 @@ export default function Navbar() {
                 <a href="/about" className={urlClasses + drawerClasses}>
                     About me
                 </a>
-                <a href="/projects" className={urlClasses + drawerClasses}>
+                {/* <a href="/qa" className={urlClasses + drawerClasses}>
                     QA for recruiters
                 </a>
-                <a href="/projects" className={urlClasses + drawerClasses}>
+                <a href="/about" className={urlClasses + drawerClasses}>
                     Contact
-                </a>
+                </a> */}
                 {/* <span className="text-white py-2 hidden md:block">|</span>
                 <a className={urlClasses + drawerClasses}>Norsk</a> */}
             </div>
