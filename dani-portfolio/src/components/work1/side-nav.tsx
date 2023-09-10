@@ -80,7 +80,7 @@ export default function SideNav() {
     useEffect(() => {
         if (typeof window !== "undefined") window.addEventListener("scroll", onScroll, { passive: true })
         return () => {
-            if (typeof window !== "undefined") window.removeEventListener("scroll", onScroll, { passive: true })
+            if (typeof window !== "undefined") window.removeEventListener("scroll", onScroll)
         }
     }, [])
 
