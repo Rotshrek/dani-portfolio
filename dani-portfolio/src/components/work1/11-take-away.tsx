@@ -5,14 +5,13 @@ import Image from "next/image"
 export default function TakeAway({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-darkPurple min-h-screen">
+            <div className="w-screen bg-white min-h-screen">
                 <div className={gridClasses}>
-                    <div className="md:col-span-12 text-center">
-                        <p className="font-display text-lightPurple text-5xl md:text-6xl mb-8">Take Away!</p>
-                        <p className="font-display text-white text-xl md:mb-8">What did we improve?</p>
-                    </div>
-                    <div className="md:col-span-6">
-                        <ol className="text-lg text-white list-disc pl-6">
+                    <div className="md:col-span-2" />
+                    <div className="md:col-span-8">
+                        <p className="font-bold text-4xl text-center mb-6">Take Away!</p>
+                        <p className="font-bold text-2xl mb-4">What did we improve?</p>
+                        <ol className="text-md list-disc pl-6">
                             <li>
                                 We used a database to autocomplete car data, leaving the personal info to be completed.
                             </li>
@@ -30,9 +29,7 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                             </li>
                             <li>We improved the feedback the system gives to the user (more states for inputs).</li>
                         </ol>
-                    </div>
-                    <div className="md:col-span-6">
-                        <ol className="text-lg text-white list-disc pl-6">
+                        <ol className="text-md list-disc pl-6">
                             <li>
                                 We improved the alert and information system for the user: showing information that the
                                 they might know when they click on an entry instead of showing it all at once.
@@ -49,14 +46,8 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                             </li>
                         </ol>
                     </div>
-                    <div className="md:col-span-5" />
-                    <div className="md:col-span-7">
-                        <Image src="/compara-before.png" width={550} height={370} alt="Compara online website" />
-                        <p className="text-white mt-4 text-right text-xl">Before</p>
-                    </div>
-                    <div className="md:col-span-7">
-                        <Image src="/compara-after.png" width={550} height={370} alt="Compara online website" />
-                        <p className="text-white text-right text-xl">After</p>
+                    <div className="md:col-span-12">
+                        <Image src="/compara-after.png" width={879} height={641} alt="Compara online website" />
                     </div>
                 </div>
             </div>

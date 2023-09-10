@@ -8,6 +8,7 @@ module.exports = {
     theme: {
         colors: {
             lightPink: "#E993B7",
+            lighterPink: "#F9C2D7",
             brightPink: "#DB005B",
             pink: "#951A7A",
             darkPink: "#801060",
