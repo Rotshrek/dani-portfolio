@@ -35,7 +35,7 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
         active = scrollY > upperBound && scrollY < lowerBound,
         ref = useRef<HTMLAnchorElement>(null),
         deviceHeight = typeof window !== "undefined" ? window.innerHeight : 700,
-        textColor = scrollY > deviceHeight - 200 - (ref.current?.offsetTop || 0) ? "text-purple" : "text-white"
+        textColor = scrollY > deviceHeight - 220 - (ref.current?.offsetTop || 0) ? "text-purple" : "text-white"
 
     useEffect(() => {
         if (typeof document !== "undefined") {
@@ -44,10 +44,10 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
 
             if (nextSection) {
                 const { offsetTop: nextOffsetTop } = nextSection
-                setLowerBound(nextOffsetTop)
-            } else setLowerBound(offsetTop + offsetHeight)
+                setLowerBound(nextOffsetTop - 100)
+            } else setLowerBound(offsetTop + offsetHeight - 160)
 
-            setUpperBound(offsetTop)
+            setUpperBound(offsetTop - 100)
         }
     }, [])
 
@@ -68,7 +68,7 @@ export default function SideNav() {
     const [scrollY, setScrollY] = useState(0),
         ref = useRef<HTMLAnchorElement>(null),
         deviceHeight = typeof window !== "undefined" ? window.innerHeight : 700,
-        textColor = scrollY > deviceHeight - 200 - (ref.current?.offsetTop || 0) ? "text-purple" : "text-white"
+        textColor = scrollY > deviceHeight - 240 - (ref.current?.offsetTop || 0) ? "text-purple" : "text-white"
 
     const onScroll = useCallback(() => {
         if (typeof window !== "undefined") {
@@ -85,7 +85,7 @@ export default function SideNav() {
     }, [])
 
     return (
-        <div className="hidden md:block fixed top-[200px] ml-8">
+        <div className="hidden xl:block fixed top-[200px] left-[calc(50vw-650px)]">
             <p className={`italic mb-2 text-sm duration-1000 ${textColor}`}>On this site</p>
             {sections.map(({ id, text }, index) => (
                 <NavElem key={id} id={id} text={text} scrollY={scrollY} index={index} />
