@@ -43,33 +43,63 @@ const users = [
 export default function UsabilityTest({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-darkPurple">
+            <div className="w-screen bg-white">
                 <div className={gridClasses}>
-                    <div className="md:col-span-6">
-                        <p className="font-display text-lightPink text-2xl mb-6">Usability test</p>
-                        <p className="text-lg text-white mb-6">
-                            <strong>We readjusted the flow.</strong> Having a pre-built design system saved us a lot of
-                            time, so we decided to create high-quality wireframes for conducting a usability test.{" "}
+                    <div className="md:col-span-2" />
+                    <div className="md:col-span-8">
+                        <p className="font-bold text-2xl mb-6">Usability test</p>
+                        <p className="text-md mb-6">
+                            We readjusted the flow. Having a pre-built design system saved us a lot of time, so we
+                            decided to create high-quality wireframes for conducting a usability test.
                         </p>
                         <Image
                             className="my-10"
                             src="/usability-testing.png"
-                            width={500}
-                            height={300}
+                            width={577}
+                            height={267}
                             alt="Compara online website"
                         />
-                        <p className="text-lg text-white mb-6">
-                            Users liked the idea of autocomplete the car data as it made the process more expeditious.
-                        </p>
+                        <p className="text-md mb-2 font-bold">Test goals:</p>
+                        <ol className="text-md list-disc pl-6">
+                            <li>
+                                Know if the information architecture was consistent with the user&#39;s mental model.
+                            </li>
+                            <li>Know how the user feel about data autocompletion.</li>
+                        </ol>
+                        <p className="text-md mb-2 mt-6 font-bold">Methodology:</p>
+                        <ol className="text-md list-disc pl-6">
+                            <li>
+                                Sample: 7 users belonging to the User Personas profiles: 4 with car insurance experience
+                                and 3 without.
+                            </li>
+                            <li>
+                                Procedure: Profiling questions, then they had to simulate a quote in the interactive
+                                prototype, SUS test and closing questions.
+                            </li>
+                            <li>Time: 30 minutes.</li>
+                        </ol>
+                        <p className="text-md mb-2 mt-6">The main conclusions of this survey were:</p>
+                        <ol className="text-md list-disc pl-6">
+                            <li>
+                                Users liked the idea of autocomplete the car data as it made the process more
+                                expeditious.
+                            </li>
+                            <li>
+                                Users felt uncomfortable with autocomplete personal information (phone and email),
+                                because they felt that it was invasive and/or that this data might not be up to date.
+                            </li>
+                        </ol>
+                    </div>
+                    <div className="md:col-span-7">
                         <div className="flex items-center justify-center">
                             <div>
                                 <Image src="/face3.png" width={66} height={66} alt="face of a participant" />
                             </div>
 
                             <div>
-                                <div className="w-[240px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[300px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
                                     <p>
-                                        <strong>Autocomplete car details would be very useful</strong>, especially if I
+                                        <strong>Autocomplete car details would be very useful,</strong> especially if I
                                         want to quote for someone else and I don&#39;t know their details.
                                     </p>
 
@@ -78,45 +108,16 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-6">
-                        <p className="text-lg text-white mb-6">
-                            <strong>Objectives of the test: </strong>
-                        </p>
-                        <ol className="text-lg text-white list-disc pl-6">
-                            <li>
-                                Know if the information architecture was consistent with the user&#39;s mental model.
-                            </li>
-                            <li>Know how the user feel about data autocompletion.</li>
-                        </ol>
-                        <p className="text-lg text-white mb-6 mt-12">
-                            <strong>Methodology: </strong>
-                        </p>
-                        <ol className="text-lg text-white list-disc pl-6">
-                            <li>
-                                <strong>Sample:</strong> 7 users belonging to the User Personas profiles: 4 with car
-                                insurance experience and 3 without.
-                            </li>
-                            <li>
-                                <strong>Procedure:</strong> Profiling questions, then they had to simulate a quote in
-                                the interactive prototype, SUS test and closing questions.
-                            </li>
-                            <li>
-                                <strong>Time:</strong> 30 minutes.
-                            </li>
-                        </ol>
-                        <p className="text-lg text-white mb-6 my-12">
-                            Users felt uncomfortable with autocomplete personal information (phone and email), because
-                            they felt that it was invasive and/or that this data might not be up to date.
-                        </p>
+                    <div className="md:col-span-5 mt-2">
                         <div className="flex items-center justify-center">
                             <div>
                                 <Image src="/face4.png" width={66} height={66} alt="face of a participant" />
                             </div>
 
                             <div>
-                                <div className="w-[260px] md:w-[400px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[260px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
                                     <p>
-                                        <strong>I would prefer to complete the email myself</strong> even if I have to
+                                        <strong>I would prefer to complete the email myself </strong>even if I have to
                                         type
                                     </p>
 
@@ -125,25 +126,22 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-7 mt-12">
-                        <p className="font-display text-lightPink text-2xl mb-6">
-                            SUS results (System usability scale)
-                        </p>
-                        <p className="text-lg text-white mb-6">
+                    <div className="md:col-span-2" />
+                    <div className="md:col-span-8">
+                        <p className="font-bold text-2xl mt-6 mb-6">SUS test</p>
+                        <p className="text-md mb-2">
                             The SUS (System Usability Scale) is a ten-item questionnaire administered to users to{" "}
-                            <strong>measure their perceived ease of use.</strong>
+                            measure their perceived ease of use.
                         </p>
-                        <p className="text-lg text-white mb-6">
+                        <p className="text-md mb-8">
                             The test results were great. Which left us very happy and confident.
                         </p>
-                    </div>
-                    <div className="md:col-span-5 md:mt-12">
-                        <table className="table-auto text-white w-full">
+                        <table className="table-auto w-2/3 min-w-[270px] m-auto">
                             <thead>
                                 <tr>
                                     <th className="px-4 py-2"></th>
-                                    <th className="px-4 py-2 text-center">SUS Score</th>
-                                    <th className="px-4 py-2 text-center">Score</th>
+                                    <th className="px-4 py-2 text-center">SUS SCORE</th>
+                                    <th className="px-4 py-2 text-center">SCORE</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -155,13 +153,13 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                                     </tr>
                                 ))}
                                 <tr>
-                                    <td className="border-b-2 px-4 py-2">Average</td>
-                                    <td className="border-b-2 px-4 py-2 text-center">
+                                    <td className="px-4 py-2">Average</td>
+                                    <td className="px-4 py-2 text-center">
                                         {Math.floor(
                                             (users.reduce((acc, user) => acc + user.score, 0) / users.length) * 100
                                         ) / 100}
                                     </td>
-                                    <td className="border-b-2 px-4 py-2 text-center">A</td>
+                                    <td className="px-4 py-2 text-center">A</td>
                                 </tr>
                             </tbody>
                         </table>
