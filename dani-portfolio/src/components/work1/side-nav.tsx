@@ -42,7 +42,7 @@ export default function SideNav() {
     }, [])
 
     return (
-        <div className="fixed top-[200px] ml-8">
+        <div className="hidden md:block fixed top-[200px] ml-8">
             <p className={`italic mb-2 text-sm duration-1000 ${textColor}`}>On this site</p>
             <NavElem id="context" text="Context" scrollY={scrollY} />
             <NavElem id="design-process" text="Design process" scrollY={scrollY} />
