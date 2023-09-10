@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-darkPurple min-h-screen md:h-screen">
+        <div className="w-screen bg-darkPurple min-h-screen md:h-screen md:overflow-hidden">
             <div className={gridClasses + " mt-12 md:mt-24"}>
                 <div className="md:col-span-8">
                     <p className="font-display text-lightPurple text-4xl md:text-5xl mb-4">

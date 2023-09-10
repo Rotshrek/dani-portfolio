@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function TakeAway({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-white min-h-screen">
+            <div className="w-screen bg-white min-h-screen" id="take-away">
                 <div className={gridClasses}>
                     <div className="md:col-span-2" />
                     <div className="md:col-span-8">

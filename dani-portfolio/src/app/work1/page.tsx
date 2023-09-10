@@ -12,12 +12,14 @@ import TakeAway from "@/components/work1/11-take-away"
 import UsabilityTest from "@/components/work1/6-usability-test"
 import BottomNav from "@/components/bottom-nav"
 import Context from "@/components/work1/2-context"
+import SideNav from "@/components/work1/side-nav"
 
 const gridClasses = "grid md:grid-cols-12 gap-8 max-w-[880px] h-full m-auto px-8 py-12 md:px-0 md:py-16 auto-rows-min"
 
 export default function Work1() {
     return (
-        <main className="overflow-hidden">
+        <main className="overflow-hidden relative">
+            <SideNav />
             <Work1Landing gridClasses={gridClasses} />
             <Context gridClasses={gridClasses} />
             <DesignProcess gridClasses={gridClasses} />

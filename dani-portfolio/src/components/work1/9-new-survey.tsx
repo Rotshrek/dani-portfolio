@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-white">
+            <div className="w-screen bg-white" id="iteration">
                 <div className={gridClasses}>
                     <div className="md:col-span-2" />
                     <div className="md:col-span-8">

@@ -5,7 +5,7 @@ export default function BottomNav() {
 
     return (
         <div className="min-w-[170px] max-w-[968px] m-auto px-8 md:px-0">
-            <div className="flex flex-col justify-between md:flex-row py-12 border-t-2 border-lightBlue">
+            <div className="flex flex-col justify-between md:flex-row py-12">
                 <div>
                     <p className={urlClasses}>
                         <strong>Work</strong>

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-white">
+        <div className="w-screen bg-white" id="definition">
             <div className={gridClasses}>
                 <div className="md:col-span-2" />
                 <div className="md:col-span-8">
