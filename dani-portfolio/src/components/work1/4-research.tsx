@@ -73,7 +73,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     </div>
                     <div className="relative md:col-span-12 h-[170px] md:h-[118px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                         <div className="absolute w-[1280px] md:w-full h-[170px] md:h-[118px] md:left-1/2 md:translate-x-[-50%]">
-                            <Image src="/benchmark.png" fill alt="Benchmarking timeline" />
+                            <Image src="/benchmark.jpg" fill alt="Benchmarking timeline" />
                         </div>
                     </div>
                     <div className="md:col-span-2" />

@@ -16,9 +16,9 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         owner. We eliminated questions that were not necessary to quote and grouped them by topic.
                     </p>
                 </div>
-                <div className="relative md:col-span-12 h-[456px] md:h-[268px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                    <div className="absolute w-[1280px] md:w-full h-[456px] md:h-[268px] md:left-1/2 md:translate-x-[-50%]">
-                        <Image src="/new-flow.svg" fill alt="New form flow" />
+                <div className="relative md:col-span-12 h-[456px] md:h-[300px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="absolute w-[1280px] md:w-full h-[456px] md:h-[300px] md:left-1/2 md:translate-x-[-50%]">
+                        <Image src="/new-flow.png" fill alt="New form flow" />
                     </div>
                 </div>
                 <div className="md:col-span-2" />
@@ -52,11 +52,11 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         need to build de form in one single place.
                     </p>
                 </div>
-                <div className="md:col-span-12 md:min-h-screen pr-12 md:pr-0">
+                <div className="md:col-span-12 pr-12 md:pr-0">
                     <Image
                         className="m-auto"
-                        src="/handoff.png"
-                        height={1119}
+                        src="/handoff.jpg"
+                        height={508}
                         width={879}
                         alt="Handoff to development"
                     />

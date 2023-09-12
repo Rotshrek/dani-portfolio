@@ -54,7 +54,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                         </p>
                         <Image
                             className="my-10"
-                            src="/usability-testing.png"
+                            src="/usability-testing.jpg"
                             width={577}
                             height={267}
                             alt="Compara online website"
