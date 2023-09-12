@@ -32,11 +32,16 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                 </div>
                 <div className="md:col-span-3" />
                 <div className="md:col-span-6 mt-8 pr-12 md:pr-0">
-                    <Image src="/new-inputs.png" height={228} width={445} alt="New types of text inputs for forms" />
+                    <Image
+                        src="/new-inputs-small.png"
+                        height={228}
+                        width={445}
+                        alt="New types of text inputs for forms"
+                    />
                 </div>
-                <div className="relative md:col-span-12 h-[403px] md:h-[338px] hidden md:block">
-                    <div className="md:absolute md:w-full md:h-[403px] md:h-[338px] md:left-1/2 md:translate-x-[-50%]">
-                        <Image src="/new-input-details.png" fill alt="New form flow" />
+                <div className="relative md:col-span-12 h-[403px] md:h-[310px] hidden md:block">
+                    <div className="md:absolute md:w-full md:h-[403px] md:h-[310px] md:left-1/2 md:translate-x-[-50%]">
+                        <Image src="/new-inputs-details.png" fill alt="Details on new types of text inputs" />
                     </div>
                 </div>
                 <div className="md:col-span-2" />
