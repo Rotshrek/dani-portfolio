@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import ReactImageMagnify from "react-image-magnify"
 
 export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
     return (
@@ -16,10 +17,31 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         owner. We eliminated questions that were not necessary to quote and grouped them by topic.
                     </p>
                 </div>
-                <div className="relative md:col-span-12 h-[456px] md:h-[300px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                    <div className="absolute w-[1280px] md:w-full h-[456px] md:h-[300px] md:left-1/2 md:translate-x-[-50%]">
+                <div className="relative md:hidden h-[456px] w-screen overflow-scroll">
+                    <div className="absolute w-[1280px] h-[456px]">
                         <Image src="/new-flow.png" fill alt="New form flow" />
                     </div>
+                </div>
+                <div className="hidden md:block relative md:col-span-12 md:overflow-visible ml-[-30px] md:ml-0">
+                    <ReactImageMagnify
+                        {...{
+                            smallImage: {
+                                alt: "National identity form flow",
+                                src: "/new-flow.png",
+                                width: 880,
+                                height: 300,
+                                isFluidWidth: true,
+                            },
+                            largeImage: {
+                                src: "/new-flow.png",
+                                width: 3520,
+                                height: 1200,
+                            },
+                            enlargedImagePosition: "over",
+                            isHintEnabled: true,
+                            enlargedImageClassName: "max-w-none bg-white",
+                        }}
+                    />
                 </div>
                 <div className="md:col-span-2" />
                 <div className="md:col-span-8 mt-4 md:mt-8 pr-12 md:pr-0">
@@ -40,7 +62,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     />
                 </div>
                 <div className="relative md:col-span-12 h-[403px] md:h-[310px] hidden md:block">
-                    <div className="md:absolute md:w-full md:h-[403px] md:h-[310px] md:left-1/2 md:translate-x-[-50%]">
+                    <div className="md:absolute md:w-full h-[403px] md:h-[310px] md:left-1/2 md:translate-x-[-50%]">
                         <Image src="/new-inputs-details.png" fill alt="Details on new types of text inputs" />
                     </div>
                 </div>

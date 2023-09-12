@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import ReactImageMagnify from "react-image-magnify"
 
 export default function Research({ gridClasses }: { gridClasses: string }) {
     return (
@@ -102,10 +103,31 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             identification number), since most people know it by heart.
                         </p>
                     </div>
-                    <div className="relative md:col-span-12 h-[456px] md:h-[361px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="absolute w-[1280px] md:w-full h-[456px] md:h-[361px] md:left-1/2 md:translate-x-[-50%]">
-                            <Image src="/compara-quoting-flow.png" fill alt="national identity form flow" />
+                    <div className="relative md:hidden h-[456px] w-screen overflow-scroll ml-[-30px] ">
+                        <div className="absolute w-[1280px] h-[456px]">
+                            <Image src="/compara-quoting-flow.png" fill alt="National identity form flow" />
                         </div>
+                    </div>
+                    <div className="hidden md:block relative md:col-span-12 md:overflow-visible ml-[-30px] md:ml-0">
+                        <ReactImageMagnify
+                            {...{
+                                smallImage: {
+                                    alt: "National identity form flow",
+                                    src: "/compara-quoting-flow.jpg",
+                                    width: 880,
+                                    height: 361,
+                                    isFluidWidth: true,
+                                },
+                                largeImage: {
+                                    src: "/compara-quoting-flow.png",
+                                    width: 3520,
+                                    height: 1320,
+                                },
+                                enlargedImagePosition: "over",
+                                isHintEnabled: true,
+                                enlargedImageClassName: "max-w-none",
+                            }}
+                        />
                     </div>
                     <div className="md:col-span-2" />
                     <div className="md:col-span-8">
