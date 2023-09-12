@@ -16,11 +16,7 @@ export default function Work1() {
                             Lorem ipsum dolor sit amet consectetur. Arcu rutrum vel sed ac mauris turpis sagittis eget
                             hendrerit. Sed massa purus aliquet sapien volutpat.
                         </p>
-                        <a
-                            href="/work1"
-                            target="_blank"
-                            className="inline-block rounded-full px-4 py-2 font-bold bg-brightPink"
-                        >
+                        <a href="/work1" className="inline-block rounded-full px-4 py-2 font-bold bg-brightPink">
                             See project
                             <span className="ml-3">{">"}</span>
                         </a>

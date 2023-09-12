@@ -104,7 +104,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     </div>
                     <div className="relative md:col-span-12 h-[456px] md:h-[361px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                         <div className="absolute w-[1280px] md:w-full h-[456px] md:h-[361px] md:left-1/2 md:translate-x-[-50%]">
-                            <Image src="/compara-flow.png" fill alt="national identity form flow" />
+                            <Image src="/compara-quoting-flow.png" fill alt="national identity form flow" />
                         </div>
                     </div>
                     <div className="md:col-span-2" />
