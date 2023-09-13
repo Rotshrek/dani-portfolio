@@ -12,7 +12,7 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                     </p>
                     <p className="text-white italic text-lg">February 2021 - April 2021</p>
                 </div>
-                <div className="md:col-span-5">
+                <div className="md:col-span-5 mb-12 md:mb-0">
                     <p className="text-white mb-4 mt-8 text-xl font-bold">The Challenge</p>
                     <p className="text-white text-lg">
                         Our goal was to turn the car insurance quoting form into a delightful experience through
@@ -33,7 +33,7 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                         height={200}
                     />
                     <Image
-                        className="absolute bottom-[120px] md:bottom-[80px] right-[-20px]"
+                        className="absolute bottom-[120px] md:bottom-[80px] right-[-60px] md:right-[-20px]"
                         src={`/screen.png`}
                         alt="computer screen showing the Compara website"
                         width={360}

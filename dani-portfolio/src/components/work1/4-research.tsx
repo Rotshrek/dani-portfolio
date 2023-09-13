@@ -8,7 +8,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
         <div>
             <div className="w-screen bg-white" id="research">
                 <div className={gridClasses}>
-                    <div className="md:col-span-2" />
+                    <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mb-8">
                         <p className="font-bold text-4xl mb-10 text-center">Research</p>
                         <p className="font-bold text-2xl mb-6">Interviews: Call Center</p>
@@ -60,8 +60,8 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
             </div>
             <div className="w-screen bg-white">
                 <div className={gridClasses + " md:gap-y-6"}>
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-8">
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-6">Benchmark</p>
                         <p className="text-md mb-6">
                             We made an information architecture benchmark with 6 direct competitors. The objetive was to
@@ -77,8 +77,8 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             <Image src="/benchmark.jpg" fill alt="Benchmarking timeline" />
                         </div>
                     </div>
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-8 mt-6">
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="md:col-span-8 mt-6 pr-10 md:pr-0">
                         <p className="text-md mb-4">The main conclusions of this benchmark were:</p>
                         <ol className="text-md list-disc pl-6 mb-10">
                             <li>
@@ -90,9 +90,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </li>
                         </ol>
                     </div>
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-8">
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="md:col-span-8 pr-10 md:pr-0">
                         <p className="font-bold text-2xl mb-6">User flow first aproach</p>
                         <p className="text-md mb-6">
                             We created the journey that we thought would be ideal for the user. The objective was to use
@@ -129,21 +129,21 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             }}
                         />
                     </div>
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-8">
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="md:col-span-8 pr-10 md:pr-0">
                         <p className="font-bold text-2xl mb-6">Survey</p>
                         <p className="text-md mb-6">
                             To validate the hypothesis of whether the user preferred to quote with RUT or car license
                             plate, we launched an online survey giving a fictitious scenario and asking users how they
                             preferred to quote.
                         </p>
-                        <div className="mt-8 w-full h-auto min-w-[426px] min-h-[153px] relative">
-                            <Image
-                                src="/survey-results.svg"
-                                fill
-                                alt="Results of survey showing 32% prefer id and 59% prefer license plate"
-                            />
-                        </div>
+                        <Image
+                            src="/survey-results.svg"
+                            className="m-auto"
+                            width={580}
+                            height={280}
+                            alt="Results of survey showing 32% prefer id and 59% prefer license plate"
+                        />
                         <p className="text-md mt-6">
                             The sample was small, since we were more interested in the qualitative than in the
                             quantitative perspective.
@@ -182,8 +182,8 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-8">
+                    <div className="md:col-span-2 " />
+                    <div className="md:col-span-8 pr-10 md:pr-0">
                         <p className="text-md mt-8 mb-4">The main conclusions of this survey were:</p>
                         <ol className="text-md list-disc pl-6 mb-10">
                             <li>They felt that their RUT was sensitive information to deliver at this stage. </li>

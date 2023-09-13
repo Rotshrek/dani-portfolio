@@ -7,8 +7,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
     return (
         <div className="w-screen bg-white" id="definition">
             <div className={gridClasses}>
-                <div className="md:col-span-2" />
-                <div className="md:col-span-8">
+                <div className="md:col-span-2 hidden md:block" />
+                <div className="md:col-span-8 pr-16 md:pr-0">
                     <p className="font-bold text-4xl text-center mb-6">Definition</p>
                     <p className="font-bold text-2xl mb-6">New user flow</p>
                     <p className="text-md mb-6">
@@ -43,8 +43,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         }}
                     />
                 </div>
-                <div className="md:col-span-2" />
-                <div className="md:col-span-8 mt-4 md:mt-8 pr-12 md:pr-0">
+                <div className="md:col-span-2 hidden md:block" />
+                <div className="md:col-span-8 mt-4 md:mt-8 pr-16 md:pr-0">
                     <p className="font-bold text-2xl mb-6">New input system</p>
                     <p className="text-md">
                         Together with the fronts, we decided to build a new library of inputs. These would provide
@@ -52,8 +52,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         loading, among others.
                     </p>
                 </div>
-                <div className="md:col-span-3" />
-                <div className="md:col-span-6 mt-8 pr-12 md:pr-0">
+                <div className="md:col-span-3 hidden md:block" />
+                <div className="md:col-span-6 mt-8 pr-16 md:pr-0">
                     <Image
                         src="/new-inputs-small.png"
                         height={228}
@@ -66,8 +66,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         <Image src="/new-inputs-details.png" fill alt="Details on new types of text inputs" />
                     </div>
                 </div>
-                <div className="md:col-span-2" />
-                <div className="md:col-span-8 md:mt-8 pr-12 md:pr-0">
+                <div className="md:col-span-2 hidden md:block" />
+                <div className="md:col-span-8 md:mt-8 pr-16 md:pr-0">
                     <p className="font-bold text-2xl mb-6">Handoff to development</p>
                     <p className="text-md">
                         As a team (UX and Front), this was the way we defined to facilitate the designs to development.
@@ -79,7 +79,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         need to build de form in one single place.
                     </p>
                 </div>
-                <div className="md:col-span-12 pr-12 md:pr-0">
+                <div className="md:col-span-12 pr-16 md:pr-0">
                     <Image
                         className="m-auto"
                         src="/handoff.jpg"
@@ -88,7 +88,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         alt="Handoff to development"
                     />
                 </div>
-                <div className="md:col-span-12 text-right pr-12 md:pr-0">
+                <div className="md:col-span-12 text-right pr-16 md:pr-0">
                     <a
                         href="https://www.figma.com/file/1Boh16TmDAvE6tTnP2Ki5Y/Cotizacio%CC%81n-CICL?type=design&node-id=2102%3A49992&mode=design&t=RUDtx62WYegODiLO-1"
                         target="_blank"

@@ -45,7 +45,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
         <div>
             <div className="w-screen bg-white">
                 <div className={gridClasses}>
-                    <div className="md:col-span-2" />
+                    <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
                         <p className="font-bold text-2xl mb-6">Usability test</p>
                         <p className="text-md mb-6">
@@ -59,6 +59,9 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             height={267}
                             alt="Compara online website"
                         />
+                        <video className="m-auto mb-8" autoPlay muted loop width={880} height={524}>
+                            <source src="/usability-test-video.mov" type="video/mp4" />
+                        </video>
                         <p className="text-md mb-2 font-bold">Test goals:</p>
                         <ol className="text-md list-disc pl-6">
                             <li>
@@ -126,7 +129,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             </div>
                         </div>
                     </div>
-                    <div className="md:col-span-2" />
+                    <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
                         <p className="font-bold text-2xl mt-6 mb-6">SUS test</p>
                         <p className="text-md mb-2">
