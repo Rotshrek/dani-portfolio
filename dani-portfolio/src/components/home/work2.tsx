@@ -11,7 +11,7 @@ export default function Work2() {
                         <Image src={`/work2.png`} alt="cloud outline" width={208} height={417} />
                     </div>
                     <div className="md:col-span-5 text-white m-auto">
-                        <p className="font-display text-4xl mb-4">
+                        <p className="font-display text-3xl mb-4">
                             Improving data visualization in the salmon industry
                         </p>
                         <p className="mb-4 font-bold">Coming soon!</p>

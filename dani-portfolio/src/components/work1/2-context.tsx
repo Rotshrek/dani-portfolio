@@ -8,7 +8,7 @@ export default function Context({ gridClasses }: { gridClasses: string }) {
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8">
-                    <p className="text-4xl mb-10 text-center font-bold">Context</p>
+                    <p className="text-3xl mb-10 text-center font-bold">Context</p>
                     <p className="text-md mb-8">
                         Before the redesign, the quoting experience was an intricate and extensive form. Upon reviewing
                         it, we raised our own hypotheses of problems and opportunities for improvement.

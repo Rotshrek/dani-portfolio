@@ -11,7 +11,7 @@ export default function Work3() {
                         <Image src={`/work3.png`} alt="cloud outline" width={551} height={312} />
                     </div>
                     <div className="md:col-span-5 text-white m-auto">
-                        <p className="font-display text-4xl mb-4">Building a user account for car insurance clients</p>
+                        <p className="font-display text-3xl mb-4">Building a user account for car insurance clients</p>
                         <p className="mb-4 font-bold">Coming soon!</p>
                         <p className="mb-8">
                             For this project, we designed the user account section from the ground up. As a result,

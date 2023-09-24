@@ -85,8 +85,8 @@ export default function SideNav() {
     }, [])
 
     return (
-        <div className="hidden xl:block fixed top-[200px] left-[calc(50vw-650px)]">
-            <p className={`italic mb-2 text-sm duration-1000 ${textColor}`}>On this site</p>
+        <div className="hidden xl:block fixed top-[200px] left-[calc(50vw-630px)]">
+            <p className={`italic mb-2 text-sm duration-1000 ${textColor}`}>On this page</p>
             {sections.map(({ id, text }, index) => (
                 <NavElem key={id} id={id} text={text} scrollY={scrollY} index={index} />
             ))}

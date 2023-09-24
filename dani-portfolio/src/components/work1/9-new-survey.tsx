@@ -9,7 +9,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
-                        <p className="font-bold text-4xl text-center mb-6">Iteration</p>
+                        <p className="font-bold text-3xl text-center mb-6">Iteration</p>
                         <p className="font-bold text-2xl mb-6">New Survey</p>
                         <p className="text-md  md:mb-6">
                             With this new information we decided to give a try on illustration, a resource we used to

@@ -9,7 +9,7 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
-                        <p className="font-bold text-4xl text-center mb-6">Take Away!</p>
+                        <p className="font-bold text-3xl text-center mb-6">Take Away!</p>
                         <p className="font-bold text-2xl mb-4">What did we improve?</p>
                         <ol className="text-md list-disc pl-6">
                             <li>

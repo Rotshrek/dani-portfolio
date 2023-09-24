@@ -9,7 +9,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 pr-16 md:pr-0">
-                    <p className="font-bold text-4xl text-center mb-6">Definition</p>
+                    <p className="font-bold text-3xl text-center mb-6">Definition</p>
                     <p className="font-bold text-2xl mb-6">New user flow</p>
                     <p className="text-md mb-6">
                         Given all the previous research this was the design of final flow. We start by asking for the

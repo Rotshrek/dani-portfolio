@@ -11,7 +11,7 @@ export default function Work1() {
                         <Image src={`/work1.png`} alt="cloud outline" width={543} height={294} />
                     </div>
                     <div className="md:col-span-5 text-white m-auto">
-                        <p className="font-display text-4xl mb-8">Redisigning the way to quote a car insurance</p>
+                        <p className="font-display text-3xl mb-8">Redisigning the way to quote a car insurance</p>
                         <p className="mb-8">
                             Lorem ipsum dolor sit amet consectetur. Arcu rutrum vel sed ac mauris turpis sagittis eget
                             hendrerit. Sed massa purus aliquet sapien volutpat.

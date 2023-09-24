@@ -10,7 +10,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mb-8">
-                        <p className="font-bold text-4xl mb-10 text-center">Research</p>
+                        <p className="font-bold text-3xl mb-10 text-center">Research</p>
                         <p className="font-bold text-2xl mb-6">Interviews: Call Center</p>
                         <p className="text-md">
                             I moderated one-on-one interviews with 10 executives to discover possible user pain points.
