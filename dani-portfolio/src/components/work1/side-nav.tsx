@@ -85,11 +85,21 @@ export default function SideNav() {
     }, [])
 
     return (
-        <div className="hidden xl:block fixed top-[200px] left-[calc(50vw-630px)]">
-            <p className={`italic mb-2 text-sm duration-1000 ${textColor}`}>On this page</p>
+        <div className="fixed top-[200px] left-[calc(50vw-630px)]">
+            <p className={`hidden xl:block italic mb-2 text-sm duration-1000 ${textColor}`}>On this page</p>
             {sections.map(({ id, text }, index) => (
                 <NavElem key={id} id={id} text={text} scrollY={scrollY} index={index} />
             ))}
+            {scrollY > deviceHeight && (
+                <div className="fixed bottom-[20px] right-[20px] md:bottom-[30px] md:right-[40px]">
+                    <a
+                        href="#work1"
+                        className="block shadow-md shadow-black hover:text-lightPink relative duration-1000 rounded-full bg-white h-[24px] w-[24px]"
+                    >
+                        <span className="absolute -rotate-90 right-[5px]">➜</span>
+                    </a>
+                </div>
+            )}
         </div>
     )
 }
