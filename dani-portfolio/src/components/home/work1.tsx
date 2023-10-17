@@ -5,21 +5,28 @@ import Image from "next/image"
 export default function Work1() {
     return (
         <div>
-            <div className="w-screen bg-darkPurple md:h-[75vh]">
-                <div className="grid md:grid-cols-12 gap-8 max-w-[1024px] h-full m-auto p-8 md:p-0 py-20">
-                    <div className="md:col-span-7 m-auto">
-                        <Image src={`/work1.png`} alt="cloud outline" width={543} height={294} />
-                    </div>
-                    <div className="md:col-span-5 text-white m-auto">
-                        <p className="font-display text-3xl mb-8">Redisigning the way to quote a car insurance</p>
-                        <p className="mb-8">
-                            Lorem ipsum dolor sit amet consectetur. Arcu rutrum vel sed ac mauris turpis sagittis eget
-                            hendrerit. Sed massa purus aliquet sapien volutpat.
-                        </p>
-                        <a href="/work1" className="inline-block rounded-full px-4 py-2 font-bold bg-brightPink">
-                            See project
-                            <span className="ml-3">{">"}</span>
-                        </a>
+            <div className="w-screen bg-white flex">
+                <div className="max-w-[1024px] m-auto my-20 md:p-0">
+                    <p className="text-4xl mb-10 text-center font-bold">My Work</p>
+                    <div className="grid md:grid-cols-12 gap-4 bg-lightGray p-10 rounded-3xl">
+                        <div className="md:col-span-7 m-auto">
+                            <Image src={`/work1.png`} alt="screens showing first work" width={414} height={316} />
+                        </div>
+                        <div className="md:col-span-5 m-auto">
+                            <p className="font-display text-4xl mb-8">Redisigning the way to quote a car insurance</p>
+                            <p className="mb-8">
+                                In the journey of this project, we created Figma prototypes, tested them with real
+                                users, and iterated, always keeping the user at the center of the design process. We
+                                stumbled upon an unexpected revelation that guided the redesign.
+                            </p>
+                            <a
+                                href="/work1"
+                                className="inline-block rounded-full px-5 py-4 font-bold bg-brightPink text-white"
+                            >
+                                See project
+                                <span className="ml-3">{">"}</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

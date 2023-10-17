@@ -17,9 +17,11 @@ module.exports = {
             lightBlue: "#97FAEE",
             blue: "#4168FF",
             darkBlue: "#0F0726",
-            white: "#F6F6F6",
+            white: "#FFF",
             lightPurple: "#7D8FFF",
             lighterPurple: "#c4d0ff",
+            lightGray: "#F6F6F6",
+            gray: "#E7E7E7",
         },
         fontFamily: {
             sans: ["var(--font-open_sans)"],
