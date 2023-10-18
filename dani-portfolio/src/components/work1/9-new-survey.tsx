@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-white" id="iteration">
+            <div className="w-screen" id="iteration">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
@@ -30,7 +30,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     <div className="hidden md:block md:col-span-10">
                         <div className="m-auto text-center ">
                             <div className="flex justify-between items-center">
-                                <div className="flex-initial w-[220px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="flex-initial w-[220px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>The illustration brings it to life</p>
 
                                     <div className="absolute bottom-1/4 right-0 transform translate-x-1/2 rotate-45 w-4 h-4 bg-lighterPurple" />
@@ -39,7 +39,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                                     <p className="text-7xl font-display">79%</p>
                                     <p className="text-md">of users prefer the layout with illustration.</p>
                                 </div>
-                                <div className="flex-initial w-[220px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="flex-initial w-[220px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         It&#39;s like the illustration of the good vibes company and I think that
                                         inspires confidence
@@ -53,12 +53,12 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     <div className="md:hidden">
                         <div className="m-auto text-center ">
                             <div className="flex justify-between items-end">
-                                <div className="flex-initial w-[140px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="flex-initial w-[140px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>The illustration brings it to life</p>
 
                                     <div className="absolute right-1/4 bottom-0 transform translate-y-1/2 rotate-45 w-4 h-4 bg-lighterPurple" />
                                 </div>
-                                <div className="flex-initial w-[170px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="flex-initial w-[170px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         It&#39;s like the illustration of the good vibes company and I think that
                                         inspires confidence
@@ -75,7 +75,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     </div>
                     <div className="md:col-span-6">
                         <Image
-                            className="md:my-10"
+                            className="md:my-10 rounded-lg"
                             src="/old-flow-survey.svg"
                             width={500}
                             height={533}
@@ -84,7 +84,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     </div>
                     <div className="md:col-span-6">
                         <Image
-                            className="md:my-10"
+                            className="md:my-10 rounded-lg"
                             src="/new-flow-survey.svg"
                             width={500}
                             height={533}

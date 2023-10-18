@@ -18,7 +18,7 @@ const gridClasses = "grid md:grid-cols-12 gap-8 max-w-[880px] h-full m-auto px-8
 
 export default function Work1() {
     return (
-        <main className="overflow-hidden relative">
+        <main className="overflow-hidden relative bg-lightGray">
             <SideNav />
             <Work1Landing gridClasses={gridClasses} />
             <Context gridClasses={gridClasses} />

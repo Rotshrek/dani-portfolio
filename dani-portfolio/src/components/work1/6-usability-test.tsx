@@ -43,7 +43,7 @@ const users = [
 export default function UsabilityTest({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-white">
+            <div className="w-screen">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
@@ -53,17 +53,17 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             decided to create high-quality wireframes for conducting a usability test.
                         </p>
                         <Image
-                            className="my-10"
+                            className="my-10 rounded-lg"
                             src="/usability-testing.jpg"
                             width={577}
                             height={267}
                             alt="Compara online website"
                         />
-                        <video className="m-auto mb-8" autoPlay muted loop width={880} height={524}>
+                        <video className="m-auto mb-8 rounded-lg" autoPlay muted loop width={880} height={524}>
                             <source src="/usability-test-video.mov" type="video/mp4" />
                         </video>
                         <p className="text-md mb-2 font-bold">Test goals:</p>
-                        <ol className="text-md list-disc pl-6">
+                        <ol className="text-md list-disc pl-6 list-decimal">
                             <li>
                                 Know if the information architecture was consistent with the user&#39;s mental model.
                             </li>
@@ -100,7 +100,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             </div>
 
                             <div>
-                                <div className="w-[300px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[300px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         <strong>Autocomplete car details would be very useful,</strong> especially if I
                                         want to quote for someone else and I don&#39;t know their details.
@@ -118,7 +118,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             </div>
 
                             <div>
-                                <div className="w-[260px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[260px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         <strong>I would prefer to complete the email myself </strong>even if I have to
                                         type
@@ -150,19 +150,33 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             <tbody>
                                 {users.map((user, index) => (
                                     <tr key={index}>
-                                        <td className="border-b-2 px-4 py-2">{user.name}</td>
-                                        <td className="border-b-2 px-4 py-2 text-center">{user.score}</td>
-                                        <td className="border-b-2 px-4 py-2 text-center">{user.grade}</td>
+                                        <td className={`${index < users.length - 1 ? "border-b-2" : ""} px-4 py-2`}>
+                                            {user.name}
+                                        </td>
+                                        <td
+                                            className={`${
+                                                index < users.length - 1 ? "border-b-2" : ""
+                                            } px-4 py-2 text-center`}
+                                        >
+                                            {user.score}
+                                        </td>
+                                        <td
+                                            className={`${
+                                                index < users.length - 1 ? "border-b-2" : ""
+                                            } px-4 py-2 text-center`}
+                                        >
+                                            {user.grade}
+                                        </td>
                                     </tr>
                                 ))}
                                 <tr>
-                                    <td className="px-4 py-2">Average</td>
-                                    <td className="px-4 py-2 text-center">
+                                    <td className="px-2 py-3 text-lg text-blue">FINAL SCORE</td>
+                                    <td className="px-4 py-3 text-center text-lg text-blue">
                                         {Math.floor(
                                             (users.reduce((acc, user) => acc + user.score, 0) / users.length) * 100
                                         ) / 100}
                                     </td>
-                                    <td className="px-4 py-2 text-center">A</td>
+                                    <td className="px-2 py-3 text-center text-lg text-blue">A</td>
                                 </tr>
                             </tbody>
                         </table>

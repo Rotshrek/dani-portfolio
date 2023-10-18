@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Context({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-white" id="context">
+        <div className="w-screen" id="context">
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8">
@@ -21,7 +21,13 @@ export default function Context({ gridClasses }: { gridClasses: string }) {
                         <li>No context for the user (form name or breadcrumbs).</li>
                         <li>Inconsistent labeling.</li>
                     </ol>
-                    <Image className="m-auto" src="/context.png" width={574} height={346} alt="Compara online screen" />
+                    <Image
+                        className="m-auto rounded-lg"
+                        src="/context.png"
+                        width={574}
+                        height={346}
+                        alt="Compara online screen"
+                    />
                 </div>
             </div>
         </div>

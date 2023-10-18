@@ -5,7 +5,7 @@ import ReactImageMagnify from "react-image-magnify"
 
 export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-white" id="definition">
+        <div className="w-screen" id="definition">
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 pr-16 md:pr-0">
@@ -55,6 +55,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                 <div className="md:col-span-3 hidden md:block" />
                 <div className="md:col-span-6 mt-8 pr-16 md:pr-0">
                     <Image
+                        className="rounded-lg"
                         src="/new-inputs-small.png"
                         height={228}
                         width={445}
@@ -81,7 +82,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                 </div>
                 <div className="md:col-span-12 pr-16 md:pr-0">
                     <Image
-                        className="m-auto"
+                        className="m-auto rounded-lg"
                         src="/handoff.jpg"
                         height={508}
                         width={879}

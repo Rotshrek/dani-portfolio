@@ -8,7 +8,7 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
             <div className={gridClasses + " mt-12"}>
                 <div className="md:col-span-8">
                     <p className="font-display text-lightPurple text-3xl md:text-5xl mb-4">
-                        Redisigning the way to quote
+                        Redesigning the way to quote
                     </p>
                     <p className="text-white italic">February 2021 - April 2021</p>
                 </div>

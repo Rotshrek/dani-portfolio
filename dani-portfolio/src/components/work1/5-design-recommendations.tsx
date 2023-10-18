@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function DesignRecommendation() {
     return (
-        <div className="h-auto bg-white w-full py-20 ">
+        <div className="h-auto w-full py-20 ">
             <div className="relative w-3/4 min-w-[320px] max-w-[572px] m-auto">
                 <Image
                     className="absolute top-[-40px] left-[-140px] z-0"
@@ -20,7 +20,7 @@ export default function DesignRecommendation() {
                     height={190}
                     alt="blue cloud"
                 />
-                <div className="relative bg-[#FFF] py-12 px-8 md:px-20 rounded shadow-lg">
+                <div className="relative bg-[#FFF] py-12 px-8 md:px-20 rounded-lg shadow-lg">
                     <p className="font-bold text-2xl mb-4 text-center">💡 Design recommendation</p>
                     <p className="text-md mb-2">
                         The <strong>car license plate should be the first question in the form.</strong>

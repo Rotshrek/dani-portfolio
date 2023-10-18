@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function TakeAway({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-white min-h-screen" id="take-away">
+            <div className="w-screen min-h-screen" id="take-away">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8">
@@ -47,7 +47,13 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                         </ol>
                     </div>
                     <div className="md:col-span-12">
-                        <Image src="/compara-after.png" width={879} height={641} alt="Compara online website" />
+                        <Image
+                            className="rounded-lg"
+                            src="/compara-after.png"
+                            width={879}
+                            height={641}
+                            alt="Compara online website"
+                        />
                     </div>
                 </div>
             </div>

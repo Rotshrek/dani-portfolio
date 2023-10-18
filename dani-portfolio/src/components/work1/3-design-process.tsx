@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function DesignProcess({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-white" id="design-process">
+        <div className="w-screen" id="design-process">
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8">
@@ -15,7 +15,7 @@ export default function DesignProcess({ gridClasses }: { gridClasses: string }) 
                         form and a new design system exclusive for forms.
                     </p>
                     <Image
-                        className="m-auto"
+                        className="m-auto rounded-lg"
                         src="/design-process.png"
                         width={768}
                         height={468}

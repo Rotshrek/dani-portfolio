@@ -13,7 +13,7 @@ export default function Work1() {
                             <Image src={`/work1.png`} alt="screens showing first work" width={414} height={316} />
                         </div>
                         <div className="md:col-span-5 m-auto">
-                            <p className="font-display text-4xl mb-8">Redisigning the way to quote a car insurance</p>
+                            <p className="font-display text-4xl mb-8">Redesigning the way to quote a car insurance</p>
                             <p className="mb-8">
                                 In the journey of this project, we created Figma prototypes, tested them with real
                                 users, and iterated, always keeping the user at the center of the design process. We

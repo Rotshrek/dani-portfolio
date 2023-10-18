@@ -19,7 +19,7 @@ module.exports = {
             darkBlue: "#0F0726",
             white: "#FFF",
             lightPurple: "#7D8FFF",
-            lighterPurple: "#c4d0ff",
+            lighterPurple: "#D6DBF6",
             lightGray: "#F6F6F6",
             gray: "#E7E7E7",
         },
@@ -27,6 +27,10 @@ module.exports = {
             sans: ["var(--font-open_sans)"],
             serif: ["var(--font-scope_one)"],
             display: ["var(--font-bevan)"],
+        },
+        fontWeight: {
+            normal: 400,
+            bold: 700,
         },
         extend: {
             animation: {

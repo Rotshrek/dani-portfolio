@@ -56,7 +56,7 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
             ref={ref}
             href={`#${id}`}
             className={`block hover:text-lightPink px-4 py-2 relative duration-1000 ${textColor} ${
-                active ? "font-bold" : ""
+                active ? "font-bold ml-4 text-lg" : "font-normal"
             }`}
         >
             {text}

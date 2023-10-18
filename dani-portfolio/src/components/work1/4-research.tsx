@@ -6,7 +6,7 @@ import ReactImageMagnify from "react-image-magnify"
 export default function Research({ gridClasses }: { gridClasses: string }) {
     return (
         <div>
-            <div className="w-screen bg-white" id="research">
+            <div className="w-screen" id="research">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mb-8">
@@ -58,24 +58,45 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     </div>
                 </div>
             </div>
-            <div className="w-screen bg-white">
+            <div className="w-screen">
                 <div className={gridClasses + " md:gap-y-6"}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-6">Benchmark</p>
                         <p className="text-md mb-6">
-                            We made an information architecture benchmark with 6 direct competitors. The objetive was to
-                            find patterns to meet user expectations in quoting car insurances online.
+                            We made an information architecture benchmark with 6 direct competitors. The objective was
+                            to find patterns to meet user expectations in quoting car insurances online.
                         </p>
                         <p className="text-md mb-6">
-                            In the table below, the rows are the competitors and the colums are the questions of the
+                            In the table below, the rows are the competitors and the columns are the questions of the
                             competitors forms (inputs).
                         </p>
                     </div>
-                    <div className="relative md:col-span-12 h-[170px] md:h-[118px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="absolute w-[1280px] md:w-full h-[170px] md:h-[118px] md:left-1/2 md:translate-x-[-50%]">
-                            <Image src="/benchmark.jpg" fill alt="Benchmarking timeline" />
+                    <div className="relative md:hidden h-[170px] w-screen overflow-scroll ml-[-30px]">
+                        <div className="absolute w-[1280px] h-[170px]">
+                            <Image className="rounded-lg" src="/benchmark.jpg" fill alt="Benchmarking timeline" />
                         </div>
+                    </div>
+                    <div className="hidden md:block relative md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg">
+                        <ReactImageMagnify
+                            {...{
+                                smallImage: {
+                                    alt: "Benchmarking timeline",
+                                    src: "/benchmark.jpg",
+                                    width: 880,
+                                    height: 118,
+                                    isFluidWidth: true,
+                                },
+                                largeImage: {
+                                    src: "/benchmark.jpg",
+                                    width: 4550,
+                                    height: 610,
+                                },
+                                enlargedImagePosition: "over",
+                                isHintEnabled: true,
+                                enlargedImageClassName: "max-w-none",
+                            }}
+                        />
                     </div>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mt-6 pr-10 md:pr-0">
@@ -93,7 +114,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 pr-10 md:pr-0">
-                        <p className="font-bold text-2xl mb-6">User flow first aproach</p>
+                        <p className="font-bold text-2xl mb-6">User flow first approach</p>
                         <p className="text-md mb-6">
                             We created the journey that we thought would be ideal for the user. The objective was to use
                             this flow to create a prototype and test if our hypotheses were correct.
@@ -105,10 +126,15 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     </div>
                     <div className="relative md:hidden h-[456px] w-screen overflow-scroll ml-[-30px] ">
                         <div className="absolute w-[1280px] h-[456px]">
-                            <Image src="/compara-quoting-flow.png" fill alt="National identity form flow" />
+                            <Image
+                                className="rounded-lg"
+                                src="/compara-quoting-flow.png"
+                                fill
+                                alt="National identity form flow"
+                            />
                         </div>
                     </div>
-                    <div className="hidden md:block relative md:col-span-12 md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="hidden md:block relative md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg">
                         <ReactImageMagnify
                             {...{
                                 smallImage: {
@@ -156,7 +182,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </div>
 
                             <div>
-                                <div className="w-[200px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[200px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>I wouldn&#39;t feel safe giving my RUT if I&#39;m just quoting.</p>
 
                                     <div className="absolute left-0 top-1/2 transform -translate-x-1/2 rotate-45 w-4 h-4 bg-lighterPurple"></div>
@@ -171,7 +197,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </div>
 
                             <div>
-                                <div className="w-[240px] md:w-[400px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded relative">
+                                <div className="w-[240px] md:w-[400px] ml-4 p-6 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         The car&#39;s license plate is linked to the vehicle that I want to quote, and
                                         it is more related to the main action that I want to perform.
