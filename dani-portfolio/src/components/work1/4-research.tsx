@@ -7,7 +7,7 @@ import ImageExpansionModal from "../common/image-expansion-modal/image-expansion
 
 export default function Research({ gridClasses }: { gridClasses: string }) {
     const [modalOpen, setModalOpen] = useState(false),
-        [image, setImage] = useState({})
+        [image, setImage] = useState({ image: "", alt: "", width: 0, height: 0 })
 
     const openModal = (image: string, alt: string, width: number, height: number) => {
         setImage({
@@ -26,7 +26,14 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
 
     return (
         <div>
-            <ImageExpansionModal {...image} onClick={closeModal} open={modalOpen} />
+            <ImageExpansionModal
+                image={image.image}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                onClick={closeModal}
+                open={modalOpen}
+            />
             <div className="w-screen" id="research">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
