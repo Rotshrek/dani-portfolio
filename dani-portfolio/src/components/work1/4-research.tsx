@@ -5,9 +5,16 @@ import { useState } from "react"
 import ReactImageMagnify from "react-image-magnify"
 import ImageExpansionModal from "../common/image-expansion-modal/image-expansion-modal"
 
+const defaultImage = {
+    image: "",
+    alt: "",
+    width: 0,
+    height: 0,
+}
+
 export default function Research({ gridClasses }: { gridClasses: string }) {
     const [modalOpen, setModalOpen] = useState(false),
-        [image, setImage] = useState({ image: "", alt: "", width: 0, height: 0 })
+        [image, setImage] = useState(defaultImage)
 
     const openModal = (image: string, alt: string, width: number, height: number) => {
         setImage({
@@ -21,7 +28,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
 
     const closeModal = () => {
         setModalOpen(false)
-        setImage({})
+        setImage(defaultImage)
     }
 
     return (
