@@ -1,11 +1,32 @@
 "use client"
 
 import Image from "next/image"
+import { useState } from "react"
 import ReactImageMagnify from "react-image-magnify"
+import ImageExpansionModal from "../common/image-expansion-modal/image-expansion-modal"
 
 export default function Research({ gridClasses }: { gridClasses: string }) {
+    const [modalOpen, setModalOpen] = useState(false),
+        [image, setImage] = useState({})
+
+    const openModal = (image: string, alt: string, width: number, height: number) => {
+        setImage({
+            image,
+            alt,
+            height,
+            width,
+        })
+        setModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalOpen(false)
+        setImage({})
+    }
+
     return (
         <div>
+            <ImageExpansionModal {...image} onClick={closeModal} open={modalOpen} />
             <div className="w-screen" id="research">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
@@ -72,31 +93,22 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             competitors forms (inputs).
                         </p>
                     </div>
-                    <div className="relative md:hidden h-[170px] w-screen overflow-scroll ml-[-30px]">
-                        <div className="absolute w-[1280px] h-[170px]">
+                    <div className="relative md:col-span-12 h-[200px] md:h-[148px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                        <div className="hidden md:block md:absolute w-full h-[118px] left-1/2 translate-x-[-50%]">
+                            <Image
+                                className="rounded-lg"
+                                src="/benchmark.jpg"
+                                fill
+                                alt="Benchmarking timeline"
+                                onClick={() => openModal("/benchmark.jpg", "Benchmarking timeline", 4550, 610)}
+                            />
+                        </div>
+                        <div className="absolute md:hidden w-[1280px] h-[170px]">
                             <Image className="rounded-lg" src="/benchmark.jpg" fill alt="Benchmarking timeline" />
                         </div>
-                    </div>
-                    <div className="hidden md:block relative md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg">
-                        <ReactImageMagnify
-                            {...{
-                                smallImage: {
-                                    alt: "Benchmarking timeline",
-                                    src: "/benchmark.jpg",
-                                    width: 880,
-                                    height: 118,
-                                    isFluidWidth: true,
-                                },
-                                largeImage: {
-                                    src: "/benchmark.jpg",
-                                    width: 4550,
-                                    height: 610,
-                                },
-                                enlargedImagePosition: "over",
-                                isHintEnabled: true,
-                                enlargedImageClassName: "max-w-none",
-                            }}
-                        />
+                        <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
+                            Click to expand
+                        </p>
                     </div>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mt-6 pr-10 md:pr-0">
