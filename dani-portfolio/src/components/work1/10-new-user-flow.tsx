@@ -1,11 +1,46 @@
 "use client"
 
 import Image from "next/image"
+import { useState } from "react"
 import ReactImageMagnify from "react-image-magnify"
+import ImageExpansionModal from "../common/image-expansion-modal/image-expansion-modal"
+
+const defaultImage = {
+    image: "",
+    alt: "",
+    width: 0,
+    height: 0,
+}
 
 export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
+    const [modalOpen, setModalOpen] = useState(false),
+        [image, setImage] = useState(defaultImage)
+
+    const openModal = (image: string, alt: string, width: number, height: number) => {
+        setImage({
+            image,
+            alt,
+            height,
+            width,
+        })
+        setModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setModalOpen(false)
+        setImage(defaultImage)
+    }
+
     return (
         <div className="w-screen" id="definition">
+            <ImageExpansionModal
+                image={image.image}
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                onClick={closeModal}
+                open={modalOpen}
+            />
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 pr-16 md:pr-0">
@@ -17,31 +52,20 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         owner. We eliminated questions that were not necessary to quote and grouped them by topic.
                     </p>
                 </div>
-                <div className="relative md:hidden h-[456px] w-screen overflow-scroll">
-                    <div className="absolute w-[1280px] h-[456px]">
-                        <Image src="/new-flow.png" fill alt="New form flow" />
+                <div className="relative md:col-span-12 h-[486px] md:h-[330px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="hidden md:block md:absolute w-full h-[300px] left-1/2 translate-x-[-50%]">
+                        <Image
+                            className="rounded-lg"
+                            src="/new-flow.png"
+                            fill
+                            alt="New form flow"
+                            onClick={() => openModal("/new-flow.png", "New form flow", 3520, 1200)}
+                        />
                     </div>
-                </div>
-                <div className="hidden md:block relative md:col-span-12 md:overflow-visible ml-[-30px] md:ml-0">
-                    <ReactImageMagnify
-                        {...{
-                            smallImage: {
-                                alt: "National identity form flow",
-                                src: "/new-flow.png",
-                                width: 880,
-                                height: 300,
-                                isFluidWidth: true,
-                            },
-                            largeImage: {
-                                src: "/new-flow.png",
-                                width: 3520,
-                                height: 1200,
-                            },
-                            enlargedImagePosition: "over",
-                            isHintEnabled: true,
-                            enlargedImageClassName: "max-w-none bg-white",
-                        }}
-                    />
+                    <div className="absolute md:hidden w-[1280px] h-[456px]">
+                        <Image className="rounded-lg" src="/new-flow.png" fill alt="New form flow" />
+                    </div>
+                    <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 mt-4 md:mt-8 pr-16 md:pr-0">

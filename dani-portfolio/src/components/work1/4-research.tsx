@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import ReactImageMagnify from "react-image-magnify"
 import ImageExpansionModal from "../common/image-expansion-modal/image-expansion-modal"
 
 const defaultImage = {
@@ -150,8 +149,19 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             identification number), since most people know it by heart.
                         </p>
                     </div>
-                    <div className="relative md:hidden h-[456px] w-screen overflow-scroll ml-[-30px] ">
-                        <div className="absolute w-[1280px] h-[456px]">
+                    <div className="relative w-screen md:w-full overflow-scroll ml-[-30px] md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg h-[486px] md:h-[391px]">
+                        <div className="hidden md:block md:absolute w-full h-[361px] left-1/2 translate-x-[-50%]">
+                            <Image
+                                className="rounded-lg"
+                                src="/compara-quoting-flow.png"
+                                fill
+                                alt="National identity form flow"
+                                onClick={() =>
+                                    openModal("/compara-quoting-flow.png", "National identity form flow", 3520, 1320)
+                                }
+                            />
+                        </div>
+                        <div className="absolute md:hidden w-[1280px] h-[456px]">
                             <Image
                                 className="rounded-lg"
                                 src="/compara-quoting-flow.png"
@@ -159,27 +169,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 alt="National identity form flow"
                             />
                         </div>
-                    </div>
-                    <div className="hidden md:block relative md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg">
-                        <ReactImageMagnify
-                            {...{
-                                smallImage: {
-                                    alt: "National identity form flow",
-                                    src: "/compara-quoting-flow.jpg",
-                                    width: 880,
-                                    height: 361,
-                                    isFluidWidth: true,
-                                },
-                                largeImage: {
-                                    src: "/compara-quoting-flow.png",
-                                    width: 3520,
-                                    height: 1320,
-                                },
-                                enlargedImagePosition: "over",
-                                isHintEnabled: true,
-                                enlargedImageClassName: "max-w-none",
-                            }}
-                        />
+                        <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
+                            Click to expand
+                        </p>
                     </div>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 pr-10 md:pr-0">

@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import ReactImageMagnify from "react-image-magnify"
 
 export default function ImageExpansionModal({
@@ -26,7 +25,6 @@ export default function ImageExpansionModal({
             onClick={onClick}
         >
             <div className="m-auto">
-                {/* <Image className="m-auto max-w-screen" src={image} alt={alt} width={width} height={height} /> */}
                 <ReactImageMagnify
                     {...{
                         smallImage: {
@@ -41,7 +39,7 @@ export default function ImageExpansionModal({
                         },
                         enlargedImagePosition: "over",
                         isHintEnabled: false,
-                        enlargedImageClassName: "max-w-none",
+                        enlargedImageClassName: "max-w-none bg-white",
                     }}
                 />
                 <p className="text-center text-sm mt-8">Hover to zoom</p>

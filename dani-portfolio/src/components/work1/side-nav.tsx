@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useCallback, useEffect, useRef, useState } from "react"
 
 const sections = [
@@ -94,10 +95,11 @@ export default function SideNav() {
                 <div className="fixed bottom-[20px] right-[20px] md:bottom-[30px] md:right-[40px]">
                     <a
                         href="#work1"
-                        className="block shadow-md shadow-black hover:text-lightPink relative duration-1000 rounded-full bg-white h-[24px] w-[24px]"
+                        className="flex shadow-md shadow-black hover:text-lightPink relative duration-1000 rounded-full bg-white h-[40px] w-[40px]"
                     >
-                        <span className="absolute -rotate-90 right-[5px]">➜</span>
+                        <Image className="m-auto" src="/arrow.svg" width={24} height={24} alt="arrow up" />
                     </a>
+                    <p className="relative italic mt-2 text-xs left-[-12px]">Back to Top</p>
                 </div>
             )}
         </div>
