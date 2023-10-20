@@ -1,6 +1,10 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import ReactImageMagnify from "react-image-magnify"
+
+const baseClasses =
+    "fixed top-0 left-0 bg-lightGray w-screen h-screen bg-opacity-95 flex justify-center items-center z-40"
 
 export default function ImageExpansionModal({
     image,
@@ -19,15 +23,27 @@ export default function ImageExpansionModal({
 }) {
     const narrowScreen = typeof window !== "undefined" && window?.innerHeight < height,
         narrowScreenHeight = (window?.innerHeight || height) - 100,
-        narrowScreenWidth = ((window?.innerHeight || width) - 100) * (width / height)
+        narrowScreenWidth = ((window?.innerHeight || width) - 100) * (width / height),
+        [classes, setClasses] = useState("hidden" + baseClasses)
+
+    useEffect(() => {
+        if (open) {
+            setClasses(baseClasses + " animate-appear")
+            setTimeout(() => {
+                setClasses(baseClasses + " animate-none")
+            }, 250)
+        } else setClasses(baseClasses + " hidden")
+    }, [open])
+
+    const handleClosing = () => {
+        setClasses(baseClasses + " animate-disappear")
+        setTimeout(() => {
+            onClick()
+        }, 250)
+    }
 
     return (
-        <div
-            className={`${
-                open ? "fixed" : "hidden"
-            } top-0 left-0 bg-lightGray w-screen h-screen bg-opacity-90 flex justify-center items-center z-40`}
-            onClick={onClick}
-        >
+        <div className={classes} onClick={handleClosing}>
             <div className="m-auto">
                 <ReactImageMagnify
                     {...{

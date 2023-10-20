@@ -36,6 +36,8 @@ module.exports = {
             animation: {
                 "show-up": "show-up 1s ease-in-out",
                 enlarge: "enlarge 2.5s ease-in-out",
+                appear: "appear 0.25s ease-in-out",
+                disappear: "appear 0.25s ease-in-out reverse",
             },
             keyframes: {
                 "show-up": {
@@ -46,6 +48,10 @@ module.exports = {
                     "0%": { transform: "scale(0.72)" },
                     "20%": { transform: "scale(0.7)" },
                     "100%": { transform: "scale(1)" },
+                },
+                appear: {
+                    "0%": { opacity: 0, transform: "scale(0.7)" },
+                    "100%": { opacity: 1, transform: "scale(1)" },
                 },
             },
         },
