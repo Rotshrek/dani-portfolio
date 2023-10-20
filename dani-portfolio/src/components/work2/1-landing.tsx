@@ -1,10 +1,66 @@
 "use client"
 
 import Image from "next/image"
+import { CSSProperties } from "react"
 
 export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
+    const windowWidth = typeof window !== "undefined" ? window?.innerWidth : 880,
+        windowHeight = typeof window !== "undefined" ? window?.innerHeight : 620,
+        widthMultiplier = Math.ceil(windowWidth / 280),
+        heightMultiplier = Math.ceil(windowHeight / 180),
+        fishPath1 = `M${-10 * widthMultiplier} ${80 * heightMultiplier} Q ${120 * widthMultiplier} ${
+            10 * heightMultiplier
+        }, ${280 * widthMultiplier} ${80 * heightMultiplier} T ${480 * widthMultiplier} ${80 * heightMultiplier}`,
+        fishPath2 = `M${-15 * widthMultiplier} ${100 * heightMultiplier} Q ${120 * widthMultiplier} ${
+            140 * heightMultiplier
+        }, ${280 * widthMultiplier} ${120 * heightMultiplier} T ${480 * widthMultiplier} ${160 * heightMultiplier}`,
+        fishPath3 = `M${-10 * widthMultiplier} ${60 * heightMultiplier} Q ${120 * widthMultiplier} ${
+            240 * heightMultiplier
+        }, ${280 * widthMultiplier} ${80 * heightMultiplier} T ${480 * widthMultiplier} ${200 * heightMultiplier}`
+
     return (
         <div className="w-screen bg-darkPurple min-h-screen md:h-screen md:overflow-hidden" id="landing">
+            <div className="absolute w-screen h-screen top-0 left-0">
+                <Image
+                    id="fish1"
+                    className="absolute opacity-70 animate-moveOnPath relative"
+                    src={`/work2/fish.svg`}
+                    alt="fish vector"
+                    width={52}
+                    height={20}
+                    style={
+                        {
+                            "offset-path": `path("${fishPath1}")`,
+                        } as CSSProperties
+                    }
+                />
+                <Image
+                    id="fish2"
+                    className="absolute relative opacity-20 animate-[moveOnPath_18s_1s_linear_infinite]"
+                    src={`/work2/fish.svg`}
+                    alt="fish vector"
+                    width={117}
+                    height={48}
+                    style={
+                        {
+                            "offset-path": `path("${fishPath2}")`,
+                        } as CSSProperties
+                    }
+                />
+                <Image
+                    id="fish3"
+                    className="absolute relative opacity-40 animate-[moveOnPath_16s_100ms_linear_infinite]"
+                    src={`/work2/fish.svg`}
+                    alt="fish vector"
+                    width={63}
+                    height={26}
+                    style={
+                        {
+                            "offset-path": `path("${fishPath3}")`,
+                        } as CSSProperties
+                    }
+                />
+            </div>
             <div className={gridClasses + " mt-12"}>
                 <div className="md:col-span-8">
                     <p className="font-display text-green text-3xl md:text-5xl mb-4">
@@ -25,20 +81,6 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                     </p>
                 </div>
                 <div className="md:col-span-7 relative h-[300px] md:h-auto w-[300px] md:w-auto">
-                    <Image
-                        className="absolute bottom-[20px] md:bottom-[40px] left-[110px]"
-                        src={`/work2/fish.svg`}
-                        alt="fish vector"
-                        width={63}
-                        height={26}
-                    />
-                    <Image
-                        className="absolute bottom-[20px] md:bottom-[40px] left-[110px]"
-                        src={`/work2/fish.svg`}
-                        alt="fish vector"
-                        width={117}
-                        height={48}
-                    />
                     <Image
                         className="absolute -top-[20px] md:top-[-40px] left-0 md:left-[40px]"
                         src={`/work2/Biomass.svg`}

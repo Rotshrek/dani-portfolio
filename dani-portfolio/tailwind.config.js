@@ -39,6 +39,7 @@ module.exports = {
                 enlarge: "enlarge 2.5s ease-in-out",
                 appear: "appear 0.25s ease-in-out",
                 disappear: "appear 0.25s ease-in-out reverse",
+                moveOnPath: "moveOnPath 10s linear infinite",
             },
             keyframes: {
                 "show-up": {
@@ -53,6 +54,10 @@ module.exports = {
                 appear: {
                     "0%": { opacity: 0, transform: "scale(0.7)" },
                     "100%": { opacity: 1, transform: "scale(1)" },
+                },
+                moveOnPath: {
+                    "0%": { "offset-distance": "0%" },
+                    "100%": { "offset-distance": "100%" },
                 },
             },
         },
