@@ -10,20 +10,20 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
         heightMultiplier = Math.ceil(windowHeight / 180),
         fishPath1 = `M${-10 * widthMultiplier} ${80 * heightMultiplier} Q ${120 * widthMultiplier} ${
             10 * heightMultiplier
-        }, ${280 * widthMultiplier} ${80 * heightMultiplier} T ${480 * widthMultiplier} ${80 * heightMultiplier}`,
+        }, ${280 * widthMultiplier} ${80 * heightMultiplier} T ${460 * widthMultiplier} ${80 * heightMultiplier}`,
         fishPath2 = `M${-15 * widthMultiplier} ${100 * heightMultiplier} Q ${120 * widthMultiplier} ${
             140 * heightMultiplier
-        }, ${280 * widthMultiplier} ${120 * heightMultiplier} T ${480 * widthMultiplier} ${160 * heightMultiplier}`,
+        }, ${280 * widthMultiplier} ${120 * heightMultiplier} T ${460 * widthMultiplier} ${160 * heightMultiplier}`,
         fishPath3 = `M${-10 * widthMultiplier} ${60 * heightMultiplier} Q ${120 * widthMultiplier} ${
             240 * heightMultiplier
-        }, ${280 * widthMultiplier} ${80 * heightMultiplier} T ${480 * widthMultiplier} ${200 * heightMultiplier}`
+        }, ${280 * widthMultiplier} ${80 * heightMultiplier} T ${460 * widthMultiplier} ${200 * heightMultiplier}`
 
     return (
         <div className="w-screen bg-darkPurple min-h-screen md:h-screen md:overflow-hidden" id="landing">
             <div className="absolute w-screen h-screen top-0 left-0">
                 <Image
                     id="fish1"
-                    className="absolute opacity-70 animate-moveOnPath relative"
+                    className="opacity-70 animate-[moveOnPath_15s_3s_linear_infinite]"
                     src={`/work2/fish.svg`}
                     alt="fish vector"
                     width={52}
@@ -36,7 +36,7 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                 />
                 <Image
                     id="fish2"
-                    className="absolute relative opacity-20 animate-[moveOnPath_18s_1s_linear_infinite]"
+                    className="opacity-20 animate-[moveOnPath_18s_linear_infinite]"
                     src={`/work2/fish.svg`}
                     alt="fish vector"
                     width={117}
@@ -49,7 +49,7 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                 />
                 <Image
                     id="fish3"
-                    className="absolute relative opacity-40 animate-[moveOnPath_16s_100ms_linear_infinite]"
+                    className="opacity-40 animate-[moveOnPath_16s_500ms_linear_infinite]"
                     src={`/work2/fish.svg`}
                     alt="fish vector"
                     width={63}
@@ -80,23 +80,23 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                         design at NTNU. I worked side by side with three other designers. The client was Clarify.
                     </p>
                 </div>
-                <div className="md:col-span-7 relative h-[300px] md:h-auto w-[300px] md:w-auto">
+                <div className="md:col-span-7 relative">
                     <Image
-                        className="absolute -top-[20px] md:top-[-40px] left-0 md:left-[40px]"
+                        className="md:absolute m-auto md:top-[-40px] md:left-[40px]"
                         src={`/work2/Biomass.svg`}
                         alt="Fish weight and mortality indicators"
                         width={120}
                         height={120}
                     />
                     <Image
-                        className="absolute top-[20px] md:top-[-20px] right-0"
+                        className="md:absolute m-auto md:top-[-20px] md:right-0"
                         src={`/work2/Feeding.svg`}
                         alt="Fish feeding rate graph"
                         width={252}
                         height={119}
                     />
                     <Image
-                        className="absolute left-[20px] md:left-[80px] bottom-0 md:bottom-[-60px]"
+                        className="md:absolute m-auto md:left-[80px] md:bottom-[-60px]"
                         src={`/work2/Temperature.svg`}
                         alt="Sea temperature indicators"
                         width={252}
