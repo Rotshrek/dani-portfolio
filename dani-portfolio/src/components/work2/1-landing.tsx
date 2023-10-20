@@ -20,8 +20,8 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                     </p>
                     <p className="text-white mb-2 mt-12 text-lg font-bold">My Role</p>
                     <p className="text-white">
-                        I was a team member. This was an academic project for the master's program in interaction design
-                        at NTNU. I worked side by side with three other designers. The client was Clarify.
+                        I was a team member. This was an academic project for the master&apos;s program in interaction
+                        design at NTNU. I worked side by side with three other designers. The client was Clarify.
                     </p>
                 </div>
                 <div className="md:col-span-7 relative h-[300px] md:h-auto w-[300px] md:w-auto">

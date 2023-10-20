@@ -14,22 +14,23 @@ export default function DesignProcess({ gridClasses }: { gridClasses: string }) 
                     </p>
                     <ol className="text-md list-disc pl-6 mb-10">
                         <li>
-                            <strong>Understanding the project:</strong> We conducted desk research to gain an initial understanding of
-                            the industry and its challenges. We also conducted interviews with users to get a deep
-                            understanding of their needs, pain points, and behaviors.
+                            <strong>Understanding the project:</strong> We conducted desk research to gain an initial
+                            understanding of the industry and its challenges. We also conducted interviews with users to
+                            get a deep understanding of their needs, pain points, and behaviors.
                         </li>
                         <li>
-                            <strong>Synthesizing the insights:</strong> We analyzed the data gathered from the research and identified
-                            key themes and opportunities. This helped us to define the problem that we were trying to
-                            solve with the app.
+                            <strong>Synthesizing the insights:</strong> We analyzed the data gathered from the research
+                            and identified key themes and opportunities. This helped us to define the problem that we
+                            were trying to solve with the app.
                         </li>
                         <li>
-                            <strong>Prototyping:</strong> We created low-fidelity and high-fidelity prototypes of the app to gather
-                            feedback.
+                            <strong>Prototyping:</strong> We created low-fidelity and high-fidelity prototypes of the
+                            app to gather feedback.
                         </li>
                         <li>
-                            <strong>Iterating on the prototype:</strong> We iterated on the prototype based on the feedback we received
-                            from users. We made changes to the design, functionality, and features of the app.
+                            <strong>Iterating on the prototype:</strong> We iterated on the prototype based on the
+                            feedback we received from users. We made changes to the design, functionality, and features
+                            of the app.
                         </li>
                     </ol>
                     <Image

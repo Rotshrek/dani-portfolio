@@ -11,16 +11,16 @@ export default function Context({ gridClasses }: { gridClasses: string }) {
                     <p className="text-3xl mb-10 text-center font-bold">Context</p>
                     <ol className="text-md list-disc pl-6 mb-10">
                         <li>
-                            Clarify's platform <strong>indexes and visualizes data points in a timeline</strong> primarily using line
-                            graphs.
+                            Clarify&apos;s platform <strong>indexes and visualizes data points in a timeline</strong>{" "}
+                            primarily using line graphs.
                         </li>
                         <li>
-                            These line graphs are effective for <strong>comparing current and past data</strong>, reviewing specific data
-                            points, and predicting future data trends.
+                            These line graphs are effective for <strong>comparing current and past data</strong>,
+                            reviewing specific data points, and predicting future data trends.
                         </li>
                         <li>
-                            Compounding data from multiple sources can <strong>make the overview complex and challenging to
-                            interpret.</strong>
+                            Compounding data from multiple sources can{" "}
+                            <strong>make the overview complex and challenging to interpret.</strong>
                         </li>
                         <li>
                             Several customers in the aquaculture industry rely on Clarify for shared awareness of farm
