@@ -22,6 +22,7 @@ module.exports = {
             lighterPurple: "#D6DBF6",
             lightGray: "#F6F6F6",
             gray: "#E7E7E7",
+            green: "#04EC6F",
         },
         fontFamily: {
             sans: ["var(--font-open_sans)"],

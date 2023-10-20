@@ -1,6 +1,6 @@
 import "./globals.css"
 import { Open_Sans, Scope_One, Bevan } from "next/font/google"
-import Navbar from "@/components/navbar"
+import Navbar from "@/components/common/navbar"
 
 const open_sans = Open_Sans({ subsets: ["latin"], variable: "--font-open_sans", weight: ["400", "700"] })
 const scope_one = Scope_One({ subsets: ["latin"], variable: "--font-scope_one", weight: "400" })

@@ -54,13 +54,13 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                         </p>
                         <Image
                             className="my-10 rounded-lg"
-                            src="/usability-testing.jpg"
+                            src="/work1/usability-testing.jpg"
                             width={577}
                             height={267}
                             alt="Compara online website"
                         />
                         <video className="m-auto mb-8 rounded-lg" autoPlay muted loop width={880} height={524}>
-                            <source src="/usability-test-video.mov" type="video/mp4" />
+                            <source src="/work1/usability-test-video.mov" type="video/mp4" />
                         </video>
                         <p className="text-md mb-2 font-bold">Test goals:</p>
                         <ol className="text-md list-disc pl-6 list-decimal">
@@ -96,7 +96,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                     <div className="md:col-span-7">
                         <div className="flex items-center justify-center">
                             <div>
-                                <Image src="/face3.png" width={66} height={66} alt="face of a participant" />
+                                <Image src="/work1/face3.png" width={66} height={66} alt="face of a participant" />
                             </div>
 
                             <div>
@@ -114,7 +114,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                     <div className="md:col-span-5 mt-2">
                         <div className="flex items-center justify-center">
                             <div>
-                                <Image src="/face4.png" width={66} height={66} alt="face of a participant" />
+                                <Image src="/work1/face4.png" width={66} height={66} alt="face of a participant" />
                             </div>
 
                             <div>

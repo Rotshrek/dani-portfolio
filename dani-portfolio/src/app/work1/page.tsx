@@ -10,7 +10,7 @@ import NewSurvey from "@/components/work1/9-new-survey"
 import SomethingUnexpected from "@/components/work1/8-something-unexpected"
 import TakeAway from "@/components/work1/11-take-away"
 import UsabilityTest from "@/components/work1/6-usability-test"
-import BottomNav from "@/components/bottom-nav"
+import BottomNav from "@/components/common/bottom-nav"
 import Context from "@/components/work1/2-context"
 import SideNav from "@/components/work1/side-nav"
 
@@ -18,19 +18,21 @@ const gridClasses = "grid md:grid-cols-12 gap-8 max-w-[880px] h-full m-auto px-8
 
 export default function Work1() {
     return (
-        <main className="overflow-hidden relative bg-lightGray">
+        <main className="overflow-hidden relative">
             <SideNav />
             <Work1Landing gridClasses={gridClasses} />
-            <Context gridClasses={gridClasses} />
-            <DesignProcess gridClasses={gridClasses} />
-            <Research gridClasses={gridClasses} />
-            <DesignRecommendation />
-            <UsabilityTest gridClasses={gridClasses} />
-            <DesignRecommendation2 />
-            <SomethingUnexpected gridClasses={gridClasses} />
-            <NewSurvey gridClasses={gridClasses} />
-            <NewUserFlow gridClasses={gridClasses} />
-            <TakeAway gridClasses={gridClasses} />
+            <div className="bg-lightGray">
+                <Context gridClasses={gridClasses} />
+                <DesignProcess gridClasses={gridClasses} />
+                <Research gridClasses={gridClasses} />
+                <DesignRecommendation />
+                <UsabilityTest gridClasses={gridClasses} />
+                <DesignRecommendation2 />
+                <SomethingUnexpected gridClasses={gridClasses} />
+                <NewSurvey gridClasses={gridClasses} />
+                <NewUserFlow gridClasses={gridClasses} />
+                <TakeAway gridClasses={gridClasses} />
+            </div>
             <BottomNav />
         </main>
     )

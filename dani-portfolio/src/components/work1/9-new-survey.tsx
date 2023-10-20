@@ -76,7 +76,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-6">
                         <Image
                             className="md:my-10 rounded-lg"
-                            src="/old-flow-survey.svg"
+                            src="/work1/old-flow-survey.svg"
                             width={500}
                             height={533}
                             alt="Old Compara online website and words to describe it: Boring, simple, generic, mistrust"
@@ -85,7 +85,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-6">
                         <Image
                             className="md:my-10 rounded-lg"
-                            src="/new-flow-survey.svg"
+                            src="/work1/new-flow-survey.svg"
                             width={500}
                             height={533}
                             alt="New Compara online website and words to describe it: Pleasant, secure, cheerful, clear"

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
     return (
-        <div className="w-screen bg-darkPurple min-h-screen md:h-screen md:overflow-hidden" id="work1">
+        <div className="w-screen bg-darkPurple min-h-screen md:h-screen md:overflow-hidden" id="landing">
             <div className={gridClasses + " mt-12"}>
                 <div className="md:col-span-8">
                     <p className="font-display text-lightPurple text-3xl md:text-5xl mb-4">
@@ -27,28 +27,28 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                 <div className="md:col-span-7 relative h-[300px] md:h-auto w-[300px] md:w-auto">
                     <Image
                         className="absolute bottom-0 md:bottom-[20px] right-[-20px]"
-                        src={`/cloud.png`}
+                        src={`/work1/cloud.png`}
                         alt="cloud outline"
                         width={5020}
                         height={200}
                     />
                     <Image
-                        className="absolute bottom-[120px] md:bottom-[120px] md:bottom-[80px] right-[-60px] md:right-[-20px]"
-                        src={`/screen.png`}
+                        className="absolute bottom-[120px] md:bottom-[80px] right-[-60px] md:right-[-20px]"
+                        src={`/work1/screen.png`}
                         alt="computer screen showing the Compara website"
                         width={360}
                         height={200}
                     />
                     <Image
                         className="absolute left-0 bottom-[40px] md:bottom-[90px]"
-                        src={`/ipad.png`}
+                        src={`/work1/ipad.png`}
                         alt="ipad screen showing the Compara website"
                         width={144}
                         height={200}
                     />
                     <Image
                         className="absolute bottom-[20px] md:bottom-[40px] left-[110px]"
-                        src={`/iphone.png`}
+                        src={`/work1/iphone.png`}
                         alt="iphone screen showing the Compara website"
                         width={82}
                         height={160}

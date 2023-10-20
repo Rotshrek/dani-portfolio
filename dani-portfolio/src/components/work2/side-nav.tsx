@@ -12,22 +12,22 @@ const sections = [
         id: "design-process",
         text: "Design Process",
     },
-    {
-        id: "research",
-        text: "Research",
-    },
-    {
-        id: "iteration",
-        text: "Iteration",
-    },
-    {
-        id: "definition",
-        text: "Definition",
-    },
-    {
-        id: "take-away",
-        text: "Take Away",
-    },
+    // {
+    //     id: "research",
+    //     text: "Research",
+    // },
+    // {
+    //     id: "iteration",
+    //     text: "Iteration",
+    // },
+    // {
+    //     id: "definition",
+    //     text: "Definition",
+    // },
+    // {
+    //     id: "take-away",
+    //     text: "Take Away",
+    // },
 ]
 
 function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrollY: number; index: number }) {

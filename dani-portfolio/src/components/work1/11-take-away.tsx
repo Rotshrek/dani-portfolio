@@ -49,7 +49,7 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-12">
                         <Image
                             className="rounded-lg"
-                            src="/compara-after.png"
+                            src="/work1/compara-after.png"
                             width={879}
                             height={641}
                             alt="Compara online website"

@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import ImageExpansionModal from "../common/image-expansion-modal/image-expansion-modal"
+import ImageExpansionModal from "../common/image-expansion-modal"
 
 const defaultImage = {
     image: "",
@@ -54,7 +54,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-4 md:mt-8">
                         <Image
                             className="m-auto"
-                            src="/unclear-information.svg"
+                            src="/work1/unclear-information.svg"
                             width={276}
                             height={200}
                             alt="diagram about unclear information"
@@ -67,7 +67,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-4">
                         <Image
                             className="m-auto"
-                            src="/data-entry-issues.svg"
+                            src="/work1/data-entry-issues.svg"
                             width={276}
                             height={200}
                             alt="diagram about data entry issues"
@@ -80,7 +80,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-4 md:mt-8">
                         <Image
                             className="m-auto"
-                            src="/insurance-selection.svg"
+                            src="/work1/insurance-selection.svg"
                             width={276}
                             height={200}
                             alt="diagram about insurance slection"
@@ -110,14 +110,14 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         <div className="hidden md:block md:absolute w-full h-[118px] left-1/2 translate-x-[-50%]">
                             <Image
                                 className="rounded-lg"
-                                src="/benchmark.jpg"
+                                src="/work1/benchmark.jpg"
                                 fill
                                 alt="Benchmarking timeline"
-                                onClick={() => openModal("/benchmark.jpg", "Benchmarking timeline", 4550, 610)}
+                                onClick={() => openModal("/work1/benchmark.jpg", "Benchmarking timeline", 4550, 610)}
                             />
                         </div>
                         <div className="absolute md:hidden w-[1280px] h-[170px]">
-                            <Image className="rounded-lg" src="/benchmark.jpg" fill alt="Benchmarking timeline" />
+                            <Image className="rounded-lg" src="/work1/benchmark.jpg" fill alt="Benchmarking timeline" />
                         </div>
                         <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
                             Click to expand
@@ -153,18 +153,23 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         <div className="hidden md:block md:absolute w-full h-[361px] left-1/2 translate-x-[-50%]">
                             <Image
                                 className="rounded-lg"
-                                src="/compara-quoting-flow.png"
+                                src="/work1/compara-quoting-flow.png"
                                 fill
                                 alt="National identity form flow"
                                 onClick={() =>
-                                    openModal("/compara-quoting-flow.png", "National identity form flow", 3520, 1320)
+                                    openModal(
+                                        "/work1/compara-quoting-flow.png",
+                                        "National identity form flow",
+                                        3520,
+                                        1320
+                                    )
                                 }
                             />
                         </div>
                         <div className="absolute md:hidden w-[1280px] h-[456px]">
                             <Image
                                 className="rounded-lg"
-                                src="/compara-quoting-flow.png"
+                                src="/work1/compara-quoting-flow.png"
                                 fill
                                 alt="National identity form flow"
                             />
@@ -182,7 +187,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             preferred to quote.
                         </p>
                         <Image
-                            src="/survey-results.svg"
+                            src="/work1/survey-results.svg"
                             className="m-auto"
                             width={580}
                             height={280}
@@ -196,7 +201,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-5 mt-8">
                         <div className="flex items-center md:justify-center">
                             <div>
-                                <Image src="/face1.png" width={66} height={66} alt="face of a participant" />
+                                <Image src="/work1/face1.png" width={66} height={66} alt="face of a participant" />
                             </div>
 
                             <div>
@@ -211,7 +216,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="md:col-span-7 mt-8">
                         <div className="flex items-center md:justify-center">
                             <div>
-                                <Image src="/face2.png" width={66} height={66} alt="face of a participant" />
+                                <Image src="/work1/face2.png" width={66} height={66} alt="face of a participant" />
                             </div>
 
                             <div>

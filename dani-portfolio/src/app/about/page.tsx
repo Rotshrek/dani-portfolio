@@ -1,6 +1,6 @@
 "use client"
 
-import BottomNav from "@/components/bottom-nav"
+import BottomNav from "@/components/common/bottom-nav"
 import Image from "next/image"
 
 export default function About() {

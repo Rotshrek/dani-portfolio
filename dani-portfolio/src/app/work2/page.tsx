@@ -1,9 +1,23 @@
 "use client"
 
+import BottomNav from "@/components/common/bottom-nav"
+import Work1Landing from "@/components/work2/1-landing"
+import Context from "@/components/work2/2-context"
+import DesignProcess from "@/components/work2/3-design-process"
+import SideNav from "@/components/work2/side-nav"
+
+const gridClasses = "grid md:grid-cols-12 gap-8 max-w-[880px] h-full m-auto px-8 py-12 md:px-0 md:py-16 auto-rows-min"
+
 export default function Work2() {
     return (
-        <main className="bg-gradient-to-b from-pink to-darkPurple flex h-screen">
-            <p>Work 2</p>
+        <main className="overflow-hidden relative">
+            <SideNav />
+            <div className="bg-lightGray">
+                <Work1Landing gridClasses={gridClasses} />
+                <Context gridClasses={gridClasses} />
+                <DesignProcess gridClasses={gridClasses} />
+            </div>
+            <BottomNav />
         </main>
     )
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import BottomNav from "@/components/bottom-nav"
+import BottomNav from "@/components/common/bottom-nav"
 import BackgroundStars from "@/components/home/background-stars"
 import Clouds from "@/components/home/clouds"
 import NameCard from "@/components/home/name-card"

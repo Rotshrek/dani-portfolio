@@ -8,14 +8,14 @@ export default function DesignRecommendation2() {
             <div className="relative w-3/4 min-w-[320px] max-w-[572px] m-auto">
                 <Image
                     className="absolute top-[-60px] right-[-180px] z-0"
-                    src="/blue-cloud-outline.svg"
+                    src="/work1/blue-cloud-outline.svg"
                     width={490}
                     height={190}
                     alt="blue cloud outline"
                 />
                 <Image
                     className="absolute bottom-[-40px] left-[-100px] z-0"
-                    src="/pink-cloud.svg"
+                    src="/work1/pink-cloud.svg"
                     width={220}
                     height={100}
                     alt="pink cloud"

@@ -16,7 +16,7 @@ export default function DesignProcess({ gridClasses }: { gridClasses: string }) 
                     </p>
                     <Image
                         className="m-auto rounded-lg"
-                        src="/design-process.png"
+                        src="/work1/design-process.png"
                         width={768}
                         height={468}
                         alt="design process from discovery to define to ideate to delivery"

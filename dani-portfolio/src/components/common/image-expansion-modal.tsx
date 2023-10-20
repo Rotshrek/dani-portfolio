@@ -22,8 +22,8 @@ export default function ImageExpansionModal({
     height: number
 }) {
     const narrowScreen = typeof window !== "undefined" && window?.innerHeight < height,
-        narrowScreenHeight = (window?.innerHeight || height) - 100,
-        narrowScreenWidth = ((window?.innerHeight || width) - 100) * (width / height),
+        narrowScreenHeight = (narrowScreen ? window?.innerHeight : height) - 100,
+        narrowScreenWidth = ((narrowScreen ? window?.innerHeight : width) - 100) * (width / height),
         [classes, setClasses] = useState("hidden" + baseClasses)
 
     useEffect(() => {

@@ -23,7 +23,7 @@ export default function Context({ gridClasses }: { gridClasses: string }) {
                     </ol>
                     <Image
                         className="m-auto rounded-lg"
-                        src="/context.png"
+                        src="/work1/context.png"
                         width={574}
                         height={346}
                         alt="Compara online screen"

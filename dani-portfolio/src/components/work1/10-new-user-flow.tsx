@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import ReactImageMagnify from "react-image-magnify"
-import ImageExpansionModal from "../common/image-expansion-modal/image-expansion-modal"
+import ImageExpansionModal from "../common/image-expansion-modal"
 
 const defaultImage = {
     image: "",
@@ -56,14 +56,14 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     <div className="hidden md:block md:absolute w-full h-[300px] left-1/2 translate-x-[-50%]">
                         <Image
                             className="rounded-lg"
-                            src="/new-flow.png"
+                            src="/work1/new-flow.png"
                             fill
                             alt="New form flow"
-                            onClick={() => openModal("/new-flow.png", "New form flow", 3520, 1200)}
+                            onClick={() => openModal("/work1/new-flow.png", "New form flow", 3520, 1200)}
                         />
                     </div>
                     <div className="absolute md:hidden w-[1280px] h-[456px]">
-                        <Image className="rounded-lg" src="/new-flow.png" fill alt="New form flow" />
+                        <Image className="rounded-lg" src="/work1/new-flow.png" fill alt="New form flow" />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
@@ -80,15 +80,15 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     <div className="hidden md:block m-auto">
                         <Image
                             className="rounded-lg"
-                            src="/new-inputs.png"
+                            src="/work1/new-inputs.png"
                             width={880}
                             height={668}
                             alt="New types of text inputs"
-                            onClick={() => openModal("/new-inputs.png", "New types of text inputs", 2640, 2005)}
+                            onClick={() => openModal("/work1/new-inputs.png", "New types of text inputs", 2640, 2005)}
                         />
                     </div>
                     <div className="absolute md:hidden w-[880px] h-[668px]">
-                        <Image className="rounded-lg" src="/new-inputs.png" fill alt="New types of text inputs" />
+                        <Image className="rounded-lg" src="/work1/new-inputs.png" fill alt="New types of text inputs" />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
@@ -109,14 +109,14 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     <div className="hidden md:block md:absolute w-[880px] h-[509px] left-1/2 translate-x-[-50%]">
                         <Image
                             className="rounded-lg"
-                            src="/handoff.png"
+                            src="/work1/handoff.png"
                             fill
                             alt="Handoff to development"
-                            onClick={() => openModal("/handoff.png", "Handoff to development", 1760, 1019)}
+                            onClick={() => openModal("/work1/handoff.png", "Handoff to development", 1760, 1019)}
                         />
                     </div>
                     <div className="absolute md:hidden w-[880px] h-[509px]">
-                        <Image className="rounded-lg" src="/handoff.png" fill alt="Handoff to development" />
+                        <Image className="rounded-lg" src="/work1/handoff.png" fill alt="Handoff to development" />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
