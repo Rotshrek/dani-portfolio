@@ -76,20 +76,21 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         loading, among others.
                     </p>
                 </div>
-                <div className="md:col-span-3 hidden md:block" />
-                <div className="md:col-span-6 mt-8 pr-16 md:pr-0">
-                    <Image
-                        className="rounded-lg"
-                        src="/new-inputs-small.png"
-                        height={228}
-                        width={445}
-                        alt="New types of text inputs for forms"
-                    />
-                </div>
-                <div className="relative md:col-span-12 h-[403px] md:h-[310px] hidden md:block">
-                    <div className="md:absolute md:w-full h-[403px] md:h-[310px] md:left-1/2 md:translate-x-[-50%]">
-                        <Image src="/new-inputs-details.png" fill alt="Details on new types of text inputs" />
+                <div className="relative md:col-span-12 h-[698px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="hidden md:block m-auto">
+                        <Image
+                            className="rounded-lg"
+                            src="/new-inputs.png"
+                            width={880}
+                            height={668}
+                            alt="New types of text inputs"
+                            onClick={() => openModal("/new-inputs.png", "New types of text inputs", 2640, 2005)}
+                        />
                     </div>
+                    <div className="absolute md:hidden w-[880px] h-[668px]">
+                        <Image className="rounded-lg" src="/new-inputs.png" fill alt="New types of text inputs" />
+                    </div>
+                    <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 md:mt-8 pr-16 md:pr-0">
@@ -104,14 +105,20 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         need to build de form in one single place.
                     </p>
                 </div>
-                <div className="md:col-span-12 pr-16 md:pr-0">
-                    <Image
-                        className="m-auto rounded-lg"
-                        src="/handoff.jpg"
-                        height={508}
-                        width={879}
-                        alt="Handoff to development"
-                    />
+                <div className="relative md:col-span-12 h-[539px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="hidden md:block md:absolute w-[880px] h-[509px] left-1/2 translate-x-[-50%]">
+                        <Image
+                            className="rounded-lg"
+                            src="/handoff.png"
+                            fill
+                            alt="Handoff to development"
+                            onClick={() => openModal("/handoff.png", "Handoff to development", 1760, 1019)}
+                        />
+                    </div>
+                    <div className="absolute md:hidden w-[880px] h-[509px]">
+                        <Image className="rounded-lg" src="/handoff.png" fill alt="Handoff to development" />
+                    </div>
+                    <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
                 <div className="md:col-span-12 text-right pr-16 md:pr-0">
                     <a

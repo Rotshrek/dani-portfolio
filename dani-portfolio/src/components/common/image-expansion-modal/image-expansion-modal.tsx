@@ -17,6 +17,10 @@ export default function ImageExpansionModal({
     width: number
     height: number
 }) {
+    const narrowScreen = typeof window !== "undefined" && window?.innerHeight < height,
+        narrowScreenHeight = (window?.innerHeight || height) - 100,
+        narrowScreenWidth = ((window?.innerHeight || width) - 100) * (width / height)
+
     return (
         <div
             className={`${
@@ -30,7 +34,9 @@ export default function ImageExpansionModal({
                         smallImage: {
                             alt: alt,
                             src: image,
-                            isFluidWidth: true,
+                            isFluidWidth: !narrowScreen,
+                            width: narrowScreen ? narrowScreenWidth : width,
+                            height: narrowScreen ? narrowScreenHeight : height,
                         },
                         largeImage: {
                             src: image,
