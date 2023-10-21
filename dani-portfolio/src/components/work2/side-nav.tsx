@@ -12,10 +12,10 @@ const sections = [
         id: "design-process",
         text: "Design Process",
     },
-    // {
-    //     id: "research",
-    //     text: "Research",
-    // },
+    {
+        id: "research",
+        text: "Research",
+    },
     // {
     //     id: "iteration",
     //     text: "Iteration",
@@ -86,7 +86,7 @@ export default function SideNav() {
     }, [])
 
     return (
-        <div className="fixed top-[200px] left-[calc(50vw-630px)]">
+        <div className="fixed top-[200px] left-[calc(50vw-630px)] z-50">
             <p className={`hidden xl:block italic mb-2 text-sm duration-1000 ${textColor}`}>On this page</p>
             {sections.map(({ id, text }, index) => (
                 <NavElem key={id} id={id} text={text} scrollY={scrollY} index={index} />
