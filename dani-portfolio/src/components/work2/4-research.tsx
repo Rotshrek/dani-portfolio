@@ -3,6 +3,10 @@
 import Image from "next/image"
 import { useState } from "react"
 import ImageExpansionModal from "../common/image-expansion-modal"
+import Iteration1 from "./4.1-iteration1"
+import Iteration2 from "./4.2-iteration2"
+import Iteration3 from "./4.3-iteration3"
+import Iteration4 from "./4.4-iteration4"
 
 const defaultImage = {
     image: "",
@@ -31,7 +35,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
     }
 
     return (
-        <div>
+        <div id="research">
             <ImageExpansionModal
                 image={image.image}
                 alt={image.alt}
@@ -40,11 +44,11 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                 onClick={closeModal}
                 open={modalOpen}
             />
-            <div className="w-screen" id="research">
+            <div className="w-screen">
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mb-8">
-                        <p className="font-bold text-3xl mb-10 text-center">Research</p>
+                        <p className="font-bold text-3xl mb-10 text-center">Research and Ideation</p>
                         <p className="font-bold text-2xl mb-2">Stakeholder map</p>
                         <p className="text-md mb-6">
                             We created a stakeholder map to ensure that we take into account and meet the needs of
@@ -74,10 +78,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             alt="Stakeholder map"
                         />
                     </div>
-                </div>
-            </div>
-            <div className="w-screen">
-                <div className={gridClasses + " md:gap-y-6"}>
+                    <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-6">User Personas</p>
@@ -156,6 +157,39 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
                             Secondary user persona profile
                         </p>
+                    </div>
+
+                    <Iteration1 />
+                    <Iteration2 />
+                    <Iteration3 />
+                    <Iteration4 />
+
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="md:col-span-2 hidden md:block" />
+                    <div className="pr-10 md:pr-0 md:col-span-8">
+                        <p className="font-bold text-2xl mb-6">UI references and inspiration</p>
+                        <p className="text-md mb-6">
+                            Before proceeding to the final prototyping phase, we familiarized ourselves with widget
+                            guidelines and gathered examples to ensure design consistency
+                        </p>
+                    </div>
+                    <div className="relative md:col-span-12 h-[889px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                        <div className="hidden md:block md:absolute w-[1342px] h-[889px] left-1/2 translate-x-[-50%]">
+                            <Image
+                                className="rounded-lg"
+                                src="/work2/ui-references.png"
+                                fill
+                                alt="UI references and inspiration"
+                            />
+                        </div>
+                        <div className="absolute md:hidden w-[1342px] h-[889px]">
+                            <Image
+                                className="rounded-lg"
+                                src="/work2/ui-references.png"
+                                fill
+                                alt="UI references and inspiration"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

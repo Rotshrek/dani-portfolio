@@ -14,7 +14,7 @@ const sections = [
     },
     {
         id: "research",
-        text: "Research",
+        text: "Research & Ideation",
     },
     // {
     //     id: "iteration",
@@ -36,7 +36,11 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
         active = scrollY > upperBound && scrollY < lowerBound,
         ref = useRef<HTMLAnchorElement>(null),
         deviceHeight = typeof window !== "undefined" ? window.innerHeight : 700,
-        textColor = scrollY > deviceHeight - 220 - (ref.current?.offsetTop || 0) ? "text-purple" : "text-white"
+        textColor = active
+            ? "text-green"
+            : scrollY > deviceHeight - 220 - (ref.current?.offsetTop || 0)
+            ? "text-purple"
+            : "text-white"
 
     useEffect(() => {
         if (typeof document !== "undefined") {
@@ -56,7 +60,7 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
         <a
             ref={ref}
             href={`#${id}`}
-            className={`block hover:text-lightPink px-4 py-2 relative duration-1000 ${textColor} ${
+            className={`block hover:text-green px-4 py-2 relative duration-1000 ${textColor} ${
                 active ? "font-bold ml-4 text-lg" : "font-normal"
             }`}
         >
