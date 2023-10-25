@@ -39,7 +39,7 @@ export default function Navbar() {
                 setOpenWorksDropdown(false)
             }, 250)
         },
-        handleWorksDropdown = (e) => {
+        handleWorksDropdown = (e: React.MouseEvent<HTMLInputElement>) => {
             e.stopPropagation()
             if (openWorksDropdown) handleCloseDropDown()
             else handleOpenDropDown()
