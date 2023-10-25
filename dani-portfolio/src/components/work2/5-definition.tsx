@@ -52,7 +52,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         </p>
                     </div>
 
-                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
                         <div className="relative md:col-span-12 h-[889px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                             <div className="hidden md:block md:absolute w-[1342px] h-[889px] left-1/2 translate-x-[-50%]">
                                 <Image
@@ -105,7 +105,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-2">Biology data</p>
                     </div>
-                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
                         <div className="relative h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                             <div className="hidden md:block md:absolute w-[883px] h-[375px] left-1/2 translate-x-[-50%]">
                                 <Image
@@ -130,7 +130,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-2">Feeding data</p>
                     </div>
-                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
                         <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                             <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
                                 <Image
@@ -155,7 +155,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-2">Environmental data</p>
                     </div>
-                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
                         <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                             <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
                                 <Image

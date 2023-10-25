@@ -19,14 +19,31 @@ const sections = [
     {
         id: "definition",
         text: "Definition",
+        offset: 1000,
     },
     {
         id: "take-away",
         text: "Take Away",
+        color: true,
+        offset: 2300,
     },
 ]
 
-function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrollY: number; index: number }) {
+function NavElem({
+    id,
+    text,
+    scrollY,
+    index,
+    lastSectionY,
+    setLastSectionY,
+}: {
+    id: string
+    text: string
+    scrollY: number
+    index: number
+    lastSectionY: number
+    setLastSectionY: (y: number) => void
+}) {
     const [upperBound, setUpperBound] = useState(0),
         [lowerBound, setLowerBound] = useState(0),
         active = scrollY > upperBound && scrollY < lowerBound,
@@ -34,7 +51,8 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
         deviceHeight = typeof window !== "undefined" ? window.innerHeight : 700,
         textColor = active
             ? "text-green"
-            : scrollY > deviceHeight - 220 - (ref.current?.offsetTop || 0)
+            : scrollY > deviceHeight - 220 - (ref.current?.offsetTop || 0) &&
+              scrollY < lastSectionY + 360 - (ref.current?.offsetTop || 0)
             ? "text-purple"
             : "text-white"
 
@@ -45,10 +63,13 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
 
             if (nextSection) {
                 const { offsetTop: nextOffsetTop } = nextSection
-                setLowerBound(nextOffsetTop - 400 * index)
-            } else setLowerBound(offsetTop + offsetHeight - 1060)
+                setLowerBound(nextOffsetTop - 200 - (sections[index + 1]?.offset || 0))
+            } else {
+                setLastSectionY(offsetTop - 200 - (sections[index]?.offset || 0))
+                setLowerBound(offsetTop + offsetHeight - 1060)
+            }
 
-            setUpperBound(offsetTop - 400 * index)
+            setUpperBound(offsetTop - 200 - (sections[index]?.offset || 0))
         }
     }, [])
 
@@ -67,9 +88,14 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
 
 export default function SideNav() {
     const [scrollY, setScrollY] = useState(0),
+        [lastSectionY, setLastSectionY] = useState(0),
         ref = useRef<HTMLAnchorElement>(null),
         deviceHeight = typeof window !== "undefined" ? window.innerHeight : 700,
-        textColor = scrollY > deviceHeight - 240 - (ref.current?.offsetTop || 0) ? "text-purple" : "text-white"
+        textColor =
+            scrollY > deviceHeight - 240 - (ref.current?.offsetTop || 0) &&
+            scrollY < lastSectionY + 360 - (ref.current?.offsetTop || 0)
+                ? "text-purple"
+                : "text-white"
 
     const onScroll = useCallback(() => {
         if (typeof window !== "undefined") {
@@ -89,7 +115,15 @@ export default function SideNav() {
         <div className="fixed top-[200px] left-[calc(50vw-630px)] z-50">
             <p className={`hidden xl:block italic mb-2 text-sm duration-1000 ${textColor}`}>On this page</p>
             {sections.map(({ id, text }, index) => (
-                <NavElem key={id} id={id} text={text} scrollY={scrollY} index={index} />
+                <NavElem
+                    key={id}
+                    id={id}
+                    text={text}
+                    scrollY={scrollY}
+                    index={index}
+                    lastSectionY={lastSectionY}
+                    setLastSectionY={setLastSectionY}
+                />
             ))}
             {scrollY > deviceHeight && (
                 <div className="fixed bottom-[20px] right-[20px] md:bottom-[30px] md:right-[40px]">

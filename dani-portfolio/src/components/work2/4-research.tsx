@@ -92,7 +92,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             gathered from user interviews.
                         </p>
                     </div>
-                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
                         <div className="relative h-[523px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
                             <div className="hidden md:block md:absolute w-full h-[493px] left-1/2 translate-x-[-50%]">
                                 <Image
