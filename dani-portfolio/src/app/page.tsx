@@ -12,9 +12,9 @@ export default function Home() {
     return (
         <main>
             <div className="bg-gradient-to-b from-pink to-darkPurple flex h-screen w-screen">
-                {/* <BackgroundStars />
+                <BackgroundStars />
                 <Clouds />
-                <NameCard /> */}
+                <NameCard />
             </div>
             <Work1 />
             <Work2 />

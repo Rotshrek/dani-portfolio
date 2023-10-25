@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 const baseClasses =
-    "hidden md:block absolute bg-darkPurple rounded-lg py-4 px-4 mt-2 z-[100] top-20 right-2 duration-1000 opacity-100"
+    "invisible md:visible absolute bg-darkPurple rounded-lg py-4 px-4 mt-2 z-[100] top-20 right-2 duration-1000 opacity-100"
 
 export default function Navbar() {
     const [openMenu, setOpenMenu] = useState(false),
