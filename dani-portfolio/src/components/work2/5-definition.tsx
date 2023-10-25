@@ -78,9 +78,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         <div className="mb-10">
                             <p className="text-md text-2xl font-bold mb-2">App Concept</p>
                             <p className="text-md mb-6">
-                                We also designed a &lsquo;Dashboard&rsquo; page in the existing App. It house all the widgets we
-                                created. In this concept, users can swipe through different fish pens, similar to a
-                                weather app.
+                                We also designed a &lsquo;Dashboard&rsquo; page in the existing App. It house all the
+                                widgets we created. In this concept, users can swipe through different fish pens,
+                                similar to a weather app.
                             </p>
                             <Image
                                 className="m-auto"
