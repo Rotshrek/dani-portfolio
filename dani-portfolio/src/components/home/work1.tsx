@@ -21,7 +21,7 @@ export default function Work1() {
                             </p>
                             <a
                                 href="/work1"
-                                className="inline-block rounded-full px-5 py-4 font-bold bg-brightPink text-white"
+                                className="inline-block rounded-full px-5 py-4 font-bold bg-brightPink text-white hover:bg-darkPink duration-1000"
                             >
                                 See project
                                 <span className="ml-3">{">"}</span>

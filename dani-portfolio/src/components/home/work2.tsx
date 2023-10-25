@@ -21,10 +21,10 @@ export default function Work2() {
                             </p>
                             <a
                                 href="/work2"
-                                className="inline-block rounded-full px-5 py-4 font-bold bg-gray pointer-events-none"
+                                className="inline-block rounded-full px-5 py-4 font-bold bg-brightPink text-white hover:bg-darkPink duration-1000"
                             >
-                                Coming soon!
-                                {/* <span className="ml-3">{">"}</span> */}
+                                See project
+                                <span className="ml-3">{">"}</span>
                             </a>
                         </div>
                         <div className="md:col-span-7 m-auto hidden md:block">

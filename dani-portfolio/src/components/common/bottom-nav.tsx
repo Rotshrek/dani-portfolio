@@ -14,7 +14,7 @@ export default function BottomNav() {
                         <a href="/work1" className={urlClasses + " ml-4"}>
                             Case study 1: Resigning the way to quote
                         </a>
-                        <a href="/work2" className={urlClasses + " ml-4 pointer-events-none opacity-50"}>
+                        <a href="/work2" className={urlClasses + " ml-4"}>
                             Case study 2: Improving data visualization in the salmon industry
                         </a>
                         <a href="/work3" className={urlClasses + " ml-4 pointer-events-none opacity-50"}>

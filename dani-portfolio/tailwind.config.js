@@ -40,6 +40,8 @@ module.exports = {
                 appear: "appear 0.25s ease-in-out",
                 disappear: "appear 0.25s ease-in-out reverse",
                 moveOnPath: "moveOnPath 10s linear infinite",
+                dropdown: "dropdown 0.25s ease-in-out",
+                dropdownReverse: "dropdown 0.25s ease-in-out reverse",
             },
             keyframes: {
                 "show-up": {
@@ -58,6 +60,10 @@ module.exports = {
                 moveOnPath: {
                     "0%": { "offset-distance": "0%" },
                     "100%": { "offset-distance": "100%" },
+                },
+                dropdown: {
+                    "0%": { opacity: 0, top: "1rem" },
+                    "100%": { opacity: 1, top: "5rem" },
                 },
             },
         },
