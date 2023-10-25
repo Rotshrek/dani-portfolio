@@ -48,7 +48,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                 <div className={gridClasses}>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mb-8">
-                        <p className="font-bold text-3xl mb-10 text-center">Research and Ideation</p>
+                        <p className="font-bold text-3xl mb-10 text-center">Research and Iterations</p>
                         <p className="font-bold text-2xl mb-2">Stakeholder map</p>
                         <p className="text-md mb-6">
                             We created a stakeholder map to ensure that we take into account and meet the needs of
@@ -70,13 +70,13 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 impact on the environment.
                             </li>
                         </ol>
-                        <Image
+                        {/* <Image
                             className="m-auto"
                             src="/work2/stakeholders.svg"
                             width={604}
                             height={963}
                             alt="Stakeholder map"
-                        />
+                        /> */}
                     </div>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-2 hidden md:block" />
@@ -99,7 +99,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 src="/work2/primary-user-persona.svg"
                                 fill
                                 alt="Ingrid, the operations technician is the primary persona"
-                                // onClick={() => openModal("/work2/primary-user-persona.svg", "Benchmarking timeline", 4550, 610)}
+                                // onClick={() => openModal("/work2/primary-user-persona.svg", "Ingrid, the operations technician is the primary persona", 4550, 610)}
                             />
                         </div>
                         <div className="absolute md:hidden w-[878px] h-[493px]">
@@ -107,7 +107,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 className="rounded-lg"
                                 src="/work2/primary-user-persona.svg"
                                 fill
-                                alt="Benchmarking timeline"
+                                alt="Ingrid, the operations technician is the primary persona"
                             />
                         </div>
                         <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
@@ -121,7 +121,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 src="/work2/primary-user-empathy-map.svg"
                                 fill
                                 alt="Ingrid&aph;s overall goal is to produce high quality fish products"
-                                // onClick={() => openModal("/work2/primary-user-empathy-map.svg", "Benchmarking timeline", 4550, 610)}
+                                // onClick={() => openModal("/work2/primary-user-empathy-map.svg", "Ingrid&aph;s overall goal is to produce high quality fish products", 4550, 610)}
                             />
                         </div>
                         <div className="absolute md:hidden w-[880px] h-[495px]">
@@ -129,7 +129,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 className="rounded-lg"
                                 src="/work2/primary-user-empathy-map.svg"
                                 fill
-                                alt="Benchmarking timeline"
+                                alt="Ingrid&aph;s overall goal is to produce high quality fish products"
                             />
                         </div>
                         <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
@@ -143,7 +143,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 src="/work2/secondary-user-persona.svg"
                                 fill
                                 alt="Erik, the CEO is the secondary persona"
-                                // onClick={() => openModal("/work2/secondary-user-persona.svg", "Benchmarking timeline", 4550, 610)}
+                                // onClick={() => openModal("/work2/secondary-user-persona.svg", "Erik, the CEO is the secondary persona", 4550, 610)}
                             />
                         </div>
                         <div className="absolute md:hidden w-[878px] h-[491px]">
@@ -151,7 +151,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 className="rounded-lg"
                                 src="/work2/secondary-user-persona.svg"
                                 fill
-                                alt="Benchmarking timeline"
+                                alt="Erik, the CEO is the secondary persona"
                             />
                         </div>
                         <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
@@ -159,38 +159,10 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         </p>
                     </div>
 
-                    <Iteration1 />
+                    {/* <Iteration1 />
                     <Iteration2 />
                     <Iteration3 />
-                    <Iteration4 />
-
-                    <div className="md:col-span-2 hidden md:block" />
-                    <div className="md:col-span-2 hidden md:block" />
-                    <div className="pr-10 md:pr-0 md:col-span-8">
-                        <p className="font-bold text-2xl mb-6">UI references and inspiration</p>
-                        <p className="text-md mb-6">
-                            Before proceeding to the final prototyping phase, we familiarized ourselves with widget
-                            guidelines and gathered examples to ensure design consistency
-                        </p>
-                    </div>
-                    <div className="relative md:col-span-12 h-[889px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="hidden md:block md:absolute w-[1342px] h-[889px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/ui-references.png"
-                                fill
-                                alt="UI references and inspiration"
-                            />
-                        </div>
-                        <div className="absolute md:hidden w-[1342px] h-[889px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/ui-references.png"
-                                fill
-                                alt="UI references and inspiration"
-                            />
-                        </div>
-                    </div>
+                    <Iteration4 /> */}
                 </div>
             </div>
         </div>

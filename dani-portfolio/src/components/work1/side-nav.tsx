@@ -45,10 +45,10 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
 
             if (nextSection) {
                 const { offsetTop: nextOffsetTop } = nextSection
-                setLowerBound(nextOffsetTop - 100)
-            } else setLowerBound(offsetTop + offsetHeight - 160)
+                setLowerBound(nextOffsetTop - 1000)
+            } else setLowerBound(offsetTop + offsetHeight - 1060)
 
-            setUpperBound(offsetTop - 100)
+            setUpperBound(offsetTop - 1000)
         }
     }, [])
 

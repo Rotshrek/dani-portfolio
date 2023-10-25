@@ -14,20 +14,16 @@ const sections = [
     },
     {
         id: "research",
-        text: "Research & Ideation",
+        text: "Research & Iterations",
     },
-    // {
-    //     id: "iteration",
-    //     text: "Iteration",
-    // },
-    // {
-    //     id: "definition",
-    //     text: "Definition",
-    // },
-    // {
-    //     id: "take-away",
-    //     text: "Take Away",
-    // },
+    {
+        id: "definition",
+        text: "Definition",
+    },
+    {
+        id: "take-away",
+        text: "Take Away",
+    },
 ]
 
 function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrollY: number; index: number }) {
@@ -49,10 +45,10 @@ function NavElem({ id, text, scrollY, index }: { id: string; text: string; scrol
 
             if (nextSection) {
                 const { offsetTop: nextOffsetTop } = nextSection
-                setLowerBound(nextOffsetTop - 100)
-            } else setLowerBound(offsetTop + offsetHeight - 160)
+                setLowerBound(nextOffsetTop - 400 * index)
+            } else setLowerBound(offsetTop + offsetHeight - 1060)
 
-            setUpperBound(offsetTop - 100)
+            setUpperBound(offsetTop - 400 * index)
         }
     }, [])
 
