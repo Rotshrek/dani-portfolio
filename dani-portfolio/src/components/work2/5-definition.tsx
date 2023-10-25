@@ -51,22 +51,25 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             guidelines and gathered examples to ensure design consistency
                         </p>
                     </div>
-                    <div className="relative md:col-span-12 h-[889px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="hidden md:block md:absolute w-[1342px] h-[889px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/ui-references.png"
-                                fill
-                                alt="UI references and inspiration"
-                            />
-                        </div>
-                        <div className="absolute md:hidden w-[1342px] h-[889px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/ui-references.png"
-                                fill
-                                alt="UI references and inspiration"
-                            />
+
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                        <div className="relative md:col-span-12 h-[889px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <div className="hidden md:block md:absolute w-[1342px] h-[889px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/ui-references.png"
+                                    fill
+                                    alt="UI references and inspiration"
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[1342px] h-[889px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/ui-references.png"
+                                    fill
+                                    alt="UI references and inspiration"
+                                />
+                            </div>
                         </div>
                     </div>
 
@@ -102,22 +105,24 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-2">Biology data</p>
                     </div>
-                    <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="hidden md:block md:absolute w-[883px] h-[375px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/biology-data.svg"
-                                fill
-                                alt="High fidelity prototypes showing biology data"
-                            />
-                        </div>
-                        <div className="absolute md:hidden w-[883px] h-[375px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/biology-data.svg"
-                                fill
-                                alt="High fidelity prototypes showing biology data"
-                            />
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                        <div className="relative h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <div className="hidden md:block md:absolute w-[883px] h-[375px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/biology-data.svg"
+                                    fill
+                                    alt="High fidelity prototypes showing biology data"
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[883px] h-[375px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/biology-data.svg"
+                                    fill
+                                    alt="High fidelity prototypes showing biology data"
+                                />
+                            </div>
                         </div>
                     </div>
 
@@ -125,22 +130,24 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-2">Feeding data</p>
                     </div>
-                    <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/feeding-data.svg"
-                                fill
-                                alt="High fidelity prototypes showing feeding data"
-                            />
-                        </div>
-                        <div className="absolute md:hidden w-[881px] h-[375px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/feeding-data.svg"
-                                fill
-                                alt="High fidelity prototypes showing feeding data"
-                            />
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                        <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/feeding-data.svg"
+                                    fill
+                                    alt="High fidelity prototypes showing feeding data"
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[881px] h-[375px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/feeding-data.svg"
+                                    fill
+                                    alt="High fidelity prototypes showing feeding data"
+                                />
+                            </div>
                         </div>
                     </div>
 
@@ -148,22 +155,24 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="pr-10 md:pr-0 md:col-span-8">
                         <p className="font-bold text-2xl mb-2">Environmental data</p>
                     </div>
-                    <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                        <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/environmental-data.svg"
-                                fill
-                                alt="High fidelity prototypes showing environmental data"
-                            />
-                        </div>
-                        <div className="absolute md:hidden w-[881px] h-[375px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/environmental-data.svg"
-                                fill
-                                alt="High fidelity prototypes showing environmental data"
-                            />
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                        <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/environmental-data.svg"
+                                    fill
+                                    alt="High fidelity prototypes showing environmental data"
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[881px] h-[375px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/environmental-data.svg"
+                                    fill
+                                    alt="High fidelity prototypes showing environmental data"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

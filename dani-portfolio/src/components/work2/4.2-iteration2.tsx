@@ -14,12 +14,12 @@ export default function Iteration2() {
                         We presented iteration 1 to Runar and new insight lead us to Iteration Nº2.
                     </p>
                     <div>
-                        <div className="relative w-[577px] m-auto">
-                            <div className="relative bg-[#FFF] py-12 px-8 rounded-lg shadow-lg">
+                        <div className="relative w-3/4 min-w-[320px] max-w-[577px] m-auto">
+                            <div className="relative bg-[#FFF] py-12 px-4 md:px-8 rounded-lg shadow-lg">
                                 <p className="font-bold text-2xl mb-4 text-center">
                                     💡 Insights from the interview with Runar
                                 </p>
-                                <ol className="text-md list-disc px-8 ml-4">
+                                <ol className="text-md list-disc px-2 md:px-8 ml-4">
                                     <li>
                                         Not all facilities have automated sensors that are updated throughout the day.
                                         In most cases, it is registered manually.

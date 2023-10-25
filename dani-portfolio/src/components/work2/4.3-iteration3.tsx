@@ -15,12 +15,12 @@ export default function Iteration3() {
                         insights lead us to Iteration Nº3.
                     </p>
                     <div>
-                        <div className="relative w-[577px] m-auto">
-                            <div className="relative bg-[#FFF] py-12 px-8 rounded-lg shadow-lg">
+                        <div className="relative w-3/4 min-w-[320px] max-w-[577px] m-auto">
+                            <div className="relative bg-[#FFF] py-12 px-4 md:px-8 rounded-lg shadow-lg">
                                 <p className="font-bold text-2xl mb-4 text-center">
                                     💡 Insights from the interview with Runar and his boss
                                 </p>
-                                <ol className="text-md list-disc px-8 ml-4">
+                                <ol className="text-md list-disc px-2 md:px-8 ml-4">
                                     <li>
                                         Oxygen and temperature significantly impact fish welfare, making them equally
                                         important factors to monitor.

@@ -70,17 +70,17 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 impact on the environment.
                             </li>
                         </ol>
-                        {/* <Image
+                        <Image
                             className="m-auto"
                             src="/work2/stakeholders.svg"
                             width={604}
                             height={963}
                             alt="Stakeholder map"
-                        /> */}
+                        />
                     </div>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-2 hidden md:block" />
-                    <div className="pr-10 md:pr-0 md:col-span-8">
+                    <div className="md:col-span-8">
                         <p className="font-bold text-2xl mb-6">User Personas</p>
                         <p className="text-md mb-6">
                             We developed two user personas.{" "}
@@ -92,77 +92,79 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             gathered from user interviews.
                         </p>
                     </div>
-                    <div className="relative md:col-span-12 h-[523px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0 mb-8">
-                        <div className="hidden md:block md:absolute w-full h-[493px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/primary-user-persona.svg"
-                                fill
-                                alt="Ingrid, the operations technician is the primary persona"
-                                // onClick={() => openModal("/work2/primary-user-persona.svg", "Ingrid, the operations technician is the primary persona", 4550, 610)}
-                            />
+                    <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)]">
+                        <div className="relative h-[523px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
+                            <div className="hidden md:block md:absolute w-full h-[493px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/primary-user-persona.svg"
+                                    fill
+                                    alt="Ingrid, the operations technician is the primary persona"
+                                    // onClick={() => openModal("/work2/primary-user-persona.svg", "Ingrid, the operations technician is the primary persona", 4550, 610)}
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[878px] h-[493px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/primary-user-persona.svg"
+                                    fill
+                                    alt="Ingrid, the operations technician is the primary persona"
+                                />
+                            </div>
+                            <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
+                                Primary user persona profile
+                            </p>
                         </div>
-                        <div className="absolute md:hidden w-[878px] h-[493px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/primary-user-persona.svg"
-                                fill
-                                alt="Ingrid, the operations technician is the primary persona"
-                            />
+                        <div className="relative h-[526px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
+                            <div className="hidden md:block md:absolute w-full h-[495px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/primary-user-empathy-map.svg"
+                                    fill
+                                    alt="Ingrid&aph;s overall goal is to produce high quality fish products"
+                                    // onClick={() => openModal("/work2/primary-user-empathy-map.svg", "Ingrid&aph;s overall goal is to produce high quality fish products", 4550, 610)}
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[880px] h-[495px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/primary-user-empathy-map.svg"
+                                    fill
+                                    alt="Ingrid&aph;s overall goal is to produce high quality fish products"
+                                />
+                            </div>
+                            <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
+                                Primary user persona empathy map
+                            </p>
                         </div>
-                        <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
-                            Primary user persona profile
-                        </p>
-                    </div>
-                    <div className="relative md:col-span-12 h-[526px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0 mb-8">
-                        <div className="hidden md:block md:absolute w-full h-[495px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/primary-user-empathy-map.svg"
-                                fill
-                                alt="Ingrid&aph;s overall goal is to produce high quality fish products"
-                                // onClick={() => openModal("/work2/primary-user-empathy-map.svg", "Ingrid&aph;s overall goal is to produce high quality fish products", 4550, 610)}
-                            />
+                        <div className="relative h-[521px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
+                            <div className="hidden md:block md:absolute w-full h-[491px] left-1/2 translate-x-[-50%]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/secondary-user-persona.svg"
+                                    fill
+                                    alt="Erik, the CEO is the secondary persona"
+                                    // onClick={() => openModal("/work2/secondary-user-persona.svg", "Erik, the CEO is the secondary persona", 4550, 610)}
+                                />
+                            </div>
+                            <div className="absolute md:hidden w-[878px] h-[491px]">
+                                <Image
+                                    className="rounded-lg"
+                                    src="/work2/secondary-user-persona.svg"
+                                    fill
+                                    alt="Erik, the CEO is the secondary persona"
+                                />
+                            </div>
+                            <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
+                                Secondary user persona profile
+                            </p>
                         </div>
-                        <div className="absolute md:hidden w-[880px] h-[495px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/primary-user-empathy-map.svg"
-                                fill
-                                alt="Ingrid&aph;s overall goal is to produce high quality fish products"
-                            />
-                        </div>
-                        <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
-                            Primary user persona empathy map
-                        </p>
-                    </div>
-                    <div className="relative md:col-span-12 h-[521px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0 mb-8">
-                        <div className="hidden md:block md:absolute w-full h-[491px] left-1/2 translate-x-[-50%]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/secondary-user-persona.svg"
-                                fill
-                                alt="Erik, the CEO is the secondary persona"
-                                // onClick={() => openModal("/work2/secondary-user-persona.svg", "Erik, the CEO is the secondary persona", 4550, 610)}
-                            />
-                        </div>
-                        <div className="absolute md:hidden w-[878px] h-[491px]">
-                            <Image
-                                className="rounded-lg"
-                                src="/work2/secondary-user-persona.svg"
-                                fill
-                                alt="Erik, the CEO is the secondary persona"
-                            />
-                        </div>
-                        <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
-                            Secondary user persona profile
-                        </p>
                     </div>
 
-                    {/* <Iteration1 />
+                    <Iteration1 />
                     <Iteration2 />
                     <Iteration3 />
-                    <Iteration4 /> */}
+                    <Iteration4 />
                 </div>
             </div>
         </div>

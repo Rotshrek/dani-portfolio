@@ -16,13 +16,13 @@ export default function Iteration4() {
                         how data is accessed and utilized.
                     </p>
                     <div>
-                        <div className="relative w-[577px] m-auto">
-                            <div className="relative bg-[#FFF] py-12 px-8 rounded-lg shadow-lg">
+                        <div className="relative w-3/4 min-w-[320px] max-w-[577px] m-auto">
+                            <div className="relative bg-[#FFF] py-12 px-4 md:px-8 rounded-lg shadow-lg">
                                 <p className="font-bold text-2xl mb-4 text-center">
                                     💡 Insights from the interview with NTNU professor.
                                 </p>
                                 <p className="font-bold ml-8 mt-4">✅ Positive feedback</p>
-                                <ol className="text-md list-disc px-8 ml-4">
+                                <ol className="text-md list-disc px-2 md:px-8 ml-4">
                                     <li>He liked that widgets show the most recent history with graphs.</li>
                                     <li>He liked the Inclusion of trend data/indicators.</li>
                                     <li>He agreed that feeding is of interest to both managers and technicians.</li>
@@ -31,7 +31,7 @@ export default function Iteration4() {
                                     </li>
                                 </ol>
                                 <p className="font-bold mt-6 ml-8">📌 Constructive feedback:</p>
-                                <ol className="text-md list-disc px-8 ml-4">
+                                <ol className="text-md list-disc px-2 md:px-8 ml-4">
                                     <li>
                                         Real-time sensor data is more useful than estimated data when displayed in a
                                         widget intended to create situational awareness.
@@ -60,12 +60,12 @@ export default function Iteration4() {
                         regularly as part of their daily work.
                     </p>
                     <div>
-                        <div className="relative w-[577px] m-auto">
-                            <div className="relative bg-[#FFF] py-12 px-8 rounded-lg shadow-lg">
+                        <div className="relative w-3/4 min-w-[320px] max-w-[577px] m-auto">
+                            <div className="relative bg-[#FFF] py-12 px-4 md:px-8 rounded-lg shadow-lg">
                                 <p className="font-bold text-2xl mb-4 text-center">
                                     💡 Insights from the interview with Industry professionals and Clarify clients.
                                 </p>
-                                <ol className="text-md list-disc px-8 ml-4">
+                                <ol className="text-md list-disc px-2 md:px-8 ml-4">
                                     <li>
                                         Focus on tank-specific measurements due to varying fish sizes and harvesting
                                         times.

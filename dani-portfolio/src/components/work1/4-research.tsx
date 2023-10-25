@@ -109,7 +109,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="relative md:col-span-12 h-[200px] md:h-[148px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                         <div className="hidden md:block md:absolute w-full h-[118px] left-1/2 translate-x-[-50%]">
                             <Image
-                                className="rounded-lg"
+                                className="rounded-lg cursor-zoom-in"
                                 src="/work1/benchmark.jpg"
                                 fill
                                 alt="Benchmarking timeline"
@@ -152,7 +152,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     <div className="relative w-screen md:w-full overflow-scroll ml-[-30px] md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg h-[486px] md:h-[391px]">
                         <div className="hidden md:block md:absolute w-full h-[361px] left-1/2 translate-x-[-50%]">
                             <Image
-                                className="rounded-lg"
+                                className="rounded-lg cursor-zoom-in"
                                 src="/work1/compara-quoting-flow.png"
                                 fill
                                 alt="National identity form flow"

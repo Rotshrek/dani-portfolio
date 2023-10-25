@@ -55,7 +55,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                 <div className="relative md:col-span-12 h-[486px] md:h-[330px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                     <div className="hidden md:block md:absolute w-full h-[300px] left-1/2 translate-x-[-50%]">
                         <Image
-                            className="rounded-lg"
+                            className="rounded-lg cursor-zoom-in"
                             src="/work1/new-flow.png"
                             fill
                             alt="New form flow"
@@ -79,7 +79,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                 <div className="relative md:col-span-12 h-[698px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                     <div className="hidden md:block m-auto">
                         <Image
-                            className="rounded-lg"
+                            className="rounded-lg cursor-zoom-in"
                             src="/work1/new-inputs.png"
                             width={880}
                             height={668}
@@ -108,7 +108,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                 <div className="relative md:col-span-12 h-[539px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                     <div className="hidden md:block md:absolute w-[880px] h-[509px] left-1/2 translate-x-[-50%]">
                         <Image
-                            className="rounded-lg"
+                            className="rounded-lg cursor-zoom-in"
                             src="/work1/handoff.png"
                             fill
                             alt="Handoff to development"
