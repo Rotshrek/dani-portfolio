@@ -12,7 +12,7 @@ export default function Step2({ chosenPlan, setChosenPlan, setStep }: Step2Props
     return (
         <div className="max-w-[880px] mx-auto mt-8">
             <div className="mb-8">
-                <p className="text-4xl text-bold mb-6">Choose the plan that's right for you</p>
+                <p className="text-4xl text-bold mb-6">Choose the plan that&apos;s right for you</p>
                 <div className="mb-1">
                     <NetflixTicket color={netflixRed} />
                     <span className="ml-2 text-lg align-middle">Watch all you want. Advert-free.</span>
