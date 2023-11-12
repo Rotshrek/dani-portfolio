@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { netflixRed } from "./constants"
-import { NetflixTicket } from "./page"
+import { NetflixTicket } from "./ticket"
 
 interface Step3Props {
     setStep: (step: number) => void
