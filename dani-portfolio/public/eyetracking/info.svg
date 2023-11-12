@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Assets/Info/green</title>
+    <g id="Booking-widget" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Booking-Widget---Passengers---Desktop" transform="translate(-774.000000, -250.000000)">
+            <g id="Passenger-types" transform="translate(400.000000, 148.000000)">
+                <g id="Adult" transform="translate(0.000000, 74.000000)">
+                    <g id="Infocircle_24px_green" transform="translate(372.000000, 26.000000)">
+                        <g id="BG_Square" opacity="0.01">
+                            <rect id="Rectangle-path" x="0" y="0" width="18" height="18"></rect>
+                        </g>
+                        <g id="Outlined" transform="translate(1.250000, 1.250000)" fill-rule="nonzero">
+                            <path d="M7.75,14.75 C3.88400675,14.75 0.75,11.6159932 0.75,7.75 C0.75,3.88400675 3.88400675,0.75 7.75,0.75 C11.6159932,0.75 14.75,3.88400675 14.75,7.75 C14.7456793,11.6142022 11.6142022,14.7456793 7.75,14.75 Z" id="Path" fill="#349D3B"></path>
+                            <path d="M7.75,13.75 C11.0616727,13.7462965 13.7462965,11.0616727 13.75,7.75 C13.75,4.4362915 11.0637085,1.75 7.75,1.75 C4.4362915,1.75 1.75,4.4362915 1.75,7.75 C1.75,11.0637085 4.4362915,13.75 7.75,13.75 Z" id="Path" fill="#FFFFFF"></path>
+                            <circle id="Oval" fill="#349D3B" cx="7.75" cy="4" r="1"></circle>
+                            <path d="M9.625,10.75 L9.25,10.75 C8.83578644,10.75 8.5,10.4142136 8.5,10 L8.5,6.25 C8.5,5.83578644 8.16421356,5.5 7.75,5.5 L5.875,5.5 C5.66789322,5.5 5.5,5.66789322 5.5,5.875 C5.5,6.08210678 5.66789322,6.25 5.875,6.25 L6.25,6.25 C6.66421356,6.25 7,6.58578644 7,7 L7,10 C7,10.4142136 6.66421356,10.75 6.25,10.75 L5.875,10.75 C5.66789322,10.75 5.5,10.9178932 5.5,11.125 C5.5,11.3321068 5.66789322,11.5 5.875,11.5 L9.625,11.5 C9.83210678,11.5 10,11.3321068 10,11.125 C10,10.9178932 9.83210678,10.75 9.625,10.75 Z" id="Shape" fill="#349D3B"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

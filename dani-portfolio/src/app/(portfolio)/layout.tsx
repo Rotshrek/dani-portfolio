@@ -1,4 +1,4 @@
-import "./globals.css"
+import "../globals.css"
 import { Open_Sans, Scope_One, Bevan } from "next/font/google"
 import Navbar from "@/components/common/navbar"
 

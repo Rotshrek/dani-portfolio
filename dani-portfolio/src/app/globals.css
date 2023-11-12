@@ -5,3 +5,13 @@
 body {
     color: #4a4a4a;
 }
+
+@font-face {
+    font-family: "FlamaBook";
+    src: url("/eyetracking/FlamaBook.otf");
+}
+
+@font-face {
+    font-family: "Netflix";
+    src: url("/eyetracking/Netflix.otf");
+}
