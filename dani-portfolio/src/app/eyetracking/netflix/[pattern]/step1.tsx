@@ -1,9 +1,8 @@
 "use client"
 
 import Image from "next/image"
+import { netflixRed } from "./constants"
 import { NetflixTicket } from "./page"
-
-const netflixRed = "#e50914"
 
 interface Step1Props {
     setStep: (step: number) => void

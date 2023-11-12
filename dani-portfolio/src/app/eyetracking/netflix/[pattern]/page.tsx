@@ -2,39 +2,10 @@
 
 import { useParams } from "next/navigation"
 import { useState } from "react"
+import { netflixRed, plans } from "./constants"
 import Step1 from "./step1"
 import Step2 from "./step2"
 import Step3 from "./step3"
-
-const netflixRed = "#e50914"
-
-export interface Plan {
-    name: string
-    price: number
-    quality: string
-    resolution: string
-}
-
-export const plans: Plan[] = [
-    {
-        name: "Basic",
-        price: 89,
-        quality: "Good",
-        resolution: "480p",
-    },
-    {
-        name: "Standard",
-        price: 119,
-        quality: "Better",
-        resolution: "1080p",
-    },
-    {
-        name: "Premium",
-        price: 159,
-        quality: "Best",
-        resolution: "4K+HDR",
-    },
-]
 
 export const NetflixTicket = ({ color }: { color: string }) => {
     return (
