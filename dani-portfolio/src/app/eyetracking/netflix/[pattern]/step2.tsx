@@ -1,6 +1,8 @@
 "use client"
 
-import { netflixRed, NetflixTicket, plans } from "./page"
+import { NetflixTicket, plans } from "./page"
+
+const netflixRed = "#e50914"
 
 interface Step2Props {
     chosenPlan: string | null

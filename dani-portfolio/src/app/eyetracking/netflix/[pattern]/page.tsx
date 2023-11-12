@@ -6,7 +6,7 @@ import Step1 from "./step1"
 import Step2 from "./step2"
 import Step3 from "./step3"
 
-export const netflixRed = "#e50914"
+const netflixRed = "#e50914"
 
 export interface Plan {
     name: string
