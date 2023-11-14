@@ -36,6 +36,7 @@ export default function Wideroe() {
         params = useParams(),
         [flyFrom, setFlyFrom] = useState(""),
         [flyTo, setFlyTo] = useState(""),
+        [step, setStep] = useState(1),
         [departureDate, setDepartureDate] = useState<FlyDate>({
             day: 17,
             month: 11,
@@ -64,93 +65,114 @@ export default function Wideroe() {
                         <Image src="/eyetracking/wideroe-logo.svg" alt="Widerøe logo" fill />
                     </div>
                 </div>
-                <div className="bg-white w-[360px] ml-4 rounded fixed p-6 shadow-lg relative z-10">
-                    <h2 className="mb-6 text-2xl">Book plane tickets</h2>
-                    <div className="my-4 border-[1px] border-[#dce2e5] rounded text-lg">
-                        <div
-                            className={`inline-block w-1/2 text-center font-bold pt-4 pb-2 ${
-                                travelType === "roundtrip" ? textSelected : ""
-                            } cursor-pointer`}
-                            onClick={() => setTravelType("roundtrip")}
-                        >
-                            Roundtrip
-                        </div>
-                        <div
-                            className={`inline-block w-1/2 text-center font-bold pt-4 pb-2 ${
-                                travelType === "oneway" ? textSelected : ""
-                            } cursor-pointer`}
-                            onClick={() => setTravelType("oneway")}
-                        >
-                            One way
-                        </div>
+                {step === 1 && (
+                    <div className="bg-white w-[360px] ml-4 rounded fixed p-6 shadow-lg relative z-10">
+                        <h2 className="mb-6 text-2xl">Book plane tickets</h2>
+                        <div className="my-4 border-[1px] border-[#dce2e5] rounded text-lg">
+                            <div
+                                className={`inline-block w-1/2 text-center font-bold pt-4 pb-2 ${
+                                    travelType === "roundtrip" ? textSelected : ""
+                                } cursor-pointer`}
+                                onClick={() => setTravelType("roundtrip")}
+                            >
+                                Roundtrip
+                            </div>
+                            <div
+                                className={`inline-block w-1/2 text-center font-bold pt-4 pb-2 ${
+                                    travelType === "oneway" ? textSelected : ""
+                                } cursor-pointer`}
+                                onClick={() => setTravelType("oneway")}
+                            >
+                                One way
+                            </div>
 
-                        <AirportSelector
-                            label={"Fly from"}
-                            prop={flyFrom}
-                            setProp={setFlyFrom}
-                            drawer={drawer}
-                            setDrawer={setDrawer}
-                        />
-
-                        <AirportSelector
-                            label={"Fly to"}
-                            prop={flyTo}
-                            setProp={setFlyTo}
-                            drawer={drawer}
-                            setDrawer={setDrawer}
-                        />
-
-                        <DateSelector
-                            label={"Departure date"}
-                            toDate={returnDate}
-                            fromDate={departureDate}
-                            setProp={setDepartureDate}
-                            width={travelType === "roundtrip" ? "w-1/2" : "w-full"}
-                            drawer={drawer}
-                            setDrawer={setDrawer}
-                        />
-
-                        {travelType === "roundtrip" && (
-                            <DateSelector
-                                label={"Return date"}
-                                toDate={returnDate}
-                                fromDate={departureDate}
-                                setProp={setReturnDate}
-                                width={"w-1/2"}
+                            <AirportSelector
+                                label={"Fly from"}
+                                prop={flyFrom}
+                                setProp={setFlyFrom}
                                 drawer={drawer}
                                 setDrawer={setDrawer}
                             />
-                        )}
 
-                        <PassengerSelector
-                            passengers={passengers}
-                            setPassengers={setPassengers}
-                            drawer={drawer}
-                            setDrawer={setDrawer}
-                        />
-                    </div>
+                            <AirportSelector
+                                label={"Fly to"}
+                                prop={flyTo}
+                                setProp={setFlyTo}
+                                drawer={drawer}
+                                setDrawer={setDrawer}
+                            />
 
-                    <button className="my-4 w-full h-[58px] bg-[#a0db2a] text-[#1f8226] rounded">SEARCH</button>
+                            <DateSelector
+                                label={"Departure date"}
+                                toDate={returnDate}
+                                fromDate={departureDate}
+                                setProp={setDepartureDate}
+                                width={travelType === "roundtrip" ? "w-1/2" : "w-full"}
+                                drawer={drawer}
+                                setDrawer={setDrawer}
+                            />
 
-                    <div className="mt-4">
-                        <svg
-                            className="inline-block align-middle"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
+                            {travelType === "roundtrip" && (
+                                <DateSelector
+                                    label={"Return date"}
+                                    toDate={returnDate}
+                                    fromDate={departureDate}
+                                    setProp={setReturnDate}
+                                    width={"w-1/2"}
+                                    drawer={drawer}
+                                    setDrawer={setDrawer}
+                                />
+                            )}
+
+                            <PassengerSelector
+                                passengers={passengers}
+                                setPassengers={setPassengers}
+                                drawer={drawer}
+                                setDrawer={setDrawer}
+                            />
+                        </div>
+
+                        <button
+                            className="my-4 w-full h-[58px] bg-[#a0db2a] text-[#1f8226] rounded"
+                            onClick={() => setStep(2)}
                         >
-                            <g fill="none" fill-rule="evenodd">
-                                <g transform="translate(-645.000000, -719.000000) translate(581.000000, 133.000000) translate(40.000000, 134.000000) translate(24.000000, 452.000000)">
-                                    <circle cx="10" cy="10" r="9.5" fill="#F5FAF5" stroke="#369E3B"></circle>
-                                    <rect width="10" height="1" x="5" y="9.5" fill="#369E3B" rx=".5"></rect>
-                                    <rect width="1" height="10" x="9.5" y="5" fill="#369E3B" rx=".5"></rect>
+                            SEARCH
+                        </button>
+
+                        <div className="mt-4">
+                            <svg
+                                className="inline-block align-middle"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                            >
+                                <g fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-645.000000, -719.000000) translate(581.000000, 133.000000) translate(40.000000, 134.000000) translate(24.000000, 452.000000)">
+                                        <circle cx="10" cy="10" r="9.5" fill="#F5FAF5" stroke="#369E3B"></circle>
+                                        <rect width="10" height="1" x="5" y="9.5" fill="#369E3B" rx=".5"></rect>
+                                        <rect width="1" height="10" x="9.5" y="5" fill="#369E3B" rx=".5"></rect>
+                                    </g>
                                 </g>
-                            </g>
-                        </svg>
-                        <span className="text-md align-middle ml-2">Add discount code</span>
+                            </svg>
+                            <span className="text-md align-middle ml-2">Add discount code</span>
+                        </div>
                     </div>
-                </div>
+                )}
+                {step === 2 && (
+                    <div className="bg-white w-[360px] ml-4 rounded fixed p-6 shadow-lg relative z-10">
+                        <h2 className="mb-6 text-2xl">Thanks!</h2>
+                        <div className="mb-4">
+                            <p>Thanks for participating in this exercise!</p>
+                        </div>
+                        <button
+                            className="my-4 w-full h-[58px] rounded border-2 border-[#a0db2a]"
+                            onClick={() => setStep(1)}
+                        >
+                            Go back
+                        </button>
+                    </div>
+                )}
             </div>
             <div className="w-[calc(100vw-270px)] h-screen">
                 <div className="w-full h-[84px] px-[65px] py-[32px] flex justify-end shadow-lg relative z-10">
