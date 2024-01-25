@@ -106,7 +106,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             competitors forms (inputs).
                         </p>
                     </div>
-                    <div className="relative md:col-span-12 h-[200px] md:h-[148px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="relative md:col-span-12 h-[170px] md:h-[148px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                         <div className="hidden md:block md:absolute w-full h-[118px] left-1/2 translate-x-[-50%]">
                             <Image
                                 className="rounded-lg cursor-zoom-in"
@@ -130,6 +130,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             Click to expand
                         </p>
                     </div>
+                    <p className="md:hidden w-full -mt-4 text-sm text-center pr-10">
+                        Scroll right to see the full table.
+                    </p>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 mt-6 pr-10 md:pr-0">
                         <p className="text-md mb-4">The main conclusions of this benchmark were:</p>
@@ -156,7 +159,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             identification number), since most people know it by heart.
                         </p>
                     </div>
-                    <div className="relative w-screen md:w-full overflow-scroll ml-[-30px] md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg h-[486px] md:h-[391px]">
+                    <div className="relative w-screen md:w-full overflow-scroll ml-[-30px] md:col-span-12 md:overflow-hidden ml-[-30px] md:ml-0 rounded-lg h-[456px] md:h-[391px]">
                         <div className="hidden md:block md:absolute w-full h-[361px] left-1/2 translate-x-[-50%]">
                             <Image
                                 className="rounded-lg cursor-zoom-in"
@@ -186,8 +189,11 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             Click to expand
                         </p>
                     </div>
-                    <div className="md:col-span-2 hidden md:block" />
-                    <div className="md:col-span-8 pr-10 md:pr-0">
+                    <p className="md:hidden w-full -mt-4 text-sm text-center pr-10">
+                        Scroll right to see the full diagram.
+                    </p>
+                    <div className="md:col-span-2 hidden md:block mt-4" />
+                    <div className="md:col-span-8 pr-10 md:pr-0 mt-4">
                         <p className="font-bold text-2xl mb-6">Survey</p>
                         <p className="text-md mb-6">
                             To validate the hypothesis of whether the user preferred to quote with RUT or car license

@@ -58,7 +58,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
 
                                     <div className="absolute right-1/4 bottom-0 transform translate-y-1/2 rotate-45 w-4 h-4 bg-lighterPurple" />
                                 </div>
-                                <div className="flex-initial w-[170px] ml-2 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
+                                <div className="flex-initial w-[170px] p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         It&#39;s like the illustration of the good vibes company and I think that
                                         inspires confidence
@@ -80,6 +80,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                             width={500}
                             height={533}
                             alt="Old Compara online website and words to describe it: Boring, simple, generic, mistrust"
+                            quality={100}
                         />
                     </div>
                     <div className="md:col-span-6">
@@ -89,6 +90,7 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                             width={500}
                             height={533}
                             alt="New Compara online website and words to describe it: Pleasant, secure, cheerful, clear"
+                            quality={100}
                         />
                     </div>
                 </div>

@@ -12,7 +12,7 @@ export default function SomethingUnexpected({ gridClasses }: { gridClasses: stri
                         <p className="text-lg">Several users expressed disagreement with the design.</p>
                     </div>
                 </div>
-                <div className="md:col-span-5 flex opacity-70">
+                <div className="md:col-span-5 flex opacity-90">
                     <div className="m-auto italic text-xl">
                         <div className="w-[280px] ml-10 p-6 flex-1 bg-lighterPink p-2 relative mb-8 md:mb-32 rounded-lg">
                             <p>It could be a little bit prettier ... I think it&#39;s a bit simple ...</p>

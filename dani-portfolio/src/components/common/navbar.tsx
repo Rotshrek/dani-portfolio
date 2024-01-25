@@ -11,7 +11,7 @@ export default function Navbar() {
         [dropDownClasses, setDropDownClasses] = useState(baseClasses + " hidden")
 
     const urlClasses = "text-white hover:text-lightPink mr-4 py-2 relative duration-1000 text-right cursor-pointer",
-        drawerClasses = openMenu ? " right-0" : " right-[-200px] md:right-0",
+        drawerClasses = openMenu ? " right-0" : " right-[-160px] md:right-0",
         projectClasses = " md:hidden"
 
     const handleDrawer = () => setOpenMenu(!openMenu)
@@ -53,15 +53,28 @@ export default function Navbar() {
                 </a>
             </div>
             <div
-                className={`flex flex-col md:flex-row min-w-[170px] overflow-hidden duration-1000 ${
+                className={`flex flex-col md:flex-row min-w-[170px] overflow-hidden duration-500 ${
                     openMenu ? "bg-darkPurple md:bg-transparent" : ""
                 }`}
             >
                 <a
-                    className="text-white text-right font-bold text-xl md:hidden mb-4 mr-2 cursor-pointer"
+                    className="text-white text-right font-bold text-xl md:hidden mb-4 mr-6 cursor-pointer"
                     onClick={handleDrawer}
                 >
-                    {openMenu ? ">" : "<"}
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="inline w-6 h-6"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
                 </a>
                 <a href="/work1" className={urlClasses + drawerClasses + projectClasses}>
                     Case study 1

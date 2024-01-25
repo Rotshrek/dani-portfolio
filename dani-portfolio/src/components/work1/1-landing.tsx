@@ -33,7 +33,7 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                         height={200}
                     />
                     <Image
-                        className="absolute bottom-[120px] md:bottom-[80px] right-[-60px] md:right-[-20px]"
+                        className="absolute bottom-[120px] md:bottom-[80px] right-[-40px] md:right-[-20px]"
                         src={`/work1/screen.png`}
                         alt="computer screen showing the Compara website"
                         width={360}

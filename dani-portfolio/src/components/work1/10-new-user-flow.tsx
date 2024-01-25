@@ -91,6 +91,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                             width={880}
                             height={668}
                             alt="New types of text inputs"
+                            quality={100}
                             onClick={() => openModal("/work1/new-inputs.png", "New types of text inputs", 2640, 2005)}
                         />
                     </div>

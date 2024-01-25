@@ -35,10 +35,12 @@ export default function About() {
                         alt="Dani looking at an Art exhibition in the Moco Museum, Amsterdam"
                     />
                     <p className="text-white text-xl mt-8 max-w-[1048px]">
-                        In August 2022, I relocated to Norway, embarking on the next chapter of my life: pursuing a
-                        master&#39;s program in Interaction Design at NTNU. Presently, I am in the final year of my
-                        master&#39;s program, holding the position of Teacher Assistant at NTNU, and actively
-                        participating in level 2 of the Norwegian course provided by the university.
+                        In August 2022, I relocated to Norway, embarking on the next chapter of my life by pursuing a
+                        master&#39;s program in Interaction Design at NTNU. Currently, I am in the final semester of my
+                        master&#39;s program. Throughout my studies, I worked as a Teaching Assistant and successfully
+                        completed Level 1 of the Norwegian course offered by the university. In March of this year, I
+                        will continue my studies in the Norwegian language through a course I have enrolled in
+                        Stavanger.
                     </p>
                     <p className="text-white text-xl mt-8 max-w-[1048px]">
                         When I&#39;m not knee-deep in design, you can catch me adventuring through fiction realms,
@@ -73,7 +75,7 @@ export default function About() {
                         alt="Dani looking at an Art exhibition in the Moco Museum, Amsterdam"
                     />
                     <Image
-                        className="relative mb-[-60px] translate-x-1/2 z-30"
+                        className="relative mb-[-60px] translate-x-1/2 z-10"
                         src="/about-fish.png"
                         width={229}
                         height={172}
