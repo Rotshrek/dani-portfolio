@@ -120,7 +120,8 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             <Image
                                 className="rounded-lg"
                                 src="/work1/benchmark.jpg"
-                                fill
+                                width={1280}
+                                height={170}
                                 alt="Benchmarking timeline"
                                 quality={100}
                             />
@@ -176,7 +177,8 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             <Image
                                 className="rounded-lg"
                                 src="/work1/compara-quoting-flow.png"
-                                fill
+                                width={1280}
+                                height={456}
                                 alt="National identity form flow"
                             />
                         </div>

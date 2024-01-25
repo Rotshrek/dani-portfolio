@@ -1,7 +1,7 @@
 "use client"
 
 export default function BottomNav() {
-    const urlClasses = "block text-white hover:text-lightPink px-4 py-2 relative duration-1000"
+    const urlClasses = "block text-white md:hover:text-lightPink px-4 py-2 relative duration-1000"
 
     return (
         <div className="w-screen bg-darkPurple">

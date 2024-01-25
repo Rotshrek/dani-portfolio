@@ -66,7 +66,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         <Image
                             className="rounded-lg"
                             src="/work1/new-flow.png"
-                            fill
+                            width={1280}
+                            height={456}
                             alt="New form flow"
                             quality={100}
                         />
@@ -125,7 +126,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         <Image
                             className="rounded-lg"
                             src="/work1/handoff.png"
-                            fill
+                            width={880}
+                            height={509}
                             alt="Handoff to development"
                             quality={100}
                         />

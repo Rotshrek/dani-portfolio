@@ -92,7 +92,7 @@ export default function SideNav() {
                 <NavElem key={id} id={id} text={text} scrollY={scrollY} index={index} />
             ))}
             {scrollY > deviceHeight && (
-                <div className="fixed bottom-[20px] right-[20px] md:bottom-[30px] md:right-[40px]">
+                <div className="hidden md:block fixed bottom-[20px] right-[20px] md:bottom-[30px] md:right-[40px]">
                     <a
                         href="#landing"
                         className="flex shadow-md shadow-black hover:text-lightPink relative duration-1000 rounded-full bg-white h-[40px] w-[40px]"
