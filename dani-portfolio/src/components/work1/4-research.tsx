@@ -117,7 +117,13 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             />
                         </div>
                         <div className="absolute md:hidden w-[1280px] h-[170px]">
-                            <Image className="rounded-lg" src="/work1/benchmark.jpg" fill alt="Benchmarking timeline" />
+                            <Image
+                                className="rounded-lg"
+                                src="/work1/benchmark.jpg"
+                                fill
+                                alt="Benchmarking timeline"
+                                quality={100}
+                            />
                         </div>
                         <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">
                             Click to expand

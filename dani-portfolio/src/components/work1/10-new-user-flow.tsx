@@ -43,7 +43,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
             />
             <div className={gridClasses}>
                 <div className="md:col-span-2 hidden md:block" />
-                <div className="md:col-span-8 pr-16 md:pr-0">
+                <div className="md:col-span-8 pr-10 md:pr-0">
                     <p className="font-bold text-3xl text-center mb-6">Definition</p>
                     <p className="font-bold text-2xl mb-6">New user flow</p>
                     <p className="text-md mb-6">
@@ -63,12 +63,18 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         />
                     </div>
                     <div className="absolute md:hidden w-[1280px] h-[456px]">
-                        <Image className="rounded-lg" src="/work1/new-flow.png" fill alt="New form flow" />
+                        <Image
+                            className="rounded-lg"
+                            src="/work1/new-flow.png"
+                            fill
+                            alt="New form flow"
+                            quality={100}
+                        />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
                 <div className="md:col-span-2 hidden md:block" />
-                <div className="md:col-span-8 mt-4 md:mt-8 pr-16 md:pr-0">
+                <div className="md:col-span-8 mt-4 md:mt-8 pr-10 md:pr-0">
                     <p className="font-bold text-2xl mb-6">New input system</p>
                     <p className="text-md">
                         Together with the fronts, we decided to build a new library of inputs. These would provide
@@ -93,7 +99,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
                 <div className="md:col-span-2 hidden md:block" />
-                <div className="md:col-span-8 md:mt-8 pr-16 md:pr-0">
+                <div className="md:col-span-8 md:mt-8 pr-10 md:pr-0">
                     <p className="font-bold text-2xl mb-6">Handoff to development</p>
                     <p className="text-md">
                         As a team (UX and Front), this was the way we defined to facilitate the designs to development.
@@ -116,11 +122,17 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         />
                     </div>
                     <div className="absolute md:hidden w-[880px] h-[509px]">
-                        <Image className="rounded-lg" src="/work1/handoff.png" fill alt="Handoff to development" />
+                        <Image
+                            className="rounded-lg"
+                            src="/work1/handoff.png"
+                            fill
+                            alt="Handoff to development"
+                            quality={100}
+                        />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
-                <div className="md:col-span-12 text-right pr-16 md:pr-0">
+                <div className="md:col-span-12 text-right pr-10 md:pr-0">
                     <a
                         href="https://www.figma.com/file/1Boh16TmDAvE6tTnP2Ki5Y/Cotizacio%CC%81n-CICL?type=design&node-id=2102%3A49992&mode=design&t=RUDtx62WYegODiLO-1"
                         target="_blank"

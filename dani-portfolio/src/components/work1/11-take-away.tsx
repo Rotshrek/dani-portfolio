@@ -53,6 +53,7 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                             width={879}
                             height={641}
                             alt="Compara online website"
+                            quality={100}
                         />
                     </div>
                 </div>

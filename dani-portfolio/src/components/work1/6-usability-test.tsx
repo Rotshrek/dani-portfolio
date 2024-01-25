@@ -58,6 +58,7 @@ export default function UsabilityTest({ gridClasses }: { gridClasses: string }) 
                             width={577}
                             height={267}
                             alt="Compara online website"
+                            quality={100}
                         />
                         <video className="m-auto mb-8 rounded-lg" autoPlay muted loop width={880} height={524}>
                             <source src="/work1/usability-test-video.mov" type="video/mp4" />

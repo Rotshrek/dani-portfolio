@@ -53,12 +53,12 @@ export default function NewSurvey({ gridClasses }: { gridClasses: string }) {
                     <div className="md:hidden">
                         <div className="m-auto text-center ">
                             <div className="flex justify-between items-end">
-                                <div className="flex-initial w-[140px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
+                                <div className="flex-initial w-[140px] p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>The illustration brings it to life</p>
 
                                     <div className="absolute right-1/4 bottom-0 transform translate-y-1/2 rotate-45 w-4 h-4 bg-lighterPurple" />
                                 </div>
-                                <div className="flex-initial w-[170px] ml-4 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
+                                <div className="flex-initial w-[170px] ml-2 p-4 flex-1 bg-lighterPurple text-gray-800 p-2 rounded-lg relative">
                                     <p>
                                         It&#39;s like the illustration of the good vibes company and I think that
                                         inspires confidence
