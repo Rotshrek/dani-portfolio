@@ -34,10 +34,12 @@ export default function Navbar() {
 
     const handleOpenDropDown = () => setOpenWorksDropdown(true),
         handleCloseDropDown = () => {
-            setDropDownClasses(baseClasses + " animate-dropdownReverse")
-            setTimeout(() => {
-                setOpenWorksDropdown(false)
-            }, 250)
+            if (openWorksDropdown) {
+                setDropDownClasses(baseClasses + " animate-dropdownReverse")
+                setTimeout(() => {
+                    setOpenWorksDropdown(false)
+                }, 250)
+            }
         },
         handleWorksDropdown = (event: React.MouseEvent<HTMLAnchorElement>) => {
             event.stopPropagation()
