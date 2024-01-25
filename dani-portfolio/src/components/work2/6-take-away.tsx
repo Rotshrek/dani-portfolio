@@ -11,16 +11,19 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
             <div className="w-screen relative z-10 bg-[url('/work2/wave-bg.svg')] bg-cover">
                 <div className={gridClasses + "  mt-20 md:pt-0 border-b-2"}>
                     <div className="md:col-span-6">
-                        <Image
-                            className="m-auto mt-[-80px]"
-                            src="/work2/home-screen.png"
-                            width={374}
-                            height={764}
-                            alt="Home screen of the application"
-                        />
-                        <p className="font-bold text-2xl my-2 text-center text-white">Home screen</p>
+                        <div className="relative mt-[-80px]">
+                            <p className="font-bold mb-4 text-md text-center">Phone home screen with the widgets</p>
+                            <Image
+                                className="m-auto p-4"
+                                src="/work2/home-screen.png"
+                                width={374}
+                                height={764}
+                                alt="Home screen of the application"
+                                quality={100}
+                            />
+                        </div>
                     </div>
-                    <div className="md:col-span-6 mb-20 mt-40">
+                    <div className="md:col-span-6 mb-10 md:mb-20 mt-10 md:mt-40">
                         {/* <Image
                             className="m-auto"
                             src="/work2/home-screen.png"
@@ -28,10 +31,10 @@ export default function TakeAway({ gridClasses }: { gridClasses: string }) {
                             height={764}
                             alt="Widgets of the application"
                         /> */}
-                        <video className="m-auto mb-8 rounded-lg" autoPlay muted loop width={416} height={749}>
+                        <video className="m-auto mb-4 rounded-lg" autoPlay muted loop width={416} height={749}>
                             <source src="/work2/widgets.mov" type="video/mp4" />
                         </video>
-                        <p className="font-bold text-2xl my-2 text-center text-white">Widgets in the App</p>
+                        <p className="font-bold text-md my-2 text-center text-white">Widgets in the App</p>
                     </div>
                     <div className="md:col-span-2 hidden md:block" />
                     <div className="md:col-span-8 text-white mb-8">

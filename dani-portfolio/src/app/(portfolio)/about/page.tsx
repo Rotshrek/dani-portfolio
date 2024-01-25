@@ -66,6 +66,7 @@ export default function About() {
                         width={205}
                         height={274}
                         alt="Dani holding pastries"
+                        quality={100}
                     />
                     <Image
                         className="relative mb-[-60px] z-20"
@@ -73,6 +74,7 @@ export default function About() {
                         width={201}
                         height={267}
                         alt="Dani looking at an Art exhibition in the Moco Museum, Amsterdam"
+                        quality={100}
                     />
                     <Image
                         className="relative mb-[-60px] translate-x-1/2 z-10"
@@ -80,6 +82,7 @@ export default function About() {
                         width={229}
                         height={172}
                         alt="Pesquecito Antonio, the fish"
+                        quality={100}
                     />
                 </div>
             </div>

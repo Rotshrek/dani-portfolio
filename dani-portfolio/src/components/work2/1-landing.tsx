@@ -82,25 +82,28 @@ export default function Work1Landing({ gridClasses }: { gridClasses: string }) {
                 </div>
                 <div className="md:col-span-7 relative">
                     <Image
-                        className="md:absolute m-auto md:top-[-40px] md:left-[40px]"
+                        className="md:absolute m-auto md:top-[-50px] md:left-[40px]"
                         src={`/work2/Biomass.svg`}
                         alt="Fish weight and mortality indicators"
                         width={120}
                         height={120}
+                        quality={100}
                     />
                     <Image
-                        className="md:absolute m-auto md:top-[-20px] md:right-0"
+                        className="md:absolute m-auto md:top-[-30px] md:right-0"
                         src={`/work2/Feeding.svg`}
                         alt="Fish feeding rate graph"
                         width={252}
                         height={119}
+                        quality={100}
                     />
                     <Image
-                        className="md:absolute m-auto md:left-[80px] md:bottom-[-60px]"
+                        className="md:absolute m-auto md:left-[90px] md:bottom-[-40px]"
                         src={`/work2/Temperature.svg`}
                         alt="Sea temperature indicators"
                         width={252}
                         height={265}
+                        quality={100}
                     />
                 </div>
             </div>

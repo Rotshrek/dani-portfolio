@@ -93,7 +93,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         </p>
                     </div>
                     <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
-                        <div className="relative h-[523px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
+                        <div className="relative h-[493px] md:h-[523px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
                             <div className="hidden md:block md:absolute w-full h-[493px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
@@ -115,7 +115,10 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 Primary user persona profile
                             </p>
                         </div>
-                        <div className="relative h-[526px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
+                        <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                            Scroll right to see the full profile.
+                        </p>
+                        <div className="relative h-[495px] md:h-[526px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
                             <div className="hidden md:block md:absolute w-full h-[495px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
@@ -137,7 +140,10 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 Primary user persona empathy map
                             </p>
                         </div>
-                        <div className="relative h-[521px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
+                        <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                            Scroll right to see the full empathy map.
+                        </p>
+                        <div className="relative h-[491px] md:h-[521px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-2rem] md:ml-0 mb-8">
                             <div className="hidden md:block md:absolute w-full h-[491px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
@@ -159,6 +165,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 Secondary user persona profile
                             </p>
                         </div>
+                        <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                            Scroll right to see the full profile.
+                        </p>
                     </div>
 
                     <Iteration1 />

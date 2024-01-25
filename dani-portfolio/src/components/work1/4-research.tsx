@@ -106,7 +106,7 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             competitors forms (inputs).
                         </p>
                     </div>
-                    <div className="relative md:col-span-12 h-[170px] md:h-[148px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="relative md:col-span-12 h-[172px] md:h-[148px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                         <div className="hidden md:block md:absolute w-full h-[118px] left-1/2 translate-x-[-50%]">
                             <Image
                                 className="rounded-lg cursor-zoom-in"
@@ -116,12 +116,12 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                 onClick={() => openModal("/work1/benchmark.jpg", "Benchmarking timeline", 4550, 610)}
                             />
                         </div>
-                        <div className="absolute md:hidden w-[1280px] h-[170px]">
+                        <div className="absolute md:hidden w-[1280px] h-[172px]">
                             <Image
                                 className="rounded-lg"
                                 src="/work1/benchmark.jpg"
                                 width={1280}
-                                height={170}
+                                height={172}
                                 alt="Benchmarking timeline"
                                 quality={100}
                             />

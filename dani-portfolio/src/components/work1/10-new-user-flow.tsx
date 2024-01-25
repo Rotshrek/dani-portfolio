@@ -52,7 +52,7 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         owner. We eliminated questions that were not necessary to quote and grouped them by topic.
                     </p>
                 </div>
-                <div className="relative md:col-span-12 h-[486px] md:h-[330px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                <div className="relative md:col-span-12 h-[561px] md:h-[330px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                     <div className="hidden md:block md:absolute w-full h-[300px] left-1/2 translate-x-[-50%]">
                         <Image
                             className="rounded-lg cursor-zoom-in"
@@ -62,18 +62,21 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                             onClick={() => openModal("/work1/new-flow.png", "New form flow", 3520, 1200)}
                         />
                     </div>
-                    <div className="absolute md:hidden w-[1280px] h-[456px]">
+                    <div className="absolute md:hidden w-[1280px] h-[561px]">
                         <Image
                             className="rounded-lg"
                             src="/work1/new-flow.png"
                             width={1280}
-                            height={456}
+                            height={561}
                             alt="New form flow"
                             quality={100}
                         />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
+                <p className="md:hidden w-full -mt-4 text-sm text-center pr-10">
+                    Scroll right to see the full diagram.
+                </p>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 mt-4 md:mt-8 pr-10 md:pr-0">
                     <p className="font-bold text-2xl mb-6">New input system</p>
@@ -83,23 +86,32 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         loading, among others.
                     </p>
                 </div>
-                <div className="relative md:col-span-12 h-[698px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                <div className="relative md:col-span-12 h-[668px] md:h-[698px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
                     <div className="hidden md:block m-auto">
                         <Image
                             className="rounded-lg cursor-zoom-in"
                             src="/work1/new-inputs.png"
+                            alt="New types of text inputs"
                             width={880}
                             height={668}
-                            alt="New types of text inputs"
                             quality={100}
                             onClick={() => openModal("/work1/new-inputs.png", "New types of text inputs", 2640, 2005)}
                         />
                     </div>
                     <div className="absolute md:hidden w-[880px] h-[668px]">
-                        <Image className="rounded-lg" src="/work1/new-inputs.png" fill alt="New types of text inputs" />
+                        <Image
+                            className="rounded-lg"
+                            src="/work1/new-inputs.png"
+                            width={880}
+                            height={668}
+                            alt="New types of text inputs"
+                        />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
+                <p className="md:hidden w-full -mt-4 text-sm text-center pr-10">
+                    Scroll right to see the full input system.
+                </p>
                 <div className="md:col-span-2 hidden md:block" />
                 <div className="md:col-span-8 md:mt-8 pr-10 md:pr-0">
                     <p className="font-bold text-2xl mb-6">Handoff to development</p>
@@ -113,8 +125,8 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                         need to build de form in one single place.
                     </p>
                 </div>
-                <div className="relative md:col-span-12 h-[539px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                    <div className="hidden md:block md:absolute w-[880px] h-[509px] left-1/2 translate-x-[-50%]">
+                <div className="relative md:col-span-12 h-[510px] md:h-[539px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                    <div className="hidden md:block md:absolute w-[880px] h-[510px] left-1/2 translate-x-[-50%]">
                         <Image
                             className="rounded-lg cursor-zoom-in"
                             src="/work1/handoff.png"
@@ -123,18 +135,19 @@ export default function NewUserFlow({ gridClasses }: { gridClasses: string }) {
                             onClick={() => openModal("/work1/handoff.png", "Handoff to development", 1760, 1019)}
                         />
                     </div>
-                    <div className="absolute md:hidden w-[880px] h-[509px]">
+                    <div className="absolute md:hidden w-[880px] h-[510px]">
                         <Image
                             className="rounded-lg"
                             src="/work1/handoff.png"
                             width={880}
-                            height={509}
+                            height={510}
                             alt="Handoff to development"
                             quality={100}
                         />
                     </div>
                     <p className="hidden md:block md:absolute bottom-0 w-full text-center text-sm">Click to expand</p>
                 </div>
+                <p className="md:hidden w-full -mt-4 text-sm text-center pr-10">Scroll right to see the full chart.</p>
                 <div className="md:col-span-12 text-right pr-10 md:pr-0">
                     <a
                         href="https://www.figma.com/file/1Boh16TmDAvE6tTnP2Ki5Y/Cotizacio%CC%81n-CICL?type=design&node-id=2102%3A49992&mode=design&t=RUDtx62WYegODiLO-1"

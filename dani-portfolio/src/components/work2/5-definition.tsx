@@ -53,8 +53,8 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                     </div>
 
                     <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
-                        <div className="relative md:col-span-12 h-[889px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
-                            <div className="hidden md:block md:absolute w-[1342px] h-[889px] left-1/2 translate-x-[-50%]">
+                        <div className="relative md:col-span-12 h-[555px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <div className="hidden md:block md:absolute w-[878px] h-[555px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
                                     src="/work2/ui-references.png"
@@ -62,20 +62,24 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                                     alt="UI references and inspiration"
                                 />
                             </div>
-                            <div className="absolute md:hidden w-[1342px] h-[889px]">
+                            <div className="absolute md:hidden w-[878px] h-[555px]">
                                 <Image
                                     className="rounded-lg"
                                     src="/work2/ui-references.png"
-                                    fill
+                                    width={878}
+                                    height={555}
                                     alt="UI references and inspiration"
                                 />
                             </div>
                         </div>
                     </div>
+                    <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                        Scroll right to see the all references.
+                    </p>
 
                     <div className="md:col-span-2" />
                     <div className="md:col-span-8">
-                        <div className="mb-10">
+                        <div className="mb-8">
                             <p className="text-md text-2xl font-bold mb-2">App Concept</p>
                             <p className="text-md mb-6">
                                 We also designed a &lsquo;Dashboard&rsquo; page in the existing App. It house all the
@@ -100,13 +104,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                         </div>
                     </div>
 
-                    <div className="md:col-span-2" />
-                    <div className="md:col-span-2" />
-                    <div className="pr-10 md:pr-0 md:col-span-8">
-                        <p className="font-bold text-2xl mb-2">Biology data</p>
-                    </div>
                     <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
-                        <div className="relative h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                        <div className="relative h-[416px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <p className="font-bold text-md mb-4 ml-[26.5px]">Biology data</p>
                             <div className="hidden md:block md:absolute w-[883px] h-[375px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
@@ -125,13 +125,13 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </div>
                         </div>
                     </div>
+                    <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                        Scroll right to see the all prototypes.
+                    </p>
 
-                    <div className="md:col-span-2" />
-                    <div className="pr-10 md:pr-0 md:col-span-8">
-                        <p className="font-bold text-2xl mb-2">Feeding data</p>
-                    </div>
                     <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
-                        <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                        <div className="relative md:col-span-12 h-[416px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <p className="font-bold text-md mb-4 ml-[22px]">Feeding data</p>
                             <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
@@ -150,13 +150,13 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </div>
                         </div>
                     </div>
+                    <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                        Scroll right to see the all prototypes.
+                    </p>
 
-                    <div className="md:col-span-2" />
-                    <div className="pr-10 md:pr-0 md:col-span-8">
-                        <p className="font-bold text-2xl mb-2">Environmental data</p>
-                    </div>
                     <div className="md:col-span-12 overflow-visible w-[calc(100vw-4rem)] md:w-auto">
-                        <div className="relative md:col-span-12 h-[375px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                        <div className="relative md:col-span-12 h-[416px] w-screen md:w-auto overflow-scroll md:overflow-visible ml-[-30px] md:ml-0">
+                            <p className="font-bold text-md mb-4 ml-[27.5px]">Environmental data</p>
                             <div className="hidden md:block md:absolute w-[881px] h-[375px] left-1/2 translate-x-[-50%]">
                                 <Image
                                     className="rounded-lg"
@@ -175,6 +175,9 @@ export default function Research({ gridClasses }: { gridClasses: string }) {
                             </div>
                         </div>
                     </div>
+                    <p className="md:hidden w-full -mt-6 text-sm text-center mb-6">
+                        Scroll right to see the all prototypes.
+                    </p>
                 </div>
             </div>
         </div>

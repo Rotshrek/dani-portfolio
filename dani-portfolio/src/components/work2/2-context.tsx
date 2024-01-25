@@ -37,6 +37,7 @@ export default function Context({ gridClasses }: { gridClasses: string }) {
                         width={574}
                         height={346}
                         alt="Platform screen"
+                        quality={100}
                     />
                 </div>
             </div>
